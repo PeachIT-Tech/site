@@ -1,0 +1,23 @@
+# # ignore everything in the root except the "wp-content" directory.
+# !Wordpress/wp-content/
+
+# # ignore everything in the "wp-content" directory, except:
+# # "mu-plugins", "plugins", "themes" directory
+# Wordpress/wp-content/*
+# !Wordpress/wp-content/mu-plugins/
+# !Wordpress/wp-content/plugins/
+# !Wordpress/wp-content/themes/
+
+# # ignore these plugins
+# Wordpress/wp-content/plugins/hello.php
+
+# # ignore specific themes
+# Wordpress/wp-content/themes/twenty*/
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore sass-cache
+HTML/.sass-cache
