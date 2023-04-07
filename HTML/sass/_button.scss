@@ -1,0 +1,26 @@
+.button {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #65B343;
+    text-decoration: none;
+
+    &.button-more {
+        padding: 13px 27px;
+        padding-right: 50px;
+        border-radius: 4px;
+        background: url(../images/icons/arrow-right.svg) #F2FAEF right 15px center no-repeat;
+        background-size: 25px;
+    }
+
+    &.primary {
+        color: #0C1707;
+        background: url(../images/icons/arrow-right-dark.svg) #7CD854 right 15px center no-repeat;
+        background-size: 25px;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

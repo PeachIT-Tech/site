@@ -3,35 +3,36 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1,minimum-scale=1" />
 		<title>Peach IT</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="images/favi-icon.webp">
+		<script src="js/bootstrap.bundle.min.js"></script>
 	</head> 
 	<body>
-		<header class="header">
+		<header id="header" class="header">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<a class="navbar-brand" href="#">
 						<img src="images/logo-grande.png" alt="Logo Peach IT">
 					</a>
 					<div class="navbar-menu">
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 								<li class="nav-item">
 									<a class="nav-link active" aria-current="page" href="#">Início</a>
 								</li>
-								<li class="nav-item dropdown">
+								<li class="nav-item dropdown-open" id="DropdownItem">
 									<a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										O que fazemos
 									</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Action</a></li>
-										<li><a class="dropdown-item" href="#">Another action</a></li>
-										<li><hr class="dropdown-divider"></li>
-										<li><a class="dropdown-item" href="#">Something else here</a></li>
+										<div class="container">
+											<li><a class="dropdown-item" href="#">Campanhas</a></li>
+											<li><a class="dropdown-item" href="#">Consultoria & Estratégia</a></li>
+											<li><a class="dropdown-item" href="#">Desenvolvimento Soluções</a></li>
+											<li><a class="dropdown-item" href="#">Outsourcing</a></li>
+										</div>
 									</ul>
 								</li>
 								<li class="nav-item">
@@ -43,23 +44,232 @@
 							</ul>
 						</div>
 						<button class="navbar-button-client" type="button">Seja cliente</button>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navToggle">
+							<div class="menu-button" id="menu-button">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div>
+						</button>
 					</div>
 				</div>
 			</nav>
-		</header><!-- /header -->
+		</header>
+		
 		<section class="main">
-			<div class="slider" style="color: #FFF;">
-				<div class="container">
-					Slider
+			<div class="slider">
+				<div class="swiper slider-home">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slider-general slider-type-1" style="background: #172511 center no-repeat;">
+								<div class="container">
+									<div class="row row-slider">
+										<div class="col-md-8 line-slider-text">
+											<h1>Gestão de TI com foco em estratégia e implementação! </h1>
+											<p>"Utilizamos a tecnologia de forma a simplificar, potencializar e acelerar os resultados."</p>
+										</div>
+										<div class="col-md-4 line-slider-image">
+											<img src="images/personagem-1.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slider-general slider-type-2" style="background: url('images/bg-slider.png') #172511 center no-repeat;">
+								<div class="container">
+									<div class="row row-slider">
+										<div class="col-md-4 line-slider-image">
+											<img src="images/personagem-2.png" alt="">
+										</div>
+										<div class="col-md-8 line-slider-text">
+											<h1>Proporcionamos a melhor e mais inovadora experiência de entrega de software!</h1>
+											<p>"Nós somos uma empresa especializada em desenvolver soluções de tecnologia estratégicas."</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slider-general slider-type-3" style="background: url('') #172511 center no-repeat;">
+								<div class="container">
+									<div class="row row-slider">
+										<div class="col-md-12 line-slider-text">
+											<h1>Proporcionamos a melhor e mais inovadora experiência de entrega de software!</h1>
+											<p>"Nós somos uma empresa especializada em desenvolver soluções de tecnologia estratégicas."</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+
+				<div class="swiper-pagination swiper-pagination-slider-home"></div>
 			</div>
 
-			<div>
-				<div class="container">
-					Conteúdo
+			<div class="home">
+				<div class="home-doing">
+					<div class="container">
+						<h1 class="title"><span>O que</span> fazemos?</h1>
+						<p>Usamos a tecnologia de maneira eficiente para simplificar, potencializar e acelerar os resultados.</p>
+
+						
+						<div class="box-what-doing">
+							<div class="swiper swiper-doing">
+								<div class="swiper-wrapper">
+								  <div class="swiper-slide">
+									<div class="box-doing">
+										<h5>Consultoria & Estratégia</h5>
+
+										<p>Colocamos à disposição de sua empresa uma equipe de desenvolvedores altamente qualificados.</p>
+
+										<a href="#" class="button button-more">Saiba mais</a>
+									</div>
+								  </div>
+								  <div class="swiper-slide">
+									<div class="box-doing">
+										<h5>Soluções Digitais</h5>
+
+										<p>Colocamos à disposição de sua empresa uma equipe de desenvolvedores altamente qualificados.</p>
+
+										<a href="#" class="button button-more">Saiba mais</a>
+									</div>
+								  </div>
+								  <div class="swiper-slide">
+									<div class="box-doing">
+										<h5>Outsourcing</h5>
+
+										<p>Oferecemos alocação de profissionais altamente qualificados em diversas áreas de conhecimento técnico.</p>
+
+										<a href="#" class="button button-more">Saiba mais</a>
+									</div>
+								  </div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination swiper-pagination-slider-doing"></div>
+						</div>
+					</div>
+				</div>
+					
+				<div class="home-we">
+					<div class="container">
+						<h1 class="title"><span>Quem</span> somos?</h1>
+						
+						<div class="box-border">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="box-border-image">
+										<img src="./images/equipe.png" alt="Equipe Peach IT">
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="box-border-text">
+										<h1>Somos uma empresa que preza pela entrega de soluções ágeis e inteligentes!</h1>
+	
+										<p>Nossa missão é utilizar a tecnologia como uma ferramenta para potencializar os negócios de nossos clientes. Por isso estamos sempre empenhados em ajudar nossos clientes a alcançarem o sucesso que desejam.</p>
+										
+										<a href="#" class="button button-more primary">Saiba mais</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="home-projects">
+					<div class="container">
+						<h1 class="title"><span>Projetos</span> desenvolvidos com:</h1>
+						<p>Acreditamos nas empresas que entendem que a combinação de pessoas e tecnologias é fundamental para promover a transformação e o sucesso.</p>
+					</div>
+				</div>
+					
+				<div class="home-clients">
+					<div class="container">
+						<h1>O que nossos clientes estão dizendo!</h1>
+
+						<div class="slider">
+							<div class="swiper slider-clients">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="client-depoiment">
+											<div class="row linha">
+												<div class="row linha-1">
+													<div class="col-3 col-md-1">
+														<img src="images/img-depoimento.png" alt="Darrell Steward">
+													</div>
+													<div class="col-9 col-md-11 d-flex align-items-center">
+														<p>Darrell Steward</p>
+													</div>
+												</div>
+												<div class="col-md-11 offset-md-1 linha-2">
+													<p>Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. </p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="client-depoiment">
+											<div class="row linha">
+												<div class="row linha-1">
+													<div class="col-3 col-md-1">
+														<img src="images/img-depoimento.png" alt="Darrell Steward">
+													</div>
+													<div class="col-9 col-md-11 d-flex align-items-center">
+														<p>Darrell Steward</p>
+													</div>
+												</div>
+												<div class="col-md-11 offset-md-1 linha-2">
+													<p>Duis condimentum, risus mollis vehicula commodo, odio arcu sagittis purus, sit amet tristique orci neque non dolor. Integer ut magna ligula. </p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="client-depoiment">
+											<div class="row linha">
+												<div class="row linha-1">
+													<div class="col-3 col-md-1">
+														<img src="images/img-depoimento.png" alt="Darrell Steward">
+													</div>
+													<div class="col-9 col-md-11 d-flex align-items-center">
+														<p>Darrell Steward</p>
+													</div>
+												</div>
+												<div class="col-md-11 offset-md-1 linha-2">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique ante eros, ut aliquet nulla finibus laoreet. In nec massa justo.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="client-depoiment">
+											<div class="row linha">
+												<div class="row linha-1">
+													<div class="col-3 col-md-1">
+														<img src="images/img-depoimento.png" alt="Darrell Steward">
+													</div>
+													<div class="col-9 col-md-11 d-flex align-items-center">
+														<p>Darrell Steward</p>
+													</div>
+												</div>
+												<div class="col-md-11 offset-md-1 linha-2">
+													<p>Duis luctus ante sed odio scelerisque porttitor. Aliquam posuere ligula vitae dui posuere, id commodo nisi interdum. Nunc rutrum elit at metus tempus viverra.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination swiper-pagination-slider-clients"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
+
 		<footer class="footer">
 			<div class="sob-footer">
 				<div class="container">
@@ -143,5 +353,72 @@
 				<p>Copyright © 2023 PEACH IT. Todos os direitos reservados.</p>
 			</div>
 		</footer>
+		
+		<!-- Swiper JS -->
+		<script src="js/swiper-bundle.min.js"></script>
+		
+		<!-- JS para Menu -->
+		<script>
+			const myDropdown = document.getElementById('DropdownItem');
+
+			myDropdown.addEventListener('show.bs.dropdown', event => {
+				var element = document.getElementById("header");
+				element.classList.add("show");
+			})
+
+			myDropdown.addEventListener('hide.bs.dropdown', event => {
+				var element = document.getElementById("header");
+				element.classList.remove("show");
+			})
+
+			// const navToggle = document.getElementById('navToggle');
+
+			// navToggle.addEventListener('show.bs.dropdown', event => {
+			// 	var menu = document.getElementById("menu-button");
+			// 	menu.classList.add("cross");
+			// 	element.classList.add("show");
+			// })
+
+			// navToggle.addEventListener('hide.bs.dropdown', event => {
+			// 	var menu = document.getElementById("menu-button");
+			// 	menu.classList.remove("cross");
+			// })
+		</script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiperHome = new Swiper(".slider-home", {
+				pagination: {
+					el: ".swiper-pagination-slider-home",
+        			clickable: true,
+				},
+			});
+
+			var swiperClients = new Swiper(".slider-clients", {
+				pagination: {
+					el: ".swiper-pagination-slider-clients",
+        			clickable: true,
+				},
+			});
+
+			var swiperDoing = new Swiper(".swiper-doing", {
+				pagination: {
+					el: ".swiper-pagination-slider-doing",
+        			clickable: true,
+				},
+				slidesPerView: 3,
+				spaceBetween: 30,
+				breakpoints: {
+					100: {
+						slidesPerView: 1,
+						spaceBetween: 30,
+					},
+					991: {
+						slidesPerView: 3,
+						spaceBetween: 30,
+					},
+				},
+			});
+		</script>
 	</body>
 </html>
