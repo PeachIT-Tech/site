@@ -5,19 +5,27 @@
     line-height: 18px;
     color: #65B343;
     text-decoration: none;
+    padding: 13px 27px;
+    border-radius: 4px;
 
     &.button-more {
-        padding: 13px 27px;
         padding-right: 50px;
-        border-radius: 4px;
         background: url(../images/icons/arrow-right.svg) #F2FAEF right 15px center no-repeat;
         background-size: 25px;
+
+        &.primary {
+            background: url(../images/icons/arrow-right-dark.svg) #7CD854 right 15px center no-repeat;
+            background-size: 25px;
+        }
     }
 
     &.primary {
+        background-color: #7CD854;
         color: #0C1707;
-        background: url(../images/icons/arrow-right-dark.svg) #7CD854 right 15px center no-repeat;
-        background-size: 25px;
+    }
+
+    &.shadow {
+        box-shadow: 2px 2px 6px rgba(18, 18, 18, 0.35);
     }
 
     &:hover {

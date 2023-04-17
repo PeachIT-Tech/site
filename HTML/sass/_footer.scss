@@ -21,6 +21,10 @@
 			}
 
 			.coluna-1 {
+				@media screen and (max-width: 991px) {
+					padding-top: 30px;
+				}
+
 				h1 {
 					font-family: 'Inter';
 					font-style: normal;
@@ -32,6 +36,10 @@
 				}
 
 				.redes-sociais {
+					@media screen and (max-width: 991px) {
+						text-align: center;
+					}
+
 					p {
 						font-family: 'Inter';
 						font-style: normal;
@@ -46,17 +54,40 @@
 					ul {
 						padding: 0;
 						margin: 0;
+								
+						@media screen and (max-width: 991px) {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
 
 						li {
-							display: flex;
-							align-items: center;
 							font-family: 'Inter';
 							font-style: normal;
-							font-weight: 700;
-							font-size: 16px;
-							line-height: 19px;
-							color: $primaria;
 							padding-bottom: 16px;
+								
+							@media screen and (max-width: 991px) {
+								padding-bottom: 0;
+								margin: 0 5px;
+							}
+
+							span {
+								line-height: 1;
+
+								@media screen and (max-width: 991px) {
+									display: none;
+								}
+							}
+
+							a {
+								text-decoration: none;
+								display: flex;
+								align-items: center;
+								font-weight: 700;
+								font-size: 16px;
+								line-height: 19px;
+								color: $primaria;
+							}
 
 							img {
 								width: 32px;
@@ -119,6 +150,10 @@
 			}
 
 			.coluna-3 {
+				@media screen and (max-width: 991px) {
+					padding-bottom: 24px;
+				}
+
 				h1 {
 					font-family: 'Inter';
 					font-style: normal;
@@ -139,6 +174,10 @@
 							display: flex;
 							align-items: center;
 							padding-bottom: 21px;
+
+							@media screen and (max-width: 991px) {
+								justify-content: center;
+							}
 
 							&:last-of-type {
 								padding: 0;
@@ -168,6 +207,12 @@
 		padding: 15px 30px;
 		background-color: $primaria;
 
+		@media screen and (max-width: 991px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
 		p {
 			text-align: center;
 			margin: 0;
@@ -178,6 +223,16 @@
 			font-weight: 700;
 			font-size: 16px;
 			line-height: 19px;
+			
+			@media screen and (max-width: 991px) {
+				max-width: 250px;
+			}
+		}
+	}
+
+	.mobile-hidden {
+		@media screen and (max-width: 991px) {
+			display: none;
 		}
 	}
 }
