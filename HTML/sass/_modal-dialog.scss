@@ -1,0 +1,30 @@
+.modal-dialog {
+    .modal-body {
+        padding: 40px;
+
+        img {
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .left {
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: justify;
+                letter-spacing: 0.005em;
+            }
+        }
+
+        .right {
+            .button {
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+// .modal-dialog-cliente {}
+
+// .modal-dialog-trabalhe {}

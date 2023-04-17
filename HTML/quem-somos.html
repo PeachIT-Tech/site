@@ -44,7 +44,7 @@
 								</li>
 							</ul>
 						</div>
-						<button class="navbar-button-client" type="button">Seja cliente</button>
+						<button class="navbar-button-client" type="button" data-bs-toggle="modal" data-bs-target="#modalClient">Seja cliente</button>
 						<button class="navbar-toggler">
 							<div class="menu-button" id="menu-button" onclick="menuMobile()">
 								<div class="bar"></div>
@@ -473,6 +473,67 @@
 		<!-- Swiper JS -->
 		<script src="js/swiper-bundle.min.js"></script>
         
+		<!-- Modal -->
+		<div class="modal fade" id="modalClient" tabindex="-1" aria-labelledby="modalClient" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl modal-fullscreen-md-down modal-dialog-client">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="left">
+									<img src="images/dialog-client-desktop.png" class="desktop" alt="Peach IT">
+									<img src="images/dialog-client-mobile.png" class="mobile" alt="Peach IT">
+
+									<p>Por favor, preencha este formulário se você deseja obter resultados através da tecnologia. Um de nossos consultores entrará em contato com você em breve.</p>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="right">
+									<form action="">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-floating mb-3">
+													<input type="text" class="form-control" id="nome" placeholder="Nome">
+													<label for="nome">Nome</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-floating mb-3">
+													<input type="email" class="form-control" id="email" placeholder="name@example.com">
+													<label for="email">Email</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-floating mb-3">
+													<input type="whatsapp" class="form-control" id="whatsapp" placeholder="Whatsapp">
+													<label for="whatsapp">Whatsapp</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-floating mb-3">
+													<input type="empresa" class="form-control" id="empresa" placeholder="Empresa">
+													<label for="empresa">Empresa</label>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-floating">
+													<textarea class="form-control" placeholder="Mensagem" id="mensagem" style="height: 150px"></textarea>
+													<label for="mensagem">Mensagem</label>
+												</div>
+											</div>
+										</div>
+										<div>
+											<button type="submit" class="button invert">Enviar mensagem</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- JS para Menu -->
 		<script>
 			function dropMenu() {

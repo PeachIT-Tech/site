@@ -22304,6 +22304,63 @@ input:active, input:focus, button:active, button:focus {
   outline: none;
 }
 
+.modal-dialog .modal-body {
+  padding: 40px;
+}
+.modal-dialog .modal-body img {
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+.modal-dialog .modal-body .left p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 0.005em;
+}
+.modal-dialog .modal-body .right .button {
+  margin-top: 24px;
+}
+
+.form-floating label {
+  font-weight: 700;
+  color: #8E8E8E;
+}
+.form-floating .form-control {
+  height: 50px;
+  color: #8E8E8E;
+  background-color: #E9E9E9;
+}
+.form-floating textarea {
+  resize: none;
+}
+.form-floating .uploaded-item {
+  background: #F4F4F4;
+  border-radius: 0px 0px 0px 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+  padding: 5px 30px;
+  padding-right: 50px;
+}
+.form-floating .uploaded-item p {
+  font-weight: 700;
+  color: #7CD854;
+  font-size: 16px;
+  line-height: 19px;
+}
+.form-floating .uploaded-item button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: none;
+}
+.form-floating .uploaded-item.active {
+  display: flex;
+}
+
 .button {
   display: inline-block;
   font-weight: 500;
@@ -22327,11 +22384,28 @@ input:active, input:focus, button:active, button:focus {
   background-color: #7CD854;
   color: #0C1707;
 }
+.button.invert {
+  background-color: #7CD854;
+  color: #FFFFFF;
+  border: none;
+}
+.button.invert-bg {
+  background-color: #FFFFFF;
+}
 .button.shadow {
   box-shadow: 2px 2px 6px rgba(18, 18, 18, 0.35);
 }
 .button:hover {
   opacity: 0.7;
+}
+.button.border-primary {
+  border: 1px solid #7CD854 !important;
+}
+.button.invert-shadow {
+  box-shadow: 1px 1px 8px 2px rgba(18, 18, 18, 0.2);
+}
+.button.no-border {
+  border: none;
 }
 
 .header {
@@ -23493,6 +23567,39 @@ body {
   .vertical-align.mob-center {
     justify-content: center;
   }
+}
+
+.desktop {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+}
+
+input[type=file] {
+  display: none;
+}
+
+.label-file {
+  padding: 10px;
+  width: 50px;
+  color: #7CD854;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  margin-right: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

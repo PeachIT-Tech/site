@@ -10,6 +10,8 @@
 @import "vendor/swiper/_swiper.scss";
 @import "vendor/reset";
 
+@import "_modal-dialog.scss";
+@import "_form.scss";
 @import "_button.scss";
 @import "_header.scss";
 @import "_footer.scss";
@@ -131,4 +133,35 @@ body {
 			justify-content: center;
 		}
 	}
+}
+
+.desktop {
+	display: block;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+
+.mobile {
+	display: none;
+
+	@media screen and (max-width: 767px) {
+		display: block;
+	}
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.label-file {
+    padding: 10px;
+    width: 50px;
+    color: #7CD854;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    margin-right: 24px;
 }

@@ -1,0 +1,46 @@
+.form-floating {
+    label {
+        font-weight: 700;
+        color: #8E8E8E;
+    }
+    
+    .form-control {
+        height: 50px;
+        color: #8E8E8E;
+        background-color: #E9E9E9;
+    }
+    
+    textarea {
+        resize: none;
+    }
+
+    .uploaded-item {
+        background: #F4F4F4;
+        border-radius: 0px 0px 0px 8px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: none;
+        padding: 5px 30px;
+        padding-right: 50px;
+
+        p {
+            font-weight: 700;
+            color: $primaria;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: transparent;
+            border: none;
+        }
+
+        &.active {
+            display: flex;
+        }
+    }
+}
