@@ -86,6 +86,25 @@
         },
     });
 
+    var swiperMetodologia = new Swiper(".swiper-metodologia", {
+        pagination: {
+            el: ".swiper-pagination-slider-metodologia",
+            clickable: true,
+        },
+        slidesPerView: 5,
+        spaceBetween: 30,
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            },
+        },
+    });
+
     var swiperProjects = new Swiper(".swiper-projects", {
         spaceBetween: 30,
         pagination: {

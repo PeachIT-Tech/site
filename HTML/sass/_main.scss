@@ -91,6 +91,18 @@
 		}
 	}
 
+	.section-general {
+		padding-bottom: 50px;
+	}
+
+	.section-metodologia {
+		padding-bottom: 50px;
+		
+		@media screen and (max-width: 991px) {
+			padding: 0;
+		}
+	}
+
 	.section-projects {
 		p {
 			font-weight: 500;

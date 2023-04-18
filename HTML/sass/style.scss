@@ -87,12 +87,18 @@ body {
 		img {
 			max-width: 100%;
 			height: auto;
+
+			&.max-300 {
+				width: 300px;
+			}
 		}
 	}
 
 	.box-border-text {
-		@media screen and (max-width: 767px) {
-			text-align: center;
+		&.text-align {
+			@media screen and (max-width: 767px) {
+				text-align: center;
+			}
 		}
 
 		h1 {
@@ -120,6 +126,7 @@ body {
 				font-size: 16px;
 				line-height: 19px;
 				letter-spacing: 0.05em;
+				margin-bottom: 12px;
 			}
 		}
 
@@ -130,9 +137,54 @@ body {
 		}
 	}
 
+	ul {
+		font-size: 20px;
+		margin-left: 0;
+		list-style: none;
+
+		li {
+			background: url("../images/icons/peach-icon.svg") left center no-repeat;
+			background-size: 25px;
+			padding: 10px 0;
+			padding-left: 40px;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 24px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 14px;
+				line-height: 17px;
+				padding: 15px 0;
+				padding-left: 40px;
+			}
+		}
+	}
+
+	.text-md-end {
+		ul {
+			li {
+				background: url("../images/icons/peach-icon.svg") right center no-repeat;
+				background-size: 25px;
+				padding: 10px 0;
+				padding-left: 0;
+				padding-right: 40px;
+				
+				@media screen and (max-width: 991px) {
+					background: url("../images/icons/peach-icon.svg") left center no-repeat;
+					background-size: 25px;
+					padding: 15px 0;
+					padding-left: 40px;
+					padding-right: 0;
+				}
+			}
+		}
+	}
+
 	.row {
-		@media screen and (max-width: 767px) {
-			flex-direction: column-reverse;
+		&.mobile-invert {
+			@media screen and (max-width: 767px) {
+				flex-direction: column-reverse;
+			}
 		}
 	}
 }

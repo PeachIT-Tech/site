@@ -226,6 +226,146 @@
 			color: #172511;
 		}
 	}
+
+	.swiper-metodologia {
+		background: transparent;
+		
+		@media screen and (max-width: 991px) {
+			background-color: $branco;
+			border-radius: 8px;
+			padding: 16px;
+		}
+
+		&.swiper-backface-hidden .swiper-slide {
+			transform: none !important;
+			-webkit-backface-visibility: inherit !important;
+			backface-visibility: inherit !important;
+		}
+	
+		.swiper-wrapper {
+			.swiper-slide {
+				&:first-child {
+					.box-conteudo {
+						&::before {
+							display: none;
+						}
+					}
+				}
+
+				&:last-child {
+					.box-conteudo {
+						&::after {
+							display: none;
+						}
+					}
+				}
+
+				&.impar {
+					.box-conteudo {
+						&::before {
+							content: '';
+							position: absolute;
+							background: rgba(150, 212, 129, 0.38);
+							width: 250px;
+							height: 20px;
+							transform: rotate(155deg);
+							top: 100px;
+							left: -130px;
+							z-index: -1;
+							
+							@media screen and (max-width: 1199px) {
+								width: 200px;
+								transform: rotate(150deg);
+								top: 90px;
+								left: -130px;
+							}
+							
+							@media screen and (max-width: 991px) {
+								display: none;
+							}
+						}
+						
+						&::after {
+							content: "";
+							position: absolute;
+							background: rgba(150, 212, 129, 0.38);
+							width: 250px;
+							height: 20px;
+							transform: rotate(385deg);
+							top: 100px;
+							right: -130px;
+							z-index: -1;
+							
+							@media screen and (max-width: 1199px) {
+								width: 250px;
+								transform: rotate(390deg);
+								top: 90px;
+								right: -130px;
+							}
+							
+							@media screen and (max-width: 991px) {
+								display: none;
+							}
+						}
+					}
+				}
+				
+				&.par {
+					margin-top: 100px;
+
+					@media screen and (max-width: 991px) {
+						margin: 0;
+					}
+				}
+				
+				.box-conteudo {
+					.box-conteudo-imagem {
+						img {
+							max-width: 100%;
+							position: relative;
+							z-index: 1000;
+
+							@media screen and (max-width: 991px) {
+								position: initial;
+							}
+						}
+					}
+
+					.box-conteudo-texto {
+						margin-top: -60px;
+
+						@media screen and (max-width: 991px) {
+							margin-top: -120px;
+						}
+
+						h5 {
+							font-weight: 700;
+							font-size: 28px;
+							line-height: 34px;
+							color: #0C1707;
+							padding-bottom: 4px;
+							margin-bottom: 8px;
+							border-bottom: 4px solid #7CD854;
+							max-width: 60%;
+
+							@media screen and (max-width: 1199px) {
+								word-break: break-all;
+								font-size: 20px;
+							}
+						}
+
+						p {
+							font-weight: 500;
+							font-size: 14px;
+							line-height: 17px;
+							color: #3D3D3D;
+							margin: 0;							
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 .swiper-pagination-bullets {
