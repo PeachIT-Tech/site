@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1,minimum-scale=1" />
+		<title>Peach IT</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="images/favi-icon.webp">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</head> 
+	<body>
+		<header id="header" class="header">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo-grande.png" alt="Logo Peach IT">
+					</a>
+					<div class="navbar-menu">
+						<div class="collapse navbar-collapse" id="navbar-collapse">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="index.html">Início</a>
+								</li>
+								<li class="nav-item dropdown-open" onclick="dropMenu()">
+									<a class="nav-link" onclick="expand()">
+										O que fazemos <span class="material-symbols-outlined mobile" id="expand" >expand_more</span>
+									</a>
+									<ul class="dropdown-menu" id="DropdownItem">
+										<div class="container">
+											<li><a class="dropdown-item" href="#">Campanhas</a></li>
+											<li><a class="dropdown-item" href="#">Consultoria & Estratégia</a></li>
+											<li><a class="dropdown-item" href="#">Desenvolvimento Soluções</a></li>
+											<li><a class="dropdown-item" href="#">Outsourcing</a></li>
+										</div>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="quem-somos.html">Quem somos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="trabalhe.html">Trabalhe conosco</a>
+								</li>
+							</ul>
+						</div>
+						<button class="navbar-button-client" type="button" data-bs-toggle="modal" data-bs-target="#modalClient">Seja cliente</button>
+						<button class="navbar-toggler">
+							<div class="menu-button" id="menu-button" onclick="menuMobile()">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div>
+						</button>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<section class="main">
+			<div class="section">
+				<div class="section-404">
+					<div class="container">
+                        <img src="images/404_1_Desktop.png" alt="404">
+
+						<h1>OOPS, DESCULPE! =( <br/> ESTA PÁGINA NÃO FOI ENCONTRADA</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="sob-footer">
+				<div class="container">
+					<a class="logo-footer" href="#">
+						<img src="images/logo-grande.png" alt="Logo Peach IT">
+					</a>
+
+					<div class="row">
+						<div class="col-12 col-md-4 coluna-1 order-1 order-md-first">
+							<h1 class="mobile-hidden">"Utilizamos a tecnologia de forma a simplificar, potencializar e acelerar os resultados."</h1>
+
+							<div class="redes-sociais">
+								<p>Acesse nossas redes:</p>
+
+								<ul>
+									<li>
+										<a href="#" target="_blank">
+											<img src="images/icons/instagram.svg" alt="Instagram Peach IT" width="32" height="32"> <span>Instagram</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<img src="images/icons/linkedin.svg" alt="Linkedin Peach IT" width="32" height="32"> <span>Linkedin</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-md-5 coluna-2 mobile-hidden">
+							<h1>Navegue pelo site</h1>
+
+							<div class="row">
+								<div class="col">
+									<ul class="lista-espacamento">
+										<li>
+											<strong>Início</strong>
+										</li>
+										<li>
+											<strong>Quem somos</strong>
+										</li>
+										<li>
+											<strong>Trabalhe conosco</strong>
+										</li>
+									</ul>
+								</div>
+								<div class="col">
+									<ul class="lista-sem-espacamento">
+										<li>
+											<strong>O que fazemos</strong>
+										</li>
+										<li>
+											Campanhas
+										</li>
+										<li>
+											Consultoria & Estratégia
+										</li>
+										<li>
+											Desenvolvimento Soluções
+										</li>
+										<li>
+											Outsourcing
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-3 coluna-3 order-0 order-md-last">
+							<h1 class="mobile-hidden">Fale com a gente.</h1>
+
+							<div class="contato">
+								<ul>
+									<li>
+										<img src="images/icons/email.svg" alt="Email Peach IT"> <a href="mailto:comercial@peachit.com.br?subject=Contato">comercial@peachit.com.br</a>
+									</li>
+									<li>
+										<img src="images/icons/whatsapp.svg" alt="Whatsapp Peach IT"> <a href="https://api.whatsapp.com/send?phone=+5511963467100&text=Olá">(11) 96346-7100</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sub-footer">
+				<p>Copyright © 2023 PEACH IT. Todos os direitos reservados.</p>
+			</div>
+		</footer>
+
+		<!-- Modal -->
+		<div class="modal fade" id="modalClient" tabindex="-1" aria-labelledby="modalClient" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl modal-dialog-client">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="left">
+									<img src="images/dialog-client-desktop.png" class="desktop" alt="Peach IT">
+									<img src="images/dialog-client-mobile.png" class="mobile" alt="Peach IT">
+
+									<p>Por favor, preencha este formulário se você deseja obter resultados através da tecnologia. Um de nossos consultores entrará em contato com você em breve.</p>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="right">
+									<form action="">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-floating mb-3">
+													<input type="text" class="form-control" id="nome" placeholder="Nome">
+													<label for="nome">Nome</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-floating mb-3">
+													<input type="email" class="form-control" id="email" placeholder="name@example.com">
+													<label for="email">Email</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-floating mb-3">
+													<input type="whatsapp" class="form-control" id="whatsapp" placeholder="Whatsapp">
+													<label for="whatsapp">Whatsapp</label>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-floating mb-3">
+													<input type="empresa" class="form-control" id="empresa" placeholder="Empresa">
+													<label for="empresa">Empresa</label>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-floating">
+													<textarea class="form-control" placeholder="Mensagem" id="mensagem" style="height: 150px"></textarea>
+													<label for="mensagem">Mensagem</label>
+												</div>
+											</div>
+										</div>
+										<div>
+											<button type="submit" class="button invert">Enviar mensagem</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Swiper JS -->
+		<script src="js/swiper-bundle.min.js"></script>
+		<!-- App JS -->
+		<script src="js/app.js"></script>
+	</body>
+</html>

@@ -22897,11 +22897,11 @@ input:active, input:focus, button:active, button:focus {
 .slider {
   position: relative;
 }
-.slider .slider-home {
+.slider .slider-home, .slider .slider-geral {
   width: 100%;
   height: 500px;
 }
-.slider .slider-home .swiper-slide {
+.slider .slider-home .swiper-slide, .slider .slider-geral .swiper-slide {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -22911,7 +22911,7 @@ input:active, input:focus, button:active, button:focus {
   align-items: center;
   color: #FFFFFF;
 }
-.slider .slider-home .swiper-slide .slider-general {
+.slider .slider-home .swiper-slide .slider-general, .slider .slider-geral .swiper-slide .slider-general {
   background-size: cover;
   background-color: #172511;
   width: 100%;
@@ -22919,14 +22919,14 @@ input:active, input:focus, button:active, button:focus {
   display: flex;
   align-items: center;
 }
-.slider .slider-home .swiper-slide .slider-general .row-slider {
+.slider .slider-home .swiper-slide .slider-general .row-slider, .slider .slider-geral .swiper-slide .slider-general .row-slider {
   align-items: center;
 }
-.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text {
+.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text {
   display: flex;
   flex-direction: column;
 }
-.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
+.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
   font-weight: 700;
   font-size: 46px;
   line-height: 56px;
@@ -22937,11 +22937,11 @@ input:active, input:focus, button:active, button:focus {
   margin-bottom: 32px;
 }
 @media screen and (max-width: 767px) {
-  .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
+  .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
     max-width: 300px;
   }
 }
-.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1:after, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1:after {
+.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1:after, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1:after, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1:after, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1:after {
   content: "";
   width: 100%;
   height: 8px;
@@ -22952,12 +22952,12 @@ input:active, input:focus, button:active, button:focus {
   left: 0;
 }
 @media screen and (max-width: 767px) {
-  .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
+  .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
     font-size: 20px;
     line-height: 24px;
   }
 }
-.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text P {
+.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text P {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -22966,91 +22966,91 @@ input:active, input:focus, button:active, button:focus {
   max-width: 663px;
 }
 @media screen and (max-width: 767px) {
-  .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text P {
+  .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text P {
     font-size: 14px;
     line-height: 17px;
   }
 }
-.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-image {
+.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-image, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-image img {
+.slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-image img, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-image img {
   max-width: 100%;
   width: 400px;
   height: auto;
 }
 @media screen and (max-width: 767px) {
-  .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-image img {
+  .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-image img, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-image img {
     width: 220px;
   }
 }
 @media screen and (max-width: 767px) {
-  .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider {
+  .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider {
     flex-direction: column-reverse;
   }
 }
-.slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text {
+.slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text {
   align-items: start;
 }
-.slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text .h1 {
+.slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text .h1 {
   text-align: left;
 }
-.slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text P {
+.slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text P {
   text-align: left;
 }
 @media screen and (max-width: 767px) {
-  .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text {
+  .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text {
     align-items: center;
   }
-  .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text .h1 {
+  .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text .h1 {
     text-align: center;
   }
-  .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text P {
+  .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text P {
     text-align: center;
   }
 }
 @media screen and (max-width: 767px) {
-  .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-image {
+  .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-image, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-image {
     margin-bottom: 30px;
   }
 }
-.slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text {
+.slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text {
   align-items: end;
 }
-.slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text .h1 {
+.slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text .h1 {
   text-align: right;
 }
-.slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text P {
+.slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text P {
   text-align: right;
 }
 @media screen and (max-width: 767px) {
-  .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text {
+  .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text {
     align-items: center;
   }
-  .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text .h1 {
+  .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text .h1 {
     text-align: center;
   }
-  .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text P {
+  .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text P {
     text-align: center;
   }
 }
 @media screen and (max-width: 767px) {
-  .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-image {
+  .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-image, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-image {
     margin-bottom: 30px;
   }
 }
-.slider .slider-home .swiper-slide .slider-general.slider-type-3 .line-slider-text {
+.slider .slider-home .swiper-slide .slider-general.slider-type-3 .line-slider-text, .slider .slider-geral .swiper-slide .slider-general.slider-type-3 .line-slider-text {
   align-items: center;
 }
-.slider .slider-home .swiper-slide .slider-general.slider-type-3 .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-3 .line-slider-text .h1 {
+.slider .slider-home .swiper-slide .slider-general.slider-type-3 .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-3 .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-3 .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-3 .line-slider-text .h1 {
   text-align: center;
 }
-.slider .slider-home .swiper-slide .slider-general.slider-type-3 .line-slider-text P {
+.slider .slider-home .swiper-slide .slider-general.slider-type-3 .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general.slider-type-3 .line-slider-text P {
   text-align: center;
 }
-.slider .slider-home .swiper-slide img {
+.slider .slider-home .swiper-slide img, .slider .slider-geral .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -23380,6 +23380,15 @@ input:active, input:focus, button:active, button:focus {
     font-size: 16px;
     line-height: 19px;
   }
+}
+.section .section-404 {
+  text-align: center;
+}
+.section .section-404 h1, .section .section-404 .h1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0C1707;
 }
 
 .semi-footer {
