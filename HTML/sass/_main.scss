@@ -1,11 +1,11 @@
-.home {
+.section {
 	padding: 50px 0;
 
 	@media screen and (max-width: 767px) {
 		padding: 24px 0;
 	}
 
-	.home-doing {
+	.section-doing {
 		margin-bottom: 50px;
 
 		@media screen and (max-width: 767px) {
@@ -83,19 +83,11 @@
 		}
 	}
 
-	.home-we {
-		.box-border {
-			margin: 50px 0;
-
-			.row {
-				@media screen and (max-width: 767px) {
-					flex-direction: column-reverse;
-				}
-			}
-		}
+	.section-we {
+		padding-bottom: 50px;
 	}
 
-	.home-projects {
+	.section-projects {
 		p {
 			font-weight: 500;
 			font-size: 24px;
@@ -156,8 +148,76 @@
 		}
 	}
 
+	.section-clients {
+		padding: 50px 30px;
 
-	.home-clients {
+		h1 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 44px;
+			color: $preto;
+
+			@media screen and (max-width: 767px) {
+				font-size: 28px;
+				line-height: 34px;
+			}
+		}
+
+		.client-depoiment {
+			padding: 24px 32px;
+
+			.linha {
+				.linha-1 {
+					text-align: left;
+
+					@media screen and (max-width: 767px) {
+						margin-bottom: 24px;
+					}
+
+					img {
+						max-width: 100%;
+						border-radius: 100%;
+					}
+
+					p {
+						font-weight: 500;
+						font-size: 24px;
+						line-height: 29px;
+						color: $preto;
+
+						@media screen and (max-width: 767px) {
+							font-size: 20px;
+							line-height: 24px;
+						}
+					}
+				}
+
+				.linha-2 {
+					text-align: left;
+
+					p {
+						font-weight: 400;
+						font-size: 24px;
+						line-height: 29px;
+						color: #0C1707;
+						margin-bottom: 16px;
+
+						&:last-of-type {
+							margin-bottom: 24px;
+						}
+
+						@media screen and (max-width: 767px) {
+							font-size: 16px;
+							line-height: 19px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-team {
 		padding: 50px 30px;
 
 		h1 {
