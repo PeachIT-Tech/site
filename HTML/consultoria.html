@@ -11,7 +11,7 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 	</head> 
 	<body>
-		<header id="header" class="header">
+		<header id="header" class="header show">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
 					<a class="navbar-brand" href="index.html">
@@ -24,14 +24,14 @@
 									<a class="nav-link" aria-current="page" href="index.html">Início</a>
 								</li>
 								<li class="nav-item dropdown-open" onclick="dropMenu()">
-									<a class="nav-link" onclick="expand()">
+									<a class="nav-link active" onclick="expand()">
 										O que fazemos <span class="material-symbols-outlined mobile" id="expand" >expand_more</span>
 									</a>
-									<ul class="dropdown-menu" id="DropdownItem">
+									<ul class="dropdown-menu show" id="DropdownItem">
 										<div class="container">
 											<li><a class="dropdown-item" href="solucoes-digitais.html">Soluções digitais</a></li>
 											<li><a class="dropdown-item" href="solucoes-promocionais.html">Soluções Promocionais</a></li>
-											<li><a class="dropdown-item" href="consultoria.html">Consultoria & Estratégia</a></li>
+											<li><a class="dropdown-item active" href="consultoria.html">Consultoria & Estratégia</a></li>
 											<li><a class="dropdown-item" href="outsourcing.html">Outsourcing</a></li>
 										</div>
 									</ul>
@@ -40,7 +40,7 @@
 									<a class="nav-link" href="quem-somos.html">Quem somos</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link active" href="trabalhe.html">Trabalhe conosco</a>
+									<a class="nav-link" href="trabalhe.html">Trabalhe conosco</a>
 								</li>
 							</ul>
 						</div>
@@ -59,18 +59,45 @@
 		
 		<section class="main">
 			<div class="slider">
-				<div class="swiper slider-geral">
+				<div class="swiper slider-home">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="slider-general slider-type-1" style="background: #172511 center no-repeat;">
 								<div class="container">
 									<div class="row row-slider">
 										<div class="col-md-8 line-slider-text">
-											<h1>Seja um Peach Lover </h1>
-											<p>Venha fazer parte de uma empresa que tem como foco o seu desenvolvimento! Vamos juntos criar produtos com qualidade e excelência!</p>
+											<h1>Gestão de TI com foco em estratégia e implementação! </h1>
+											<p>"Utilizamos a tecnologia de forma a simplificar, potencializar e acelerar os resultados."</p>
 										</div>
 										<div class="col-md-4 line-slider-image">
-											<img src="images/banner-trabalho-desktop.png" alt="">
+											<img src="images/personagem-1.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slider-general slider-type-2" style="background: url('images/bg-slider.png') #172511 center no-repeat;">
+								<div class="container">
+									<div class="row row-slider">
+										<div class="col-md-4 line-slider-image">
+											<img src="images/personagem-2.png" alt="">
+										</div>
+										<div class="col-md-8 line-slider-text">
+											<h1>Proporcionamos a melhor e mais inovadora experiência de entrega de software!</h1>
+											<p>"Nós somos uma empresa especializada em desenvolver soluções de tecnologia estratégicas."</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slider-general slider-type-3" style="background: url('') #172511 center no-repeat;">
+								<div class="container">
+									<div class="row row-slider">
+										<div class="col-md-12 line-slider-text">
+											<h1>Proporcionamos a melhor e mais inovadora experiência de entrega de software!</h1>
+											<p>"Nós somos uma empresa especializada em desenvolver soluções de tecnologia estratégicas."</p>
 										</div>
 									</div>
 								</div>
@@ -83,22 +110,136 @@
 			</div>
 
 			<div class="section">
-				<div class="section-team">
+				<div class="section-doing">
 					<div class="container">
-						<h1>Como é trabalhar na <span class="primary-color">Peach</span> <span class="terc-color">IT</span>?</h1>
+						<h1 class="title"><span>O que</span> fazemos?</h1>
+						<p>Usamos a tecnologia de maneira eficiente para simplificar, potencializar e acelerar os resultados.</p>
+
+						
+						<div class="box-what-doing">
+							<div class="swiper swiper-doing">
+								<div class="swiper-wrapper">
+								  <div class="swiper-slide">
+									<div class="box-doing">
+										<h5>Consultoria & Estratégia</h5>
+
+										<p>Colocamos à disposição de sua empresa uma equipe de desenvolvedores altamente qualificados.</p>
+
+										<a href="#" class="button button-more">Saiba mais</a>
+									</div>
+								  </div>
+								  <div class="swiper-slide">
+									<div class="box-doing">
+										<h5>Soluções Digitais</h5>
+
+										<p>Colocamos à disposição de sua empresa uma equipe de desenvolvedores altamente qualificados.</p>
+
+										<a href="#" class="button button-more">Saiba mais</a>
+									</div>
+								  </div>
+								  <div class="swiper-slide">
+									<div class="box-doing">
+										<h5>Outsourcing</h5>
+
+										<p>Oferecemos alocação de profissionais altamente qualificados em diversas áreas de conhecimento técnico.</p>
+
+										<a href="#" class="button button-more">Saiba mais</a>
+									</div>
+								  </div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination swiper-pagination-slider-doing"></div>
+						</div>
+					</div>
+				</div>
+					
+				<div class="section-we">
+					<div class="container">
+						<h1 class="title"><span>Quem</span> somos?</h1>
+						
+						<div class="box-border mt-50">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="box-border-image">
+										<img src="./images/equipe.png" alt="Equipe Peach IT">
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="box-border-text">
+										<h1>Somos uma empresa que preza pela entrega de soluções ágeis e inteligentes!</h1>
+	
+										<p>Nossa missão é utilizar a tecnologia como uma ferramenta para potencializar os negócios de nossos clientes. Por isso estamos sempre empenhados em ajudar nossos clientes a alcançarem o sucesso que desejam.</p>
+										
+										<a href="#" class="button button-more primary">Saiba mais</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="section-projects">
+					<div class="projects">
+						<!-- Swiper -->
+						<div class="projects-bg">
+							<div class="container">
+								<h1 class="title"><span>Projetos</span> desenvolvidos com:</h1>
+								<p>Acreditamos nas empresas que entendem que a combinação de pessoas e tecnologias é fundamental para promover a transformação e o sucesso.</p>
+
+								<div class="swiper swiper-projects">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="images/customers/logo-1.png" alt="Projeto 1">
+										</div>
+										<div class="swiper-slide">
+											<img src="images/customers/logo-2.png" alt="Projeto 2">
+										</div>
+										<div class="swiper-slide">
+											<img src="images/customers/logo-3.png" alt="Projeto 3">
+										</div>
+										<div class="swiper-slide">
+											<img src="images/customers/logo-4.png" alt="Projeto 4">
+										</div>
+										<div class="swiper-slide">
+											<img src="images/customers/logo-5.png" alt="Projeto 5">
+										</div>
+										<div class="swiper-slide">
+											<img src="images/customers/logo-6.png" alt="Projeto 6">
+										</div>
+										<div class="swiper-slide">
+											<img src="images/customers/logo-7.png" alt="Projeto 7">
+										</div>
+										<div class="swiper-slide">
+											<img src="images/customers/logo-8.png" alt="Projeto 8">
+										</div>
+									</div>
+									<div class="swiper-button-next swiper-button-next-projects"></div>
+									<div class="swiper-button-prev swiper-button-prev-projects"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-pagination swiper-pagination-slider-projects"></div>
+					</div>
+				</div>
+					
+				<div class="section-clients">
+					<div class="container">
+						<h1>O que nossos clientes estão dizendo!</h1>
 
 						<div class="slider">
-							<div class="swiper slider-team">
+							<div class="swiper slider-clients">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<div class="client-depoiment">
 											<div class="row linha">
 												<div class="row linha-1">
 													<div class="col-3 col-md-1">
-														<img src="images/img-depoimento-team.png" alt="Samantha Joy">
+														<img src="images/img-depoimento.png" alt="Darrell Steward">
 													</div>
 													<div class="col-9 col-md-11 d-flex align-items-center">
-														<p>Samantha Joy</p>
+														<p>Darrell Steward</p>
 													</div>
 												</div>
 												<div class="col-md-11 offset-md-1 linha-2">
@@ -112,10 +253,10 @@
 											<div class="row linha">
 												<div class="row linha-1">
 													<div class="col-3 col-md-1">
-														<img src="images/img-depoimento-team.png" alt="Samantha Joy">
+														<img src="images/img-depoimento.png" alt="Darrell Steward">
 													</div>
 													<div class="col-9 col-md-11 d-flex align-items-center">
-														<p>Samantha Joy</p>
+														<p>Darrell Steward</p>
 													</div>
 												</div>
 												<div class="col-md-11 offset-md-1 linha-2">
@@ -129,10 +270,10 @@
 											<div class="row linha">
 												<div class="row linha-1">
 													<div class="col-3 col-md-1">
-														<img src="images/img-depoimento-team.png" alt="Samantha Joy">
+														<img src="images/img-depoimento.png" alt="Darrell Steward">
 													</div>
 													<div class="col-9 col-md-11 d-flex align-items-center">
-														<p>Samantha Joy</p>
+														<p>Darrell Steward</p>
 													</div>
 												</div>
 												<div class="col-md-11 offset-md-1 linha-2">
@@ -146,10 +287,10 @@
 											<div class="row linha">
 												<div class="row linha-1">
 													<div class="col-3 col-md-1">
-														<img src="images/img-depoimento-team.png" alt="Samantha Joy">
+														<img src="images/img-depoimento.png" alt="Darrell Steward">
 													</div>
 													<div class="col-9 col-md-11 d-flex align-items-center">
-														<p>Samantha Joy</p>
+														<p>Darrell Steward</p>
 													</div>
 												</div>
 												<div class="col-md-11 offset-md-1 linha-2">
@@ -161,70 +302,7 @@
 								</div>
 							</div>
 
-							<div class="swiper-pagination swiper-pagination-slider-team"></div>
-						</div>
-					</div>
-
-					<div class="section-text">
-						<div class="container">
-							<div class="box-border mt-50">
-								<div class="row">
-									<div class="col-lg-12">
-										<div class="box-border-text">
-											<h1>Você gosta de novos desafios?</h1>
-		
-											<p>Então é com você que nós queremos contar!</p>
-											<p>Trabalhamos em parceria com empresas dos mais diversos ramos! Buscamos manter nosso ambiente descontraído, porém, com foco. Nossa parceria é com as empresas, mas principalmente com nossos colaboradores também. </p>
-											<p>Formamos uma grande família e você poderá fazer parte dela junto conosco!</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="box-border mt-50">
-								<div class="row">
-									<div class="col-lg-12">
-										<div class="box-border-text">
-											<h1>Compromisso e Excelência.</h1>
-		
-											<p>Nosso compromisso é com o seu desenvolvimento e com a entrega de valor aos nossos clientes.</p>
-											<p>Acreditamos que, ao oferecermos um ambiente propício para o seu crescimento pessoal e profissional, podemos alcançar resultados ainda mais expressivos e positivos. Sendo assim, constantemente promovemos um ambiente colaborativo, inovador e desafiador, que estimule o seu potencial e permita que você explore novas possibilidades e ideias.</p>
-											<p>Aqui no nosso time, valorizamos características que consideramos fundamentais para o sucesso do nosso trabalho. Uma dessas características é a paixão pela construção de softwares. Acreditamos que a paixão é o que move o nosso time a buscar soluções inovadoras e a superar desafios. Outra característica que valorizamos é o compromisso com a qualidade do código e o uso das melhores práticas de programação. Sabemos que essa postura resulta em softwares mais eficientes e seguros.</p>											
-											<p>Por fim, nos sentimos motivados por saber do grande impacto que podemos promover, juntos, na entrega de excelentes projetos. Junte-se a nós e faça parte de um time apaixonado por construir grandes soluções!</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="box-border mt-50">
-								<div class="row">
-									<div class="col-lg-4">
-										<div class="box-border-image">
-											<img src="./images/img-tecnologias.png" alt="Tecnologias utilizadas pela Peach IT">
-										</div>
-									</div>
-									<div class="col-lg-8">
-										<div class="box-border-text text-md-end">
-											<h1>Tecnologia e Metodologia.</h1>
-		
-											<p>Nosso time é formado por profissionais especializados em diversas tecnologias e metodologias, o que nos permite trabalhar com flexibilidade e adaptabilidade para atender às necessidades específicas de cada projeto.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="box-border mt-50">
-								<div class="row">
-									<div class="col-lg-12">
-										<div class="box-border-text">
-											<h1>Focamos no seu desenvolvimento</h1>
-		
-											<p>Na nossa empresa, o desenvolvimento dos nossos colaboradores é uma prioridade. Por isso, auxiliamos cada indivíduo a traçar e alcançar suas metas pessoais e profissionais.</p>
-											<p>Acreditamos que o acompanhamento individual e os planos de desenvolvimento são ferramentas essenciais para o crescimento contínuo e aprimoramento de nossos colaboradores, mantendo-os sempre atualizados e preparados para os desafios do mercado.</p>
-										</div>
-									</div>
-								</div>
-							</div>
+							<div class="swiper-pagination swiper-pagination-slider-clients"></div>
 						</div>
 					</div>
 				</div>
@@ -238,11 +316,11 @@
 								<img src="images/img-holding-tablet.png" alt="img-holding-tablet">
 							</div>
 							<div class="col-sm-6">
-								<h4>Venha fazer parte do nosso time.</h4>
+								<h4>Converse com um especialista</h4>
 								<p>Caso prefira, encaminhe um e-mail para <a href="mailto:comercial@peachit.com.br" target="_blank">comercial@peachit.com.br</a></p>
 							</div>
 							<div class="col-sm-3 vertical-align right mob-center">
-								<button class="button primary shadow no-border" type="button" data-bs-toggle="modal" data-bs-target="#modalWork">Entre em contato</button>
+								<a href="#" class="button primary shadow">Entre em contato</a>
 							</div>
 						</div>
 						<img src="images/img-hexagono.png" class="hexagono" alt="Hexagono">
@@ -399,78 +477,10 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- Modal -->
-		<div class="modal fade" id="modalWork" tabindex="-1" aria-labelledby="modalWork" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl modal-dialog-client">
-				<div class="modal-content">
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="left">
-									<img src="images/dialog-work-desktop.png" class="desktop" alt="Peach IT">
-									<img src="images/dialog-work-mobile.png" class="mobile" alt="Peach IT">
-
-									<p>Por favor, preencha este formulário se você deseja obter resultados através da tecnologia. Um de nossos consultores entrará em contato com você em breve.</p>
-								</div>
-							</div>
-							<div class="col-md-8">
-								<div class="right">
-									<form action="">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-floating mb-3">
-													<input type="text" class="form-control" id="nome" placeholder="Nome">
-													<label for="nome">Nome</label>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-floating mb-3">
-													<input type="email" class="form-control" id="email" placeholder="name@example.com">
-													<label for="email">Email</label>
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-floating">
-													<textarea class="form-control" placeholder="Mensagem" id="mensagem" style="height: 200px"></textarea>
-													<label for="mensagem">Mensagem</label>
-
-													<div class="uploaded-item" id="uploaded-item">
-														<p id="fileName"></p>
-														<button type="button" onclick="removeFile()">
-															<span class="material-symbols-outlined">
-																close
-															</span>
-														</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="d-flex justify-content-center">
-											<div class="input-file">
-												<label for="arquivo" class="label-file button invert-bg border-primary invert-shadow">
-													<span class="material-symbols-outlined">
-														attach_file
-													</span>
-												</label>
-												<input type="file" name="arquivo" id="arquivo" onchange="getInputName()">
-											</div>
-											</button>
-											<button type="submit" class="button invert shadow">Enviar mensagem</button>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		
 		<!-- Swiper JS -->
 		<script src="js/swiper-bundle.min.js"></script>
 		<!-- App JS -->
 		<script src="js/app.js"></script>
-        
 	</body>
 </html>
