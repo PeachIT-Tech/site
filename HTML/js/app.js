@@ -131,6 +131,28 @@
         },
     });
 
+    var swiperOptions = new Swiper(".swiper-options", {
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination-slider-options",
+            clickable: true
+        },
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+                grid: {
+                    rows: 1,
+                },
+            },
+            991: {
+                slidesPerView: 2,
+                grid: {
+                    rows: 2,
+                },
+            },
+        },
+    });
+
 // Get Filename input
     function getInputName() {
         var fullPath = document.getElementById('arquivo').value;
