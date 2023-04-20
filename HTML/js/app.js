@@ -86,6 +86,15 @@
         },
     });
 
+    var swiperValues = new Swiper(".swiper-values", {
+        pagination: {
+            el: ".swiper-pagination-slider-values",
+            clickable: true,
+        },
+        slidesPerView: 1,
+        spaceBetween: 30,
+    });
+
     var swiperMetodologia = new Swiper(".swiper-metodologia", {
         pagination: {
             el: ".swiper-pagination-slider-metodologia",
@@ -134,7 +143,7 @@
     var swiperOptions = new Swiper(".swiper-options", {
         spaceBetween: 30,
         pagination: {
-            el: ".swiper-pagination-slider-options",
+            el: ".swiper-pagination-slider-options-sol",
             clickable: true
         },
         breakpoints: {
@@ -148,6 +157,27 @@
                 slidesPerView: 2,
                 grid: {
                     rows: 2,
+                },
+            },
+        },
+    });
+
+    var swiperPlataform = new Swiper(".swiper-plataform", {
+        pagination: {
+            el: ".swiper-pagination-plataform",
+            clickable: true
+        },
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+                grid: {
+                    rows: 2,
+                },
+            },
+            991: {
+                slidesPerView: 2,
+                grid: {
+                    rows: 6,
                 },
             },
         },

@@ -22781,6 +22781,11 @@ input:active, input:focus, button:active, button:focus {
   width: 100%;
   height: 500px;
 }
+@media screen and (max-width: 991px) {
+  .slider .slider-home, .slider .slider-geral {
+    height: 550px;
+  }
+}
 .slider .slider-home .swiper-slide, .slider .slider-geral .swiper-slide {
   width: 100%;
   height: 100%;
@@ -22858,12 +22863,12 @@ input:active, input:focus, button:active, button:focus {
 }
 .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-image img, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-image img {
   max-width: 100%;
-  width: 400px;
   height: auto;
 }
 @media screen and (max-width: 767px) {
   .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-image img, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-image img {
-    width: 220px;
+    width: 300px;
+    margin-bottom: 24px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -23168,6 +23173,7 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .section .section-doing .box-what-doing .swiper-doing .swiper-wrapper .swiper-slide {
     box-shadow: none;
+    background-size: 91px;
   }
 }
 .section .section-doing .box-what-doing .swiper-doing .swiper-wrapper .swiper-slide .box-doing {
@@ -23268,7 +23274,6 @@ input:active, input:focus, button:active, button:focus {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.05em;
-    margin-bottom: 12px;
   }
 }
 .section .section-general img {
@@ -23322,15 +23327,45 @@ input:active, input:focus, button:active, button:focus {
   border-radius: 12px;
   padding: 24px 16px;
 }
+.section .section-general .box-border-image {
+  margin-top: 24px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .box-border-image {
+    text-align: center !important;
+  }
+}
 .section .section-general .marca-dagua {
   box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
   padding: 24px;
-  min-height: 310px;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .marca-dagua {
+    background-size: 91px;
+  }
+}
+.section .section-general .marca-dagua .box-text-image {
+  display: flex;
+  align-items: center;
+}
+.section .section-general .marca-dagua .box-text-image img {
+  width: 80px;
+  height: 80px;
+  margin-right: 24px;
+}
+.section .section-general .marca-dagua .box-text-image h5, .section .section-general .marca-dagua .box-text-image .h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  height: auto;
+  margin-bottom: 16px;
 }
 .section .section-general .marca-dagua h5, .section .section-general .marca-dagua .h5 {
   font-weight: 700;
@@ -23351,7 +23386,6 @@ input:active, input:focus, button:active, button:focus {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.01em;
-  margin-bottom: 24px;
 }
 @media screen and (max-width: 991px) {
   .section .section-general .marca-dagua p {
@@ -23362,14 +23396,207 @@ input:active, input:focus, button:active, button:focus {
 .section .section-general .marca-dagua.primary {
   background: url("../images/marca-dagua-peach.png") #65B343 right bottom no-repeat;
 }
+@media screen and (max-width: 991px) {
+  .section .section-general .marca-dagua.primary {
+    background: url("../images/marca-dagua-peach.png") #65B343 right bottom no-repeat;
+    background-size: 91px;
+  }
+}
 .section .section-general .marca-dagua.primary h5, .section .section-general .marca-dagua.primary .h5, .section .section-general .marca-dagua.primary p {
   color: #F2FAEF;
 }
 .section .section-general .marca-dagua.primary-light {
   background: url("../images/marca-dagua-peach.png") #F2FAEF right bottom no-repeat;
 }
+@media screen and (max-width: 991px) {
+  .section .section-general .marca-dagua.primary-light {
+    background: url("../images/marca-dagua-peach.png") #F2FAEF right bottom no-repeat;
+    background-size: 91px;
+  }
+}
 .section .section-general .marca-dagua.primary-light h5, .section .section-general .marca-dagua.primary-light .h5, .section .section-general .marca-dagua.primary-light p {
   color: #0C1707;
+}
+.section .section-general .banner {
+  margin-top: 140px;
+  padding-top: 50px;
+  background-color: #172511;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .banner {
+    margin-top: 50px;
+    padding: 9px 0;
+    background-color: transparent;
+  }
+  .section .section-general .banner .banner-mobile {
+    background-color: #172511;
+    padding: 24px;
+    border-radius: 12px;
+  }
+}
+.section .section-general .banner .banner-text h1, .section .section-general .banner .banner-text .h1 {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 56px;
+  color: #F2FAEF;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .banner .banner-text h1, .section .section-general .banner .banner-text .h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+.section .section-general .banner .banner-text h3, .section .section-general .banner .banner-text .h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F2FAEF;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .banner .banner-text h3, .section .section-general .banner .banner-text .h3 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.section .section-general .banner .banner-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F2FAEF;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .banner .banner-text p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0;
+  }
+}
+.section .section-general .banner .banner-image {
+  position: relative;
+}
+.section .section-general .banner .banner-image img {
+  position: absolute;
+  bottom: 0;
+}
+.section .section-general .options-plataform .box {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  margin-bottom: 24px;
+}
+.section .section-general .options-plataform .box img {
+  width: 100px;
+  height: 100px;
+  margin-right: 16px;
+}
+.section .section-general .options-plataform .box h5, .section .section-general .options-plataform .box .h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  height: auto;
+  margin-bottom: 8px;
+}
+.section .section-general .options-plataform .box p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin: 0;
+}
+.section .section-hotsite h1, .section .section-hotsite .h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #0C1707;
+}
+@media screen and (max-width: 991px) {
+  .section .section-hotsite h1, .section .section-hotsite .h1 {
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+.section .section-hotsite p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-hotsite p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.section .section-hotsite .box-hotsite {
+  position: relative;
+}
+.section .section-hotsite .box-hotsite .swiper-doing {
+  background: transparent;
+}
+@media screen and (max-width: 991px) {
+  .section .section-hotsite .box-hotsite .swiper-doing {
+    border-radius: 12px;
+    box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
+  }
+}
+.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper {
+  padding: 30px 0;
+  box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 991px) {
+  .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper {
+    box-shadow: none;
+    padding: 0;
+  }
+}
+.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide {
+  box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background: #F2FAEF;
+  padding: 16px;
+  min-height: 420px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide {
+    box-shadow: none;
+  }
+}
+.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite {
+  text-align: center;
+}
+.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite h5, .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite .h5 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #0C1707;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite h5, .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite .h5 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: justify;
+  letter-spacing: -0.01em;
+  color: #000000;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 991px) {
+  .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite p {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 .section .section-metodologia {
   padding-bottom: 50px;
@@ -23409,6 +23636,7 @@ input:active, input:focus, button:active, button:focus {
   .section .section-metodologia .trabalho .box-trabalho {
     margin-bottom: 24px;
     justify-content: center;
+    background-size: 91px;
   }
 }
 .section .section-metodologia .trabalho .box-trabalho h5, .section .section-metodologia .trabalho .box-trabalho .h5 {
@@ -23442,9 +23670,14 @@ input:active, input:focus, button:active, button:focus {
   }
 }
 .section .section-personalizado {
-  margin-bottom: 50px;
   background: url("../images/bg-quadriculado.png") #FFFFFF center no-repeat;
   background-size: contain;
+}
+@media screen and (max-width: 991px) {
+  .section .section-personalizado {
+    background-image: none;
+    background-color: #FFFFFF;
+  }
 }
 .section .section-personalizado h1, .section .section-personalizado .h1 {
   font-weight: 700;
@@ -23457,78 +23690,6 @@ input:active, input:focus, button:active, button:focus {
   .section .section-personalizado h1, .section .section-personalizado .h1 {
     font-size: 32px;
     line-height: 39px;
-  }
-}
-.section .section-personalizado .options .swiper-options {
-  width: 100%;
-  height: 650px;
-  padding: 50px 0;
-}
-@media screen and (max-width: 991px) {
-  .section .section-personalizado .options .swiper-options {
-    height: auto;
-  }
-}
-.section .section-personalizado .options .swiper-options .swiper-slide {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc((100% - 30px) / 2) !important;
-}
-@media screen and (max-width: 991px) {
-  .section .section-personalizado .options .swiper-options .swiper-slide {
-    height: 100%;
-  }
-}
-.section .section-personalizado .options .swiper-options .swiper-slide .option {
-  box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
-  background: url("../images/marca-dagua-peach.png") #B9F3A0 right bottom no-repeat;
-  border-radius: 16px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.section .section-personalizado .options .swiper-options .swiper-slide .option h5, .section .section-personalizado .options .swiper-options .swiper-slide .option .h5 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  color: #0C1707;
-  margin-bottom: 16px;
-  border-bottom: 2px dashed #0C1707;
-  padding-bottom: 8px;
-  padding-right: 20px;
-}
-@media screen and (max-width: 991px) {
-  .section .section-personalizado .options .swiper-options .swiper-slide .option h5, .section .section-personalizado .options .swiper-options .swiper-slide .option .h5 {
-    font-size: 28px;
-    line-height: 34px;
-  }
-}
-.section .section-personalizado .options .swiper-options .swiper-slide .option p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
-  margin-bottom: 24px;
-}
-.section .section-personalizado .options .swiper-options .swiper-slide .option p:last-of-type {
-  margin: 0;
-}
-@media screen and (max-width: 991px) {
-  .section .section-personalizado .options .swiper-options .swiper-slide .option p {
-    font-size: 14px;
-    line-height: 17px;
-  }
-}
-.section .section-personalizado .options .swiper-pagination-slider-options {
-  display: none;
-}
-@media screen and (max-width: 991px) {
-  .section .section-personalizado .options .swiper-pagination-slider-options {
-    display: block;
   }
 }
 .section .section-projects p {
@@ -23589,6 +23750,11 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-clients {
   padding: 50px 30px;
+}
+@media screen and (max-width: 767px) {
+  .section .section-clients {
+    padding: 50px 0;
+  }
 }
 .section .section-clients h1, .section .section-clients .h1 {
   font-style: normal;
@@ -23651,6 +23817,11 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-team {
   padding: 50px 30px;
+}
+@media screen and (max-width: 767px) {
+  .section .section-team {
+    padding: 50px 0;
+  }
 }
 .section .section-team h1, .section .section-team .h1 {
   font-style: normal;
@@ -23720,6 +23891,152 @@ input:active, input:focus, button:active, button:focus {
   line-height: 29px;
   color: #0C1707;
 }
+.section .swiper-options {
+  width: 100%;
+  height: 650px;
+  padding: 50px 0;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-options {
+    height: auto;
+    padding-bottom: 0;
+  }
+}
+.section .swiper-options.padding-options {
+  height: 620px;
+  padding: 50px 30px;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-options.padding-options {
+    height: auto;
+    padding-bottom: 30px;
+  }
+}
+.section .swiper-options .swiper-slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc((100% - 30px) / 2) !important;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-options .swiper-slide {
+    height: 100% !important;
+  }
+}
+.section .swiper-options .swiper-slide .option {
+  box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+  background: url("../images/marca-dagua-peach.png") #B9F3A0 right bottom no-repeat;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-options .swiper-slide .option {
+    box-shadow: none;
+    background-size: 91px;
+  }
+}
+.section .swiper-options .swiper-slide .option h5, .section .swiper-options .swiper-slide .option .h5 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #0C1707;
+  margin-bottom: 16px;
+  border-bottom: 2px dashed #0C1707;
+  padding-bottom: 8px;
+  padding-right: 20px;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-options .swiper-slide .option h5, .section .swiper-options .swiper-slide .option .h5 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+.section .swiper-options .swiper-slide .option p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.section .swiper-options .swiper-slide .option p:last-of-type {
+  margin: 0;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-options .swiper-slide .option p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-ajuste-width {
+    width: 320px;
+  }
+}
+.section .swiper-plataform {
+  width: 100%;
+  height: 770px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-plataform {
+    height: 650px;
+    margin-top: 50px;
+  }
+}
+.section .swiper-plataform .swiper-slide {
+  background: transparent;
+  height: calc((100% - 30px) / 6) !important;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-plataform .swiper-slide {
+    height: calc((100% - 30px) / 2) !important;
+  }
+}
+.section .swiper-plataform .swiper-slide .box {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-plataform .swiper-slide .box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.section .swiper-plataform .swiper-slide .box img {
+  width: 100px;
+  height: 100px;
+  margin-right: 16px;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-plataform .swiper-slide .box img {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
+.section .swiper-plataform .swiper-slide .box h5, .section .swiper-plataform .swiper-slide .box .h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  height: auto;
+  margin-bottom: 8px;
+}
+.section .swiper-plataform .swiper-slide .box p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin: 0;
+}
 
 .semi-footer {
   padding: 50px 0;
@@ -23786,23 +24103,6 @@ input:active, input:focus, button:active, button:focus {
   .semi-footer .box-semi-footer .image {
     display: none;
   }
-}
-
-.mySwiper {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.mySwiper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  height: calc((100% - 30px) / 2) !important;
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .page-timeline {
@@ -24078,7 +24378,7 @@ body {
   line-height: 51px;
   margin-bottom: 16px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .title {
     font-size: 32px;
     line-height: 39px;
@@ -24111,6 +24411,20 @@ body {
 .box-border.no-shadow {
   box-shadow: none;
 }
+.box-border.marca-dagua {
+  background-image: url("../images/left-arrow.png"), url("../images/marca-dagua-peach.png");
+  background-position: top 20px left, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 140px, 142px;
+}
+@media screen and (max-width: 991px) {
+  .box-border.marca-dagua {
+    background-image: url("../images/left-arrow.png"), url("../images/marca-dagua-inteira.png");
+    background-position: top 20px left, right center;
+    background-size: 140px, 91px;
+    margin-top: 50px;
+  }
+}
 .box-border .box-border-image img {
   max-width: 100%;
   height: auto;
@@ -24118,7 +24432,10 @@ body {
 .box-border .box-border-image img.max-300 {
   width: 300px;
 }
-@media screen and (max-width: 767px) {
+.box-border .box-border-image img.shadow {
+  box-shadow: 4.6478872299px 4.6478872299px 18.5915489197px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 991px) {
   .box-border .box-border-text.text-align {
     text-align: center;
   }
@@ -24130,11 +24447,22 @@ body {
   color: #0C1707;
   margin-bottom: 24px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .box-border .box-border-text h1, .box-border .box-border-text .h1 {
     font-size: 28px;
     line-height: 34px;
     text-align: left;
+  }
+}
+.box-border .box-border-text h1.small, .box-border .box-border-text .small.h1 {
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+@media screen and (max-width: 991px) {
+  .box-border .box-border-text h1.small, .box-border .box-border-text .small.h1 {
+    font-size: 28px;
+    line-height: 34px;
   }
 }
 .box-border .box-border-text p {
@@ -24144,7 +24472,7 @@ body {
   color: #0C1707;
   margin-bottom: 24px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .box-border .box-border-text p {
     font-size: 16px;
     line-height: 19px;
@@ -24152,7 +24480,19 @@ body {
     margin-bottom: 12px;
   }
 }
-@media screen and (max-width: 767px) {
+.box-border .box-border-text p.small {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+@media screen and (max-width: 991px) {
+  .box-border .box-border-text p.small {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 991px) {
   .box-border .box-border-text .button {
     margin-bottom: 24px;
   }
@@ -24195,8 +24535,9 @@ body {
     padding-right: 0;
   }
 }
-@media screen and (max-width: 767px) {
-  .box-border .row.mobile-invert {
+
+@media screen and (max-width: 991px) {
+  .row.mobile-invert {
     flex-direction: column-reverse;
   }
 }
@@ -24262,7 +24603,7 @@ body {
 .desktop {
   display: block !important;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .desktop {
     display: none !important;
   }
@@ -24271,9 +24612,9 @@ body {
 .mobile {
   display: none !important;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .mobile {
-    display: block !important;
+    display: inline-block !important;
   }
 }
 
@@ -24294,6 +24635,16 @@ input[type=file] {
 
 .mt-50 {
   margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .row-margin-adjust {
+    margin-right: -30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

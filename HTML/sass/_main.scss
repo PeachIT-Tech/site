@@ -50,6 +50,7 @@
 
 						@media screen and (max-width: 991px) {
 							box-shadow: none;
+							background-size: 91px;
 						}
 
 						.box-doing {
@@ -157,7 +158,6 @@
 				font-size: 16px;
 				line-height: 19px;
 				letter-spacing: 0.05em;
-				margin-bottom: 12px;
 			}
 		}
 
@@ -222,15 +222,47 @@
 			padding: 24px 16px;
 		}
 
+		.box-border-image {
+			margin-top: 24px;
+
+			@media screen and (max-width: 991px) {
+				text-align: center !important;
+			}
+		}
+
 		.marca-dagua {
 			box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
 			border-radius: 16px;
 			padding: 24px;
-			min-height: 310px;
+			min-height: 250px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			align-items: flex-start;
+
+			@media screen and (max-width: 991px) {
+				background-size: 91px;
+			}
+
+			.box-text-image {
+				display: flex;
+				align-items: center;
+
+				img {
+					width: 80px;
+					height: 80px;
+					margin-right: 24px;
+				}
+
+				h5 {
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					text-transform: capitalize;
+					height: auto;
+					margin-bottom: 16px;
+				}
+			}
 
 			h5 {
 				font-weight: 700;
@@ -251,7 +283,7 @@
 				font-size: 16px;
 				line-height: 19px;
 				letter-spacing: -0.01em;
-				margin-bottom: 24px;
+				// margin-bottom: 24px;
 
 				@media screen and (max-width: 991px) {
 					font-size: 14px;
@@ -262,6 +294,11 @@
 			&.primary {
 				background: url("../images/marca-dagua-peach.png") #65B343 right bottom no-repeat;
 
+				@media screen and (max-width: 991px) {
+					background: url("../images/marca-dagua-peach.png") #65B343 right bottom no-repeat;
+					background-size: 91px;
+				}
+	
 				h5, p {
 					color: #F2FAEF;
 				}
@@ -270,8 +307,209 @@
 			&.primary-light {
 				background: url("../images/marca-dagua-peach.png") #F2FAEF right bottom no-repeat;
 
+				@media screen and (max-width: 991px) {
+					background: url("../images/marca-dagua-peach.png") #F2FAEF right bottom no-repeat;
+					background-size: 91px;
+				}
+	
 				h5, p {
 					color: #0C1707;
+				}
+			}
+		}
+
+		.banner {
+			margin-top: 140px;
+			padding-top: 50px;
+			background-color: #172511;
+
+			@media screen and (max-width: 991px) {
+				margin-top: 50px;
+				padding: 9px 0;
+				background-color: transparent;
+
+				.banner-mobile {
+					background-color: #172511;
+					padding: 24px;
+					border-radius: 12px;
+				}
+			}
+
+			.banner-text {
+				h1 {
+					font-weight: 700;
+					font-size: 46px;
+					line-height: 56px;
+					color: #F2FAEF;
+					margin-bottom: 16px;
+
+					@media screen and (max-width: 991px) {
+						font-size: 28px;
+						line-height: 34px;
+					}
+				}
+
+				h3 {
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 24px;
+					color: #F2FAEF;
+					margin-bottom: 16px;
+
+					@media screen and (max-width: 991px) {
+						font-size: 16px;
+						line-height: 19px;
+					}
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+					color: #F2FAEF;
+					margin-bottom: 70px;
+
+					@media screen and (max-width: 991px) {
+						font-size: 14px;
+						line-height: 17px;
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			.banner-image {
+				position: relative;
+
+				img {
+					position: absolute;
+					bottom: 0;
+				}
+			}
+		}
+
+		.options-plataform {
+			.box {
+				display: flex;
+				align-items: center;
+				margin: 0 15px;
+				margin-bottom: 24px;
+
+				img {
+					width: 100px;
+					height: 100px;
+					margin-right: 16px;
+				}
+
+				h5 {
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					text-transform: uppercase;
+					color: $preto;
+					height: auto;
+					margin-bottom: 8px;
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 17px;
+					color: $preto;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.section-hotsite {
+		h1 {
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 44px;
+			color: #0C1707;
+
+			@media screen and (max-width: 991px) {
+				font-size: 32px;
+				line-height: 39px;
+			}
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			color: #000000;
+			margin-bottom: 24px;
+			
+			@media screen and (max-width: 991px) {
+				font-size: 14px;
+				line-height: 17px;
+			}
+		}
+
+		.box-hotsite {
+			position: relative;
+
+			.swiper-doing {
+				background: transparent;
+
+				@media screen and (max-width: 991px) {
+					border-radius: 12px;
+					box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
+				}
+			
+				.swiper-wrapper {
+					padding: 30px 0;
+					box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
+
+					@media screen and (max-width: 991px) {
+						box-shadow: none;
+						padding: 0;
+					}
+					
+					.swiper-slide {
+						box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
+						border-radius: 12px;
+						background: #F2FAEF;
+						padding: 16px;
+						min-height: 420px;
+
+						@media screen and (max-width: 991px) {
+							box-shadow: none;
+						}
+
+						.box-hotsite {
+							text-align: center;
+			
+							h5 {
+								font-weight: 700;
+								font-size: 28px;
+								line-height: 34px;
+								color: #0C1707;
+								margin-bottom: 8px;
+
+								@media screen and (max-width: 991px) {
+									font-size: 28px;
+									line-height: 34px;
+								}
+							}
+			
+							p {
+								font-weight: 400;
+								font-size: 14px;
+								line-height: 17px;
+								text-align: justify;
+								letter-spacing: -0.01em;
+								color: $preto;
+								margin-bottom: 0;
+
+								@media screen and (max-width: 991px) {
+									font-size: 14px;
+									line-height: 17px;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -313,6 +551,7 @@
 				@media screen and (max-width: 991px) {
 					margin-bottom: 24px;
 					justify-content: center;
+					background-size: 91px;
 				}
 
 				h5 {
@@ -349,9 +588,14 @@
 	}
 
 	.section-personalizado {
-		margin-bottom: 50px;
+		// margin-bottom: 50px;
 		background: url("../images/bg-quadriculado.png") #FFFFFF center no-repeat;
 		background-size: contain;
+
+		@media screen and (max-width: 991px) {
+			background-image: none;
+			background-color: $branco;
+		}
 		
 		h1 {
 			font-weight: 700;
@@ -363,82 +607,6 @@
 			@media screen and (max-width: 991px) {
 				font-size: 32px;
 				line-height: 39px;
-			}
-		}
-
-		.options {
-			.swiper-options {
-				width: 100%;
-				height: 650px;
-				padding: 50px 0;
-
-				@media screen and (max-width: 991px) {
-					height: auto;
-				}
-		
-				.swiper-slide {
-					height: 100%;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					height: calc((100% - 30px) / 2) !important;
-
-					@media screen and (max-width: 991px) {
-						height: 100%;
-					}
-					
-					.option {
-						box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
-						background: url("../images/marca-dagua-peach.png") #B9F3A0 right bottom no-repeat;
-						border-radius: 16px;
-						padding: 24px;
-						display: flex;
-						flex-direction: column;
-						justify-content: space-between;
-						align-items: flex-start;
-		
-						h5 {
-							font-weight: 700;
-							font-size: 36px;
-							line-height: 44px;
-							color: #0C1707;
-							margin-bottom: 16px;
-							border-bottom: 2px dashed #0C1707;
-							padding-bottom: 8px;
-							padding-right: 20px;
-
-							@media screen and (max-width: 991px) {
-								font-size: 28px;
-								line-height: 34px;
-							}
-						}
-		
-						p {
-							font-weight: 400;
-							font-size: 16px;
-							line-height: 19px;
-							color: $preto;
-							margin-bottom: 24px;
-
-							&:last-of-type {
-								margin: 0;
-							}
-
-							@media screen and (max-width: 991px) {
-								font-size: 14px;
-								line-height: 17px;
-							}
-						}
-					}
-				}
-			}
-
-			.swiper-pagination-slider-options {
-				display: none;
-
-				@media screen and (max-width: 991px) {
-					display: block;
-				}
 			}
 		}
 	}
@@ -506,6 +674,10 @@
 
 	.section-clients {
 		padding: 50px 30px;
+
+		@media screen and (max-width: 767px) {
+			padding: 50px 0;
+		}
 
 		h1 {
 			font-style: normal;
@@ -575,6 +747,10 @@
 
 	.section-team {
 		padding: 50px 30px;
+
+		@media screen and (max-width: 767px) {
+			padding: 50px 0;
+		}
 
 		h1 {
 			font-style: normal;
@@ -652,8 +828,158 @@
 			color: #0C1707;
 		}
 	}
-}
+	
+	.swiper-options {
+		width: 100%;
+		height: 650px;
+		padding: 50px 0;
 
+		@media screen and (max-width: 991px) {
+			height: auto;
+			padding-bottom: 0;
+		}
+
+		&.padding-options {
+			height: 620px;
+			padding: 50px 30px;
+		
+			@media screen and (max-width: 991px) {
+				height: auto;
+				padding-bottom: 30px;
+			}
+		}
+
+		.swiper-slide {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: calc((100% - 30px) / 2) !important;
+
+			@media screen and (max-width: 991px) {
+				height: 100% !important;
+			}
+			
+			.option {
+				box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+				background: url("../images/marca-dagua-peach.png") #B9F3A0 right bottom no-repeat;
+				border-radius: 16px;
+				padding: 24px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+
+				@media screen and (max-width: 991px) {
+					box-shadow: none;
+					background-size: 91px;
+				}
+
+				h5 {
+					font-weight: 700;
+					font-size: 36px;
+					line-height: 44px;
+					color: #0C1707;
+					margin-bottom: 16px;
+					border-bottom: 2px dashed #0C1707;
+					padding-bottom: 8px;
+					padding-right: 20px;
+
+					@media screen and (max-width: 991px) {
+						font-size: 28px;
+						line-height: 34px;
+					}
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+					color: $preto;
+					margin-bottom: 24px;
+
+					&:last-of-type {
+						margin: 0;
+					}
+
+					@media screen and (max-width: 991px) {
+						font-size: 14px;
+						line-height: 17px;
+					}
+				}
+			}
+		}
+	}
+
+	.swiper-ajuste-width {
+		@media screen and (max-width: 991px) {
+			width: 320px;
+		}
+	}
+
+	.swiper-plataform {
+		width: 100%;
+		height: 770px;
+		margin-left: auto;
+		margin-right: auto;
+
+		@media screen and (max-width: 991px) {
+			height: 650px;
+			margin-top: 50px;
+		}
+		
+		.swiper-slide {
+			background: transparent;
+			height: calc((100% - 30px) / 6) !important;
+  
+			@media screen and (max-width: 991px) {
+				height: calc((100% - 30px) / 2) !important;
+			}
+
+			.box {
+				display: flex;
+				align-items: center;
+				margin: 0 15px;
+				margin-bottom: 24px;
+				
+				@media screen and (max-width: 991px) {
+					flex-direction: column;	
+					text-align: center;
+				}
+
+				img {
+					width: 100px;
+					height: 100px;
+					margin-right: 16px;
+
+					@media screen and (max-width: 991px) {
+						margin: 0;
+						margin-bottom: 16px;
+					}
+				}
+
+				h5 {
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					text-transform: uppercase;
+					color: $preto;
+					height: auto;
+					margin-bottom: 8px;
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 17px;
+					color: $preto;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+}
 
 .semi-footer {
 	padding: 50px 0;
@@ -722,24 +1048,5 @@
 				display: none;
 			}
 		}
-	}
-}
-
-.mySwiper {
-	width: 100%;
-	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-
-	.swiper-slide {
-		text-align: center;
-		font-size: 18px;
-		background: #fff;
-		height: calc((100% - 30px) / 2) !important;
-  
-		/* Center slide text vertically */
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 }
