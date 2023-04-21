@@ -86,6 +86,25 @@
         },
     });
 
+    var swiperSlider = new Swiper(".swiper-slider", {
+        pagination: {
+            el: ".swiper-pagination-slider",
+            clickable: true,
+        },
+        slidesPerView: 3,
+        spaceBetween: 0,
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+            },
+        },
+    });
+
     var swiperValues = new Swiper(".swiper-values", {
         pagination: {
             el: ".swiper-pagination-slider-values",
@@ -144,6 +163,28 @@
         spaceBetween: 30,
         pagination: {
             el: ".swiper-pagination-slider-options-sol",
+            clickable: true
+        },
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+                grid: {
+                    rows: 1,
+                },
+            },
+            991: {
+                slidesPerView: 2,
+                grid: {
+                    rows: 2,
+                },
+            },
+        },
+    });
+
+    var swiperBeneficios = new Swiper(".swiper-beneficios", {
+        spaceBetween: 0,
+        pagination: {
+            el: ".swiper-pagination-slider-beneficios",
             clickable: true
         },
         breakpoints: {

@@ -108,6 +108,7 @@ body {
 
 			&.shadow {
 				box-shadow: 4.647887229919434px 4.647887229919434px 18.591548919677734px 0px #00000033;
+				border-radius: 25px;
 			}
 		}
 	}
@@ -191,12 +192,25 @@ body {
 			font-weight: 500;
 			font-size: 20px;
 			line-height: 24px;
+			color: #3D3D3D;
+
+			&.bigger {
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 29px;
+				color: #3D3D3D;
+			}
 
 			@media screen and (max-width: 991px) {
 				font-size: 14px;
 				line-height: 17px;
 				padding: 15px 0;
 				padding-left: 40px;
+
+				&.bigger {
+					font-size: 16px;
+					line-height: 19px;
+				}
 			}
 		}
 	}
@@ -218,6 +232,18 @@ body {
 					padding-right: 0;
 				}
 			}
+		}
+	}
+	
+	.bigger {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 29px;
+		color: #3D3D3D;
+
+		@media screen and (max-width: 991px) {
+			font-size: 16px;
+			line-height: 19px;
 		}
 	}
 }
@@ -334,6 +360,24 @@ input[type="file"] {
 
 .mb-50 {
 	margin-bottom: 50px;
+}
+
+.mobile-mt-50 {
+	@media screen and (max-width: 991px) {
+		margin-top: 50px;
+	}
+}
+
+.mobile-mt-25 {
+	@media screen and (max-width: 991px) {
+		margin-top: 25px;
+	}
+}
+
+.mobile-pb-0 {
+	@media screen and (max-width: 991px) {
+		padding-bottom: 0 !important;
+	}
 }
 
 .row-margin-adjust {

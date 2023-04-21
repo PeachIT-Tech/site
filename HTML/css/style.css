@@ -23092,6 +23092,33 @@ input:active, input:focus, button:active, button:focus {
   margin: 0;
 }
 
+.swiper.swiper-slider {
+  margin: 0 -30px;
+}
+@media screen and (max-width: 991px) {
+  .swiper.swiper-slider {
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    margin: initial;
+  }
+}
+.swiper.swiper-slider .swiper-slide {
+  padding: 30px 30px;
+}
+@media screen and (max-width: 991px) {
+  .swiper.swiper-slider .swiper-slide {
+    padding: 0;
+  }
+}
+.swiper.swiper-slider .swiper-slide .marca-dagua {
+  box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 991px) {
+  .swiper.swiper-slider .swiper-slide .marca-dagua {
+    box-shadow: none;
+  }
+}
+
 .swiper-pagination-bullets {
   padding: 24px 0;
 }
@@ -23345,14 +23372,23 @@ input:active, input:focus, button:active, button:focus {
   justify-content: space-between;
   align-items: flex-start;
 }
+.section .section-general .marca-dagua.min-height-370 {
+  min-height: 370px;
+}
 @media screen and (max-width: 991px) {
   .section .section-general .marca-dagua {
     background-size: 91px;
+    justify-content: flex-start;
   }
 }
 .section .section-general .marca-dagua .box-text-image {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .marca-dagua .box-text-image {
+    margin-bottom: 24px;
+  }
 }
 .section .section-general .marca-dagua .box-text-image img {
   width: 80px;
@@ -23391,6 +23427,7 @@ input:active, input:focus, button:active, button:focus {
   .section .section-general .marca-dagua p {
     font-size: 14px;
     line-height: 17px;
+    text-align: justify;
   }
 }
 .section .section-general .marca-dagua.primary {
@@ -23930,6 +23967,7 @@ input:active, input:focus, button:active, button:focus {
   border-radius: 16px;
   padding: 24px;
   display: flex;
+  min-height: 248px;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
@@ -23950,6 +23988,12 @@ input:active, input:focus, button:active, button:focus {
   padding-bottom: 8px;
   padding-right: 20px;
 }
+@media screen and (max-width: 1326px) {
+  .section .swiper-options .swiper-slide .option h5, .section .swiper-options .swiper-slide .option .h5 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
 @media screen and (max-width: 991px) {
   .section .swiper-options .swiper-slide .option h5, .section .swiper-options .swiper-slide .option .h5 {
     font-size: 28px;
@@ -23966,8 +24010,68 @@ input:active, input:focus, button:active, button:focus {
 .section .swiper-options .swiper-slide .option p:last-of-type {
   margin: 0;
 }
+@media screen and (max-width: 1326px) {
+  .section .swiper-options .swiper-slide .option p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
 @media screen and (max-width: 991px) {
   .section .swiper-options .swiper-slide .option p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.section .swiper-beneficios {
+  width: 100%;
+  height: 650px;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-beneficios {
+    height: auto;
+    padding-bottom: 0;
+  }
+}
+.section .swiper-beneficios .swiper-wrapper {
+  width: auto !important;
+  margin: 0 -15px;
+}
+.section .swiper-beneficios .swiper-slide {
+  height: calc((100% - 30px) / 3) !important;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-beneficios .swiper-slide {
+    height: 100% !important;
+  }
+}
+.section .swiper-beneficios .swiper-slide .beneficio {
+  padding: 0 15px;
+}
+.section .swiper-beneficios .swiper-slide .beneficio h5, .section .swiper-beneficios .swiper-slide .beneficio .h5 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #0C1707;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-beneficios .swiper-slide .beneficio h5, .section .swiper-beneficios .swiper-slide .beneficio .h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.section .swiper-beneficios .swiper-slide .beneficio p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.section .swiper-beneficios .swiper-slide .beneficio p:last-of-type {
+  margin: 0;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-beneficios .swiper-slide .beneficio p {
     font-size: 14px;
     line-height: 17px;
   }
@@ -24434,6 +24538,7 @@ body {
 }
 .box-border .box-border-image img.shadow {
   box-shadow: 4.6478872299px 4.6478872299px 18.5915489197px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
 }
 @media screen and (max-width: 991px) {
   .box-border .box-border-text.text-align {
@@ -24510,6 +24615,13 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  color: #3D3D3D;
+}
+.box-border ul li.bigger {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3D3D3D;
 }
 @media screen and (max-width: 991px) {
   .box-border ul li {
@@ -24517,6 +24629,10 @@ body {
     line-height: 17px;
     padding: 15px 0;
     padding-left: 40px;
+  }
+  .box-border ul li.bigger {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 .box-border .text-md-end ul li {
@@ -24533,6 +24649,18 @@ body {
     padding: 15px 0;
     padding-left: 40px;
     padding-right: 0;
+  }
+}
+.box-border .bigger {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3D3D3D;
+}
+@media screen and (max-width: 991px) {
+  .box-border .bigger {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 
@@ -24639,6 +24767,24 @@ input[type=file] {
 
 .mb-50 {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .mobile-mt-50 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .mobile-mt-25 {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .mobile-pb-0 {
+    padding-bottom: 0 !important;
+  }
 }
 
 @media screen and (min-width: 992px) {
