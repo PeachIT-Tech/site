@@ -1,14 +1,14 @@
 .section {
 	padding: 50px 0;
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 991px) {
 		padding: 24px 0;
 	}
 
 	.section-doing {
 		margin-bottom: 50px;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 991px) {
 			margin-bottom: 16px;
 		}
 
@@ -20,7 +20,7 @@
 			color: #3D3D3D;
 			padding-bottom: 16px;
 
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 991px) {
 				font-size: 16px;
 				line-height: 19px;
 			}
@@ -105,6 +105,42 @@
 	.section-general {
 		padding-bottom: 50px;
 
+		.box-passos {
+			padding-top: 50px;
+
+			img {
+				max-width: 100%;
+				filter: drop-shadow(6px 6px 24px rgba(0, 0, 0, 0.2));
+				margin-bottom: 16px;
+			}
+
+			h5 {
+				font-weight: 700;
+				font-size: 28px;
+				line-height: 34px;
+				color: #0C1707;
+				margin-bottom: 8px;
+
+				@media screen and (max-width: 991px) {
+					font-size: 28px;
+					line-height: 34px;
+				}
+			}
+
+			p {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 19px;
+				color: $preto;
+				margin-bottom: 0;
+
+				@media screen and (max-width: 991px) {
+					font-size: 14px;
+					line-height: 17px;
+				}
+			}
+		}
+
 		h1 {
 			font-weight: 700;
 			font-size: 36px;
@@ -112,10 +148,20 @@
 			color: #0C1707;
 			margin-bottom: 24px;
 
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 991px) {
 				font-size: 28px;
 				line-height: 34px;
 				text-align: left;
+			}
+
+			&.bigger {
+				font-size: 48px;
+				line-height: 58px;
+
+				@media screen and (max-width: 991px) {
+					font-size: 28px;
+					line-height: 34px;
+				}
 			}
 		}
 		
@@ -126,7 +172,7 @@
 			color: #0C1707;
 			margin-bottom: 24px;
 
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 991px) {
 				font-size: 24px;
 				line-height: 30px;
 				text-align: left;
@@ -140,7 +186,7 @@
 			color: #0C1707;
 			margin-bottom: 24px;
 
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 991px) {
 				font-size: 20px;
 				line-height: 26px;
 				text-align: left;
@@ -154,7 +200,7 @@
 			color: #0C1707;
 			margin-bottom: 24px;
 
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 991px) {
 				font-size: 16px;
 				line-height: 19px;
 				letter-spacing: 0.05em;
@@ -210,7 +256,7 @@
 
 		.row {
 			&.mobile-invert {
-				@media screen and (max-width: 767px) {
+				@media screen and (max-width: 991px) {
 					flex-direction: column-reverse;
 				}
 			}
@@ -227,6 +273,29 @@
 
 			@media screen and (max-width: 991px) {
 				text-align: center !important;
+			}
+		}
+
+		.white-box {
+			background-color: $branco;
+			padding-top: 16px;
+			padding-bottom: 50px;
+			position: relative;
+			// height: 1800px;
+			background: url("../images/o-que-fazemos/outsourcing/marca-dagua.png") $branco right bottom no-repeat;
+
+			@media screen and (max-width: 991px) {
+				background: url("../images/o-que-fazemos/outsourcing/marca-dagua-mobile.png") $branco right bottom no-repeat;
+			}
+
+			.image-absolute {
+				position: absolute;
+				top: -20px;
+				left: 0;
+
+				@media screen and (max-width: 991px) {
+					width: 320px;
+				}
 			}
 		}
 
@@ -281,6 +350,16 @@
 				height: 90px;
 				margin-bottom: 16px;
 
+				&.border-dotted {
+					border-bottom: 2px dashed #0C1707;
+					margin-bottom: 24px;
+					padding-bottom: 8px;
+
+					@media screen and (max-width: 991px) {
+						height: auto;
+					}
+				}
+
 				@media screen and (max-width: 991px) {
 					font-size: 28px;
 					line-height: 34px;
@@ -319,6 +398,19 @@
 
 				@media screen and (max-width: 991px) {
 					background: url("../images/marca-dagua-peach.png") #F2FAEF right bottom no-repeat;
+					background-size: 91px;
+				}
+	
+				h5, p {
+					color: #0C1707;
+				}
+			}
+
+			&.primary-middle {
+				background: url("../images/marca-dagua-peach.png") #B9F39F right bottom no-repeat;
+
+				@media screen and (max-width: 991px) {
+					background: url("../images/marca-dagua-peach.png") #B9F39F right bottom no-repeat;
 					background-size: 91px;
 				}
 	
@@ -630,7 +722,7 @@
 			color: #3D3D3D;
 			padding-bottom: 16px;
 
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 991px) {
 				font-size: 16px;
 				line-height: 19px;
 			}
@@ -685,7 +777,7 @@
 	.section-clients {
 		padding: 50px 30px;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 991px) {
 			padding: 50px 0;
 		}
 
@@ -696,7 +788,7 @@
 			line-height: 44px;
 			color: $preto;
 
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 991px) {
 				font-size: 28px;
 				line-height: 34px;
 			}
@@ -709,7 +801,7 @@
 				.linha-1 {
 					text-align: left;
 
-					@media screen and (max-width: 767px) {
+					@media screen and (max-width: 991px) {
 						margin-bottom: 24px;
 					}
 
@@ -724,7 +816,7 @@
 						line-height: 29px;
 						color: $preto;
 
-						@media screen and (max-width: 767px) {
+						@media screen and (max-width: 991px) {
 							font-size: 20px;
 							line-height: 24px;
 						}
@@ -745,7 +837,7 @@
 							margin-bottom: 24px;
 						}
 
-						@media screen and (max-width: 767px) {
+						@media screen and (max-width: 991px) {
 							font-size: 16px;
 							line-height: 19px;
 						}
@@ -758,7 +850,7 @@
 	.section-team {
 		padding: 50px 30px;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 991px) {
 			padding: 50px 0;
 		}
 
@@ -769,7 +861,7 @@
 			line-height: 44px;
 			color: $preto;
 
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 991px) {
 				font-size: 28px;
 				line-height: 34px;
 			}
@@ -782,7 +874,7 @@
 				.linha-1 {
 					text-align: left;
 
-					@media screen and (max-width: 767px) {
+					@media screen and (max-width: 991px) {
 						margin-bottom: 24px;
 					}
 
@@ -797,7 +889,7 @@
 						line-height: 29px;
 						color: $preto;
 
-						@media screen and (max-width: 767px) {
+						@media screen and (max-width: 991px) {
 							font-size: 20px;
 							line-height: 24px;
 						}
@@ -818,7 +910,7 @@
 							margin-bottom: 24px;
 						}
 
-						@media screen and (max-width: 767px) {
+						@media screen and (max-width: 991px) {
 							font-size: 16px;
 							line-height: 19px;
 						}
@@ -865,6 +957,89 @@
 			align-items: center;
 			justify-content: center;
 			height: calc((100% - 30px) / 2) !important;
+
+			@media screen and (max-width: 991px) {
+				height: 100% !important;
+			}
+			
+			.option {
+				box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+				background: url("../images/marca-dagua-peach.png") #B9F3A0 right bottom no-repeat;
+				border-radius: 16px;
+				padding: 24px;
+				display: flex;
+				min-height: 248px;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+
+				@media screen and (max-width: 991px) {
+					box-shadow: none;
+					background-size: 91px;
+				}
+
+				h5 {
+					font-weight: 700;
+					font-size: 36px;
+					line-height: 44px;
+					color: #0C1707;
+					margin-bottom: 16px;
+					border-bottom: 2px dashed #0C1707;
+					padding-bottom: 8px;
+					padding-right: 20px;
+					
+					@media screen and (max-width: 1326px) {
+						font-size: 30px;
+						line-height: 38px;
+					}
+
+					@media screen and (max-width: 991px) {
+						font-size: 28px;
+						line-height: 34px;
+					}
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+					color: $preto;
+					margin-bottom: 24px;
+
+					&:last-of-type {
+						margin: 0;
+					}
+
+					@media screen and (max-width: 1326px) {
+						font-size: 13px;
+						line-height: 16px;
+					}
+
+					@media screen and (max-width: 991px) {
+						font-size: 14px;
+						line-height: 17px;
+					}
+				}
+			}
+		}
+	}
+	
+	.swiper-options-2 {
+		width: 100%;
+		padding: 20px 0;
+		padding-bottom: 50px;
+
+		@media screen and (max-width: 991px) {
+			height: auto;
+			padding-bottom: 30px;
+		}
+
+		.swiper-slide {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 250px;
 
 			@media screen and (max-width: 991px) {
 				height: 100% !important;

@@ -22185,7 +22185,7 @@ input:active, input:focus, button:active, button:focus {
 }
 
 .primary-color {
-  color: #7CD854;
+  color: #7CD854 !important;
 }
 
 .terc-color {
@@ -22407,6 +22407,11 @@ input:active, input:focus, button:active, button:focus {
   height: 100%;
   cursor: pointer;
 }
+@media screen and (max-width: 991px) {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.dropdown-open .nav-link.active {
+    border-bottom: none;
+  }
+}
 .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link {
   height: 100%;
   display: flex;
@@ -22463,6 +22468,11 @@ input:active, input:focus, button:active, button:focus {
     left: 0;
   }
 }
+@media screen and (max-width: 991px) {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+    border-bottom: 4px solid #7CD854;
+  }
+}
 .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .dropdown-menu {
   position: absolute;
   width: 100%;
@@ -22506,6 +22516,11 @@ input:active, input:focus, button:active, button:focus {
 .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .dropdown-menu li .dropdown-item.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .dropdown-menu li .dropdown-item:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .dropdown-menu li .dropdown-item:focus {
   background-color: transparent;
   font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .dropdown-menu li .dropdown-item.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .dropdown-menu li .dropdown-item:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .dropdown-menu li .dropdown-item:focus {
+    border-bottom: 4px solid #000000;
+  }
 }
 @media screen and (max-width: 991px) {
   .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .dropdown-menu li .dropdown-item {
@@ -23118,6 +23133,128 @@ input:active, input:focus, button:active, button:focus {
     box-shadow: none;
   }
 }
+.swiper.swiper-team {
+  width: 100%;
+  height: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 991px) {
+  .swiper.swiper-team {
+    height: 500px;
+  }
+}
+.swiper.swiper-team .swiper-slide {
+  background: transparent;
+  height: calc((100% - 90px) / 3) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 991px) {
+  .swiper.swiper-team .swiper-slide {
+    height: calc((100% - 60px) / 2) !important;
+  }
+}
+.swiper.swiper-team .swiper-slide .flip-card {
+  background-color: transparent;
+  width: 450px;
+  height: 250px;
+  perspective: 1000px;
+}
+@media screen and (max-width: 991px) {
+  .swiper.swiper-team .swiper-slide .flip-card {
+    width: 300px;
+    height: 300px;
+  }
+}
+.swiper.swiper-team .swiper-slide .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+.swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-front, .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+.swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-front {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+.swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-front img {
+  width: 105px;
+  height: 105px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 991px) {
+  .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-front img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-front h1, .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-front .h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #0C1707;
+}
+@media screen and (max-width: 991px) {
+  .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-front h1, .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-front .h1 {
+    font-size: 16.8149px;
+    line-height: 20px;
+  }
+}
+.swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-back h1, .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-back .h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #0C1707;
+}
+@media screen and (max-width: 991px) {
+  .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-back h1, .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-back .h1 {
+    font-size: 16.8149px;
+    line-height: 20px;
+  }
+}
+.swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-back p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+@media screen and (max-width: 991px) {
+  .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-back p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.swiper.swiper-team .swiper-slide .flip-card:hover .flip-card-inner, .swiper.swiper-team .swiper-slide .flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.swiper.swiper-team .swiper-slide .flip-card:focus {
+  outline: 0;
+}
 
 .swiper-pagination-bullets {
   padding: 24px 0;
@@ -23147,7 +23284,7 @@ input:active, input:focus, button:active, button:focus {
 .section {
   padding: 50px 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section {
     padding: 24px 0;
   }
@@ -23155,7 +23292,7 @@ input:active, input:focus, button:active, button:focus {
 .section .section-doing {
   margin-bottom: 50px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-doing {
     margin-bottom: 16px;
   }
@@ -23168,7 +23305,7 @@ input:active, input:focus, button:active, button:focus {
   color: #3D3D3D;
   padding-bottom: 16px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-doing p {
     font-size: 16px;
     line-height: 19px;
@@ -23247,6 +23384,40 @@ input:active, input:focus, button:active, button:focus {
 .section .section-general {
   padding-bottom: 50px;
 }
+.section .section-general .box-passos {
+  padding-top: 50px;
+}
+.section .section-general .box-passos img {
+  max-width: 100%;
+  filter: drop-shadow(6px 6px 24px rgba(0, 0, 0, 0.2));
+  margin-bottom: 16px;
+}
+.section .section-general .box-passos h5, .section .section-general .box-passos .h5 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #0C1707;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .box-passos h5, .section .section-general .box-passos .h5 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+.section .section-general .box-passos p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .box-passos p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
 .section .section-general h1, .section .section-general .h1 {
   font-weight: 700;
   font-size: 36px;
@@ -23254,11 +23425,21 @@ input:active, input:focus, button:active, button:focus {
   color: #0C1707;
   margin-bottom: 24px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-general h1, .section .section-general .h1 {
     font-size: 28px;
     line-height: 34px;
     text-align: left;
+  }
+}
+.section .section-general h1.bigger, .section .section-general .bigger.h1 {
+  font-size: 48px;
+  line-height: 58px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general h1.bigger, .section .section-general .bigger.h1 {
+    font-size: 28px;
+    line-height: 34px;
   }
 }
 .section .section-general h2, .section .section-general .h2 {
@@ -23268,7 +23449,7 @@ input:active, input:focus, button:active, button:focus {
   color: #0C1707;
   margin-bottom: 24px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-general h2, .section .section-general .h2 {
     font-size: 24px;
     line-height: 30px;
@@ -23282,7 +23463,7 @@ input:active, input:focus, button:active, button:focus {
   color: #0C1707;
   margin-bottom: 24px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-general h3, .section .section-general .h3 {
     font-size: 20px;
     line-height: 26px;
@@ -23296,7 +23477,7 @@ input:active, input:focus, button:active, button:focus {
   color: #0C1707;
   margin-bottom: 24px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-general p {
     font-size: 16px;
     line-height: 19px;
@@ -23344,7 +23525,7 @@ input:active, input:focus, button:active, button:focus {
     padding-right: 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-general .row.mobile-invert {
     flex-direction: column-reverse;
   }
@@ -23360,6 +23541,28 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .section .section-general .box-border-image {
     text-align: center !important;
+  }
+}
+.section .section-general .white-box {
+  background-color: #FFFFFF;
+  padding-top: 16px;
+  padding-bottom: 50px;
+  position: relative;
+  background: url("../images/o-que-fazemos/outsourcing/marca-dagua.png") #FFFFFF right bottom no-repeat;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .white-box {
+    background: url("../images/o-que-fazemos/outsourcing/marca-dagua-mobile.png") #FFFFFF right bottom no-repeat;
+  }
+}
+.section .section-general .white-box .image-absolute {
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .white-box .image-absolute {
+    width: 320px;
   }
 }
 .section .section-general .marca-dagua {
@@ -23411,6 +23614,16 @@ input:active, input:focus, button:active, button:focus {
   height: 90px;
   margin-bottom: 16px;
 }
+.section .section-general .marca-dagua h5.border-dotted, .section .section-general .marca-dagua .border-dotted.h5 {
+  border-bottom: 2px dashed #0C1707;
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .marca-dagua h5.border-dotted, .section .section-general .marca-dagua .border-dotted.h5 {
+    height: auto;
+  }
+}
 @media screen and (max-width: 991px) {
   .section .section-general .marca-dagua h5, .section .section-general .marca-dagua .h5 {
     font-size: 28px;
@@ -23452,6 +23665,18 @@ input:active, input:focus, button:active, button:focus {
   }
 }
 .section .section-general .marca-dagua.primary-light h5, .section .section-general .marca-dagua.primary-light .h5, .section .section-general .marca-dagua.primary-light p {
+  color: #0C1707;
+}
+.section .section-general .marca-dagua.primary-middle {
+  background: url("../images/marca-dagua-peach.png") #B9F39F right bottom no-repeat;
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .marca-dagua.primary-middle {
+    background: url("../images/marca-dagua-peach.png") #B9F39F right bottom no-repeat;
+    background-size: 91px;
+  }
+}
+.section .section-general .marca-dagua.primary-middle h5, .section .section-general .marca-dagua.primary-middle .h5, .section .section-general .marca-dagua.primary-middle p {
   color: #0C1707;
 }
 .section .section-general .banner {
@@ -23737,7 +23962,7 @@ input:active, input:focus, button:active, button:focus {
   color: #3D3D3D;
   padding-bottom: 16px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-projects p {
     font-size: 16px;
     line-height: 19px;
@@ -23788,7 +24013,7 @@ input:active, input:focus, button:active, button:focus {
 .section .section-clients {
   padding: 50px 30px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-clients {
     padding: 50px 0;
   }
@@ -23800,7 +24025,7 @@ input:active, input:focus, button:active, button:focus {
   line-height: 44px;
   color: #000000;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-clients h1, .section .section-clients .h1 {
     font-size: 28px;
     line-height: 34px;
@@ -23812,7 +24037,7 @@ input:active, input:focus, button:active, button:focus {
 .section .section-clients .client-depoiment .linha .linha-1 {
   text-align: left;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-clients .client-depoiment .linha .linha-1 {
     margin-bottom: 24px;
   }
@@ -23827,7 +24052,7 @@ input:active, input:focus, button:active, button:focus {
   line-height: 29px;
   color: #000000;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-clients .client-depoiment .linha .linha-1 p {
     font-size: 20px;
     line-height: 24px;
@@ -23846,7 +24071,7 @@ input:active, input:focus, button:active, button:focus {
 .section .section-clients .client-depoiment .linha .linha-2 p:last-of-type {
   margin-bottom: 24px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-clients .client-depoiment .linha .linha-2 p {
     font-size: 16px;
     line-height: 19px;
@@ -23855,7 +24080,7 @@ input:active, input:focus, button:active, button:focus {
 .section .section-team {
   padding: 50px 30px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-team {
     padding: 50px 0;
   }
@@ -23867,7 +24092,7 @@ input:active, input:focus, button:active, button:focus {
   line-height: 44px;
   color: #000000;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-team h1, .section .section-team .h1 {
     font-size: 28px;
     line-height: 34px;
@@ -23879,7 +24104,7 @@ input:active, input:focus, button:active, button:focus {
 .section .section-team .client-depoiment .linha .linha-1 {
   text-align: left;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-team .client-depoiment .linha .linha-1 {
     margin-bottom: 24px;
   }
@@ -23894,7 +24119,7 @@ input:active, input:focus, button:active, button:focus {
   line-height: 29px;
   color: #000000;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-team .client-depoiment .linha .linha-1 p {
     font-size: 20px;
     line-height: 24px;
@@ -23913,7 +24138,7 @@ input:active, input:focus, button:active, button:focus {
 .section .section-team .client-depoiment .linha .linha-2 p:last-of-type {
   margin-bottom: 24px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .section .section-team .client-depoiment .linha .linha-2 p {
     font-size: 16px;
     line-height: 19px;
@@ -24018,6 +24243,90 @@ input:active, input:focus, button:active, button:focus {
 }
 @media screen and (max-width: 991px) {
   .section .swiper-options .swiper-slide .option p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.section .swiper-options-2 {
+  width: 100%;
+  padding: 20px 0;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-options-2 {
+    height: auto;
+    padding-bottom: 30px;
+  }
+}
+.section .swiper-options-2 .swiper-slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-options-2 .swiper-slide {
+    height: 100% !important;
+  }
+}
+.section .swiper-options-2 .swiper-slide .option {
+  box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+  background: url("../images/marca-dagua-peach.png") #B9F3A0 right bottom no-repeat;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  min-height: 248px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-options-2 .swiper-slide .option {
+    box-shadow: none;
+    background-size: 91px;
+  }
+}
+.section .swiper-options-2 .swiper-slide .option h5, .section .swiper-options-2 .swiper-slide .option .h5 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #0C1707;
+  margin-bottom: 16px;
+  border-bottom: 2px dashed #0C1707;
+  padding-bottom: 8px;
+  padding-right: 20px;
+}
+@media screen and (max-width: 1326px) {
+  .section .swiper-options-2 .swiper-slide .option h5, .section .swiper-options-2 .swiper-slide .option .h5 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-options-2 .swiper-slide .option h5, .section .swiper-options-2 .swiper-slide .option .h5 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+.section .swiper-options-2 .swiper-slide .option p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.section .swiper-options-2 .swiper-slide .option p:last-of-type {
+  margin: 0;
+}
+@media screen and (max-width: 1326px) {
+  .section .swiper-options-2 .swiper-slide .option p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section .swiper-options-2 .swiper-slide .option p {
     font-size: 14px;
     line-height: 17px;
   }
@@ -24532,9 +24841,15 @@ body {
 .box-border .box-border-image img {
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 .box-border .box-border-image img.max-300 {
   width: 300px;
+}
+@media screen and (max-width: 991px) {
+  .box-border .box-border-image img {
+    width: auto;
+  }
 }
 .box-border .box-border-image img.shadow {
   box-shadow: 4.6478872299px 4.6478872299px 18.5915489197px 0px rgba(0, 0, 0, 0.2);
@@ -24544,6 +24859,13 @@ body {
   .box-border .box-border-text.text-align {
     text-align: center;
   }
+}
+.box-border .box-border-text h3, .box-border .box-border-text .h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0C1707;
+  margin-bottom: 8px;
 }
 .box-border .box-border-text h1, .box-border .box-border-text .h1 {
   font-weight: 700;
@@ -24765,8 +25087,16 @@ input[type=file] {
   margin-top: 50px;
 }
 
+.pt-50 {
+  padding-top: 50px;
+}
+
 .mb-50 {
   margin-bottom: 50px;
+}
+
+.mb-8 {
+  margin-bottom: 8px !important;
 }
 
 @media screen and (max-width: 991px) {

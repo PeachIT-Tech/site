@@ -181,6 +181,25 @@
         },
     });
 
+    var swiperOptions2 = new Swiper(".swiper-options-2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination-slider-options-2-sol",
+            clickable: true
+        },
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+        },
+    });
+
     var swiperBeneficios = new Swiper(".swiper-beneficios", {
         spaceBetween: 0,
         pagination: {
@@ -224,6 +243,27 @@
         },
     });
 
+    var swiperBoxTeam = new Swiper(".swiper-team", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+                grid: {
+                    rows: 2,
+                },
+            },
+            991: {
+                slidesPerView: 3,
+                grid: {
+                    rows: 3,
+                },
+            },
+        },
+      });
 // Get Filename input
     function getInputName() {
         var fullPath = document.getElementById('arquivo').value;

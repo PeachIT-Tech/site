@@ -101,9 +101,14 @@ body {
 		img {
 			max-width: 100%;
 			height: auto;
+			width: 100%;
 
 			&.max-300 {
 				width: 300px;
+			}
+
+			@media screen and (max-width: 991px) {
+				width: auto;
 			}
 
 			&.shadow {
@@ -118,6 +123,14 @@ body {
 			@media screen and (max-width: 991px) {
 				text-align: center;
 			}
+		}
+
+		h3 {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 29px;
+			color: #0C1707;
+			margin-bottom: 8px;
 		}
 
 		h1 {
@@ -358,8 +371,16 @@ input[type="file"] {
 	margin-top: 50px;
 }
 
+.pt-50 {
+	padding-top: 50px;
+}
+
 .mb-50 {
 	margin-bottom: 50px;
+}
+
+.mb-8 {
+	margin-bottom: 8px !important;
 }
 
 .mobile-mt-50 {
