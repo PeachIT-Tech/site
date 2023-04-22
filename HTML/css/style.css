@@ -23385,9 +23385,6 @@ input:active, input:focus, button:active, button:focus {
 .section .section-we .valores {
   margin-top: -60px;
 }
-.section .section-general {
-  padding-bottom: 50px;
-}
 .section .section-general .box-passos {
   padding-top: 50px;
 }
@@ -24016,6 +24013,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-clients {
   padding: 50px 30px;
+  padding-bottom: 0;
 }
 @media screen and (max-width: 991px) {
   .section .section-clients {
@@ -24083,6 +24081,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-team {
   padding: 50px 30px;
+  padding-bottom: 0;
 }
 @media screen and (max-width: 991px) {
   .section .section-team {
@@ -24458,6 +24457,7 @@ input:active, input:focus, button:active, button:focus {
 .semi-footer {
   padding: 50px 0;
   padding-bottom: 100px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 991px) {
   .semi-footer {
