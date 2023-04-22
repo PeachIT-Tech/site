@@ -31,13 +31,12 @@
 
 			.swiper-doing {
 				background: transparent;
-			
+				overflow: visible;
+
 				.swiper-wrapper {
 					padding: 30px 0;
-					box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
 
 					@media screen and (max-width: 991px) {
-						box-shadow: none;
 						padding: 0;
 					}
 					
@@ -49,7 +48,6 @@
 						background: url("../images/marca-dagua-peach.png") #65B343 right bottom no-repeat;
 
 						@media screen and (max-width: 991px) {
-							box-shadow: none;
 							background-size: 91px;
 						}
 
@@ -427,7 +425,7 @@
 
 			@media screen and (max-width: 991px) {
 				margin-top: 50px;
-				padding: 9px 0;
+				padding: 0;
 				background-color: transparent;
 
 				.banner-mobile {
@@ -524,11 +522,14 @@
 	}
 
 	.section-hotsite {
+		padding-top: 50px;
+
 		h1 {
 			font-weight: 700;
 			font-size: 36px;
 			line-height: 44px;
 			color: #0C1707;
+			margin-bottom: 24px;
 
 			@media screen and (max-width: 991px) {
 				font-size: 32px;
@@ -554,15 +555,17 @@
 
 			.swiper-doing {
 				background: transparent;
+				overflow: visible;
 
 				@media screen and (max-width: 991px) {
+					overflow: hidden;
 					border-radius: 12px;
 					box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
 				}
 			
 				.swiper-wrapper {
 					padding: 30px 0;
-					box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
+					// box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
 
 					@media screen and (max-width: 991px) {
 						box-shadow: none;
@@ -574,7 +577,7 @@
 						border-radius: 12px;
 						background: #F2FAEF;
 						padding: 16px;
-						min-height: 420px;
+						min-height: 440px;
 
 						@media screen and (max-width: 991px) {
 							box-shadow: none;
@@ -582,6 +585,15 @@
 
 						.box-hotsite {
 							text-align: center;
+
+							img {
+								margin-bottom: 16px;
+
+								@media screen and (max-width: 991px) {
+									max-width: 100%;
+									width: 255px;
+								}
+							}
 			
 							h5 {
 								font-weight: 700;
@@ -780,6 +792,7 @@
 
 		@media screen and (max-width: 991px) {
 			padding: 50px 0;
+			padding-bottom: 0;
 		}
 
 		h1 {
@@ -925,11 +938,21 @@
 	.section-404 {
 		text-align: center;
 
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+
 		h1 {
 			font-weight: 500;
 			font-size: 24px;
 			line-height: 29px;
 			color: #0C1707;
+
+			@media screen and (max-width: 991px) {
+				font-size: 16px;
+				line-height: 19px;
+			}
 		}
 	}
 	
@@ -937,8 +960,10 @@
 		width: 100%;
 		height: 650px;
 		padding: 50px 0;
+		overflow: visible;
 
 		@media screen and (max-width: 991px) {
+			overflow: hidden;
 			height: auto;
 			padding-bottom: 0;
 		}
@@ -949,7 +974,8 @@
 		
 			@media screen and (max-width: 991px) {
 				height: auto;
-				padding-bottom: 30px;
+				padding-top: 30px;
+				padding-bottom: 10px;
 			}
 		}
 
@@ -1030,8 +1056,10 @@
 		width: 100%;
 		padding: 20px 0;
 		padding-bottom: 50px;
+		overflow: visible;
 
 		@media screen and (max-width: 991px) {
+			overflow: hidden;
 			height: auto;
 			padding-bottom: 30px;
 		}
@@ -1242,7 +1270,8 @@
 	margin-top: 100px;
 
 	@media screen and (max-width: 991px) {
-		padding: 50px 30px 50px 20px;
+		padding: 50px 20px 50px 0px;
+		margin-top: 20px;
 	}
 
 	.box-semi-footer {

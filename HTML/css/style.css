@@ -23110,30 +23110,11 @@ input:active, input:focus, button:active, button:focus {
 }
 
 .swiper.swiper-slider {
-  margin: 0 -30px;
-}
-@media screen and (max-width: 991px) {
-  .swiper.swiper-slider {
-    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
-    border-radius: 16px;
-    margin: initial;
-  }
-}
-.swiper.swiper-slider .swiper-slide {
-  padding: 30px 30px;
-}
-@media screen and (max-width: 991px) {
-  .swiper.swiper-slider .swiper-slide {
-    padding: 0;
-  }
+  margin-top: 24px;
+  overflow: visible;
 }
 .swiper.swiper-slider .swiper-slide .marca-dagua {
   box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
-}
-@media screen and (max-width: 991px) {
-  .swiper.swiper-slider .swiper-slide .marca-dagua {
-    box-shadow: none;
-  }
 }
 .swiper.swiper-team {
   width: 100%;
@@ -23322,14 +23303,13 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-doing .box-what-doing .swiper-doing {
   background: transparent;
+  overflow: visible;
 }
 .section .section-doing .box-what-doing .swiper-doing .swiper-wrapper {
   padding: 30px 0;
-  box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 991px) {
   .section .section-doing .box-what-doing .swiper-doing .swiper-wrapper {
-    box-shadow: none;
     padding: 0;
   }
 }
@@ -23342,7 +23322,6 @@ input:active, input:focus, button:active, button:focus {
 }
 @media screen and (max-width: 991px) {
   .section .section-doing .box-what-doing .swiper-doing .swiper-wrapper .swiper-slide {
-    box-shadow: none;
     background-size: 91px;
   }
 }
@@ -23690,7 +23669,7 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .section .section-general .banner {
     margin-top: 50px;
-    padding: 9px 0;
+    padding: 0;
     background-color: transparent;
   }
   .section .section-general .banner .banner-mobile {
@@ -23773,11 +23752,15 @@ input:active, input:focus, button:active, button:focus {
   color: #000000;
   margin: 0;
 }
+.section .section-hotsite {
+  padding-top: 50px;
+}
 .section .section-hotsite h1, .section .section-hotsite .h1 {
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   color: #0C1707;
+  margin-bottom: 24px;
 }
 @media screen and (max-width: 991px) {
   .section .section-hotsite h1, .section .section-hotsite .h1 {
@@ -23803,16 +23786,17 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-hotsite .box-hotsite .swiper-doing {
   background: transparent;
+  overflow: visible;
 }
 @media screen and (max-width: 991px) {
   .section .section-hotsite .box-hotsite .swiper-doing {
+    overflow: hidden;
     border-radius: 12px;
     box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
   }
 }
 .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper {
   padding: 30px 0;
-  box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 991px) {
   .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper {
@@ -23825,7 +23809,7 @@ input:active, input:focus, button:active, button:focus {
   border-radius: 12px;
   background: #F2FAEF;
   padding: 16px;
-  min-height: 420px;
+  min-height: 440px;
 }
 @media screen and (max-width: 991px) {
   .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide {
@@ -23834,6 +23818,15 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite {
   text-align: center;
+}
+.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite img {
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite img {
+    max-width: 100%;
+    width: 255px;
+  }
 }
 .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite h5, .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite .h5 {
   font-weight: 700;
@@ -24020,6 +24013,7 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .section .section-clients {
     padding: 50px 0;
+    padding-bottom: 0;
   }
 }
 .section .section-clients h1, .section .section-clients .h1 {
@@ -24152,19 +24146,31 @@ input:active, input:focus, button:active, button:focus {
 .section .section-404 {
   text-align: center;
 }
+.section .section-404 img {
+  display: block;
+  margin: 0 auto;
+}
 .section .section-404 h1, .section .section-404 .h1 {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   color: #0C1707;
 }
+@media screen and (max-width: 991px) {
+  .section .section-404 h1, .section .section-404 .h1 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 .section .swiper-options {
   width: 100%;
   height: 650px;
   padding: 50px 0;
+  overflow: visible;
 }
 @media screen and (max-width: 991px) {
   .section .swiper-options {
+    overflow: hidden;
     height: auto;
     padding-bottom: 0;
   }
@@ -24176,7 +24182,8 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .section .swiper-options.padding-options {
     height: auto;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
 }
 .section .swiper-options .swiper-slide {
@@ -24256,9 +24263,11 @@ input:active, input:focus, button:active, button:focus {
   width: 100%;
   padding: 20px 0;
   padding-bottom: 50px;
+  overflow: visible;
 }
 @media screen and (max-width: 991px) {
   .section .swiper-options-2 {
+    overflow: hidden;
     height: auto;
     padding-bottom: 30px;
   }
@@ -24463,7 +24472,8 @@ input:active, input:focus, button:active, button:focus {
 }
 @media screen and (max-width: 991px) {
   .semi-footer {
-    padding: 50px 30px 50px 20px;
+    padding: 50px 20px 50px 0px;
+    margin-top: 20px;
   }
 }
 .semi-footer .box-semi-footer {

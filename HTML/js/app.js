@@ -92,7 +92,7 @@
             clickable: true,
         },
         slidesPerView: 3,
-        spaceBetween: 0,
+        spaceBetween: 30,
         breakpoints: {
             100: {
                 slidesPerView: 1,
@@ -100,16 +100,17 @@
             },
             991: {
                 slidesPerView: 3,
-                spaceBetween: 0,
+                spaceBetween: 30,
             },
         },
     });
 
     var swiperValues = new Swiper(".swiper-values", {
-      pagination: {
-        el: ".swiper-pagination-slider-values",
-        clickable: true,
-      },
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination-slider-values",
+            clickable: true,
+        },
     });
 
     var swiperMetodologia = new Swiper(".swiper-metodologia", {
