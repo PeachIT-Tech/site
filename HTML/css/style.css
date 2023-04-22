@@ -22194,6 +22194,12 @@ input:active, input:focus, button:active, button:focus {
 
 .modal-dialog .modal-body {
   padding: 40px;
+  position: relative;
+}
+.modal-dialog .modal-body .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 .modal-dialog .modal-body img {
   max-width: 100%;
@@ -22209,6 +22215,8 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .modal-dialog .modal-body .left p {
     margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 .modal-dialog .modal-body .right .button {
