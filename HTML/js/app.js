@@ -106,12 +106,10 @@
     });
 
     var swiperValues = new Swiper(".swiper-values", {
-        pagination: {
-            el: ".swiper-pagination-slider-values",
-            clickable: true,
-        },
-        slidesPerView: 1,
-        spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination-slider-values",
+        clickable: true,
+      },
     });
 
     var swiperMetodologia = new Swiper(".swiper-metodologia", {
@@ -263,7 +261,8 @@
                 },
             },
         },
-      });
+    });
+
 // Get Filename input
     function getInputName() {
         var fullPath = document.getElementById('arquivo').value;

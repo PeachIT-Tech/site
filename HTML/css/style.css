@@ -23255,6 +23255,10 @@ input:active, input:focus, button:active, button:focus {
 .swiper.swiper-team .swiper-slide .flip-card:focus {
   outline: 0;
 }
+.swiper.swiper-values {
+  width: 100%;
+  height: 100%;
+}
 
 .swiper-pagination-bullets {
   padding: 24px 0;
@@ -25064,7 +25068,7 @@ body {
 }
 @media screen and (max-width: 991px) {
   .mobile {
-    display: inline-block !important;
+    display: block !important;
   }
 }
 
