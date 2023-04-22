@@ -29,7 +29,6 @@ body {
 }
 
 .title {
-	// Segundo design
 	color: $terciaria;
 	background: url("../images/icons/peach-icon.svg") left center no-repeat;
 	background-size: 35px;
@@ -39,19 +38,11 @@ body {
 	line-height: 51px;
 	margin-bottom: 16px;
 
-	// Minha opinião
-	// color: #32704C;
-    // background: url(../images/icons/peach-icon.svg) left center no-repeat;
-    // background-size: 30px;
-    // padding-left: 40px;
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 41px;
-    // margin-bottom: 16px;
-
 	@media screen and (max-width: 991px) {
 		font-size: 32px;
 		line-height: 39px;
+		padding: 2px 0;
+		padding-left: 45px;
 	}
 
 	span {
@@ -281,6 +272,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		margin-bottom: 0;
 	}
 
 	&:last-of-type {
@@ -365,10 +357,18 @@ input[type="file"] {
     display: block;
     cursor: pointer;
     margin-right: 24px;
+
+	@media screen and (max-width: 991px) {
+		width: 100%;
+	}
 }
 
 .mt-50 {
 	margin-top: 50px;
+
+	@media screen and (max-width: 991px) {
+		margin-top: 25px;
+	}
 }
 
 .pt-50 {
@@ -391,7 +391,13 @@ input[type="file"] {
 
 .mobile-mt-25 {
 	@media screen and (max-width: 991px) {
-		margin-top: 25px;
+		margin-top: 25px !important;
+	}
+}
+
+.mobile-mt-0 {
+	@media screen and (max-width: 991px) {
+		margin-top: 0 !important;
 	}
 }
 

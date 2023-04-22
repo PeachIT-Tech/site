@@ -22222,6 +22222,11 @@ input:active, input:focus, button:active, button:focus {
 .modal-dialog .modal-body .right .button {
   margin-top: 24px;
 }
+@media screen and (max-width: 991px) {
+  .modal-dialog .modal-body .right .button {
+    width: 100%;
+  }
+}
 
 .form-floating label {
   font-weight: 700;
@@ -23371,6 +23376,11 @@ input:active, input:focus, button:active, button:focus {
 .section .section-we {
   padding-bottom: 50px;
 }
+@media screen and (max-width: 991px) {
+  .section .section-we {
+    padding-bottom: 25px;
+  }
+}
 .section .section-we .valores {
   margin-top: -60px;
 }
@@ -23888,6 +23898,12 @@ input:active, input:focus, button:active, button:focus {
 .section .section-metodologia .trabalho {
   padding-top: 50px;
 }
+@media screen and (max-width: 991px) {
+  .section .section-metodologia .trabalho {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
 .section .section-metodologia .trabalho .box-trabalho {
   box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
@@ -23943,6 +23959,7 @@ input:active, input:focus, button:active, button:focus {
   .section .section-personalizado {
     background-image: none;
     background-color: #FFFFFF;
+    padding-bottom: 50px;
   }
 }
 .section .section-personalizado h1, .section .section-personalizado .h1 {
@@ -24178,7 +24195,6 @@ input:active, input:focus, button:active, button:focus {
 }
 @media screen and (max-width: 991px) {
   .section .swiper-options {
-    overflow: hidden;
     height: auto;
     padding-bottom: 0;
   }
@@ -24219,8 +24235,8 @@ input:active, input:focus, button:active, button:focus {
 }
 @media screen and (max-width: 991px) {
   .section .swiper-options .swiper-slide .option {
-    box-shadow: none;
     background-size: 91px;
+    min-height: 310px;
   }
 }
 .section .swiper-options .swiper-slide .option h5, .section .swiper-options .swiper-slide .option .h5 {
@@ -24481,7 +24497,7 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .semi-footer {
     padding: 50px 20px 50px 0px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 }
 .semi-footer .box-semi-footer {
@@ -24547,6 +24563,11 @@ input:active, input:focus, button:active, button:focus {
   position: relative;
   padding: 50px 0;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  .page-timeline {
+    margin-bottom: 25px;
+  }
 }
 .page-timeline .page-header {
   background: linear-gradient(180deg, #2AD94F 0%, #00CCA1 100%);
@@ -24819,6 +24840,8 @@ body {
   .title {
     font-size: 32px;
     line-height: 39px;
+    padding: 2px 0;
+    padding-left: 45px;
   }
 }
 .title span {
@@ -25028,6 +25051,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 992px) {
@@ -25106,9 +25130,19 @@ input[type=file] {
   cursor: pointer;
   margin-right: 24px;
 }
+@media screen and (max-width: 991px) {
+  .label-file {
+    width: 100%;
+  }
+}
 
 .mt-50 {
   margin-top: 50px;
+}
+@media screen and (max-width: 991px) {
+  .mt-50 {
+    margin-top: 25px;
+  }
 }
 
 .pt-50 {
@@ -25131,7 +25165,13 @@ input[type=file] {
 
 @media screen and (max-width: 991px) {
   .mobile-mt-25 {
-    margin-top: 25px;
+    margin-top: 25px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .mobile-mt-0 {
+    margin-top: 0 !important;
   }
 }
 
