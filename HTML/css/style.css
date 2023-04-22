@@ -22836,9 +22836,9 @@ input:active, input:focus, button:active, button:focus {
   position: relative;
   margin-bottom: 32px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
-    max-width: 300px;
+    max-width: 100%;
   }
 }
 .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1:after, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1:after, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1:after, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1:after {
@@ -22851,7 +22851,7 @@ input:active, input:focus, button:active, button:focus {
   border-radius: 15px;
   left: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
     font-size: 20px;
     line-height: 24px;
@@ -22863,12 +22863,13 @@ input:active, input:focus, button:active, button:focus {
   line-height: 29px;
   color: #F2FAEF;
   text-align: left;
-  max-width: 663px;
+  max-width: 713px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text P {
     font-size: 14px;
     line-height: 17px;
+    max-width: 100%;
   }
 }
 .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-image, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-image {
@@ -22878,15 +22879,16 @@ input:active, input:focus, button:active, button:focus {
 }
 .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-image img, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-image img {
   max-width: 100%;
+  width: 400px;
   height: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-image img, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-image img {
-    width: 300px;
+    width: 250px;
     margin-bottom: 24px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider {
     flex-direction: column-reverse;
   }
@@ -22900,18 +22902,18 @@ input:active, input:focus, button:active, button:focus {
 .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text P {
   text-align: left;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text {
     align-items: center;
   }
   .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text .h1 {
-    text-align: center;
+    text-align: left;
   }
   .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text P {
-    text-align: center;
+    text-align: left;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-image, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-image {
     margin-bottom: 30px;
   }
@@ -22925,18 +22927,18 @@ input:active, input:focus, button:active, button:focus {
 .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text P {
   text-align: right;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text {
     align-items: center;
   }
   .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text .h1 {
-    text-align: center;
+    text-align: left;
   }
   .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-text P {
-    text-align: center;
+    text-align: left;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .slider .slider-home .swiper-slide .slider-general.slider-type-2 .line-slider-image, .slider .slider-geral .swiper-slide .slider-general.slider-type-2 .line-slider-image {
     margin-bottom: 30px;
   }
@@ -23275,7 +23277,7 @@ input:active, input:focus, button:active, button:focus {
   height: 20px;
   opacity: 1;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .swiper-pagination-bullets .swiper-pagination-bullet {
     width: 15px;
     height: 15px;

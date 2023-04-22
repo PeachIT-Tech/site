@@ -44,8 +44,8 @@
 							position: relative;
 							margin-bottom: 32px;
 
-							@media screen and (max-width: 767px) {
-								max-width: 300px;
+							@media screen and (max-width: 991px) {
+								max-width: 100%;
 							}
 	
 							&:after {
@@ -59,7 +59,7 @@
 								left: 0;
 							}
 
-							@media screen and (max-width: 767px) {
+							@media screen and (max-width: 991px) {
 								font-size: 20px;
 								line-height: 24px;
 							}
@@ -71,11 +71,12 @@
 							line-height: 29px;
 							color: #F2FAEF;
 							text-align: left;
-							max-width: 663px;
+							max-width: 713px;
 
-							@media screen and (max-width: 767px) {
+							@media screen and (max-width: 991px) {
 								font-size: 14px;
 								line-height: 17px;
+								max-width: 100%;
 							}
 						}
 					}
@@ -87,11 +88,11 @@
 
 						img {
 							max-width: 100%;
-							// width: 400px;
+							width: 400px;
 							height: auto;
 
-							@media screen and (max-width: 767px) {
-								width: 300px;
+							@media screen and (max-width: 991px) {
+								width: 250px;
 								margin-bottom: 24px;
 							}
 						}
@@ -100,7 +101,7 @@
 
 				&.slider-type-1 {
 					.row-slider {
-						@media screen and (max-width: 767px) {
+						@media screen and (max-width: 991px) {
 							flex-direction: column-reverse;
 						}
 					
@@ -115,21 +116,21 @@
 								text-align: left;
 							}
 	
-							@media screen and (max-width: 767px) {
+							@media screen and (max-width: 991px) {
 								align-items: center;
 		
 								h1 {
-									text-align: center;
+									text-align: left;
 								}
 				
 								P {
-									text-align: center;
+									text-align: left;
 								}
 							}
 						}
 						
 						.line-slider-image {
-							@media screen and (max-width: 767px) {
+							@media screen and (max-width: 991px) {
 								margin-bottom: 30px;
 							}
 						}
@@ -148,21 +149,21 @@
 							text-align: right;
 						}
 
-						@media screen and (max-width: 767px) {
+						@media screen and (max-width: 991px) {
 							align-items: center;
 	
 							h1 {
-								text-align: center;
+								text-align: left;
 							}
 			
 							P {
-								text-align: center;
+								text-align: left;
 							}
 						}
 					}
 						
 					.line-slider-image {
-						@media screen and (max-width: 767px) {
+						@media screen and (max-width: 991px) {
 							margin-bottom: 30px;
 						}
 					}
@@ -195,10 +196,8 @@
     .slider-clients {
 		margin-top: 48px;
 		width: 100%;
-		// height: 350px;
-		background: #FFFFFF;
+		background: $branco;
 		box-shadow: 3px 10px 18px rgba(124, 216, 84, 0.35);
-		// padding: 24px 32px;
 		border-radius: 35px;
 
 		.swiper-slide {
@@ -215,10 +214,8 @@
     .slider-team {
 		margin-top: 48px;
 		width: 100%;
-		// height: 350px;
 		background: #FFFFFF;
 		box-shadow: 3px 10px 18px rgba(124, 216, 84, 0.35);
-		// padding: 24px 32px;
 		border-radius: 35px;
 
 		.swiper-slide {
@@ -552,7 +549,7 @@
 		height: 20px;
 		opacity: 1;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 991px) {
 			width: 15px;
 			height: 15px;
 		}
