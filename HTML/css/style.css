@@ -24213,8 +24213,10 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .section .swiper-options {
     height: auto;
-    padding-bottom: 0;
+    padding: 0;
     overflow: hidden;
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
   }
 }
 .section .swiper-options.padding-options {
@@ -24224,8 +24226,10 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .section .swiper-options.padding-options {
     height: auto;
+    padding: 0 15px;
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
+    box-shadow: none;
   }
 }
 .section .swiper-options .swiper-slide {
