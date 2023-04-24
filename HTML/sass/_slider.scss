@@ -375,6 +375,10 @@
 		margin-top: 24px;
 		overflow: visible;
 
+		@media screen and (max-width: 991px) {
+			overflow: hidden;
+		}
+
 		.swiper-slide {
 			.marca-dagua {
 				box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
