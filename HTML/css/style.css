@@ -22325,6 +22325,7 @@ input:active, input:focus, button:active, button:focus {
     width: 100%;
     top: 0;
     left: 0;
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
   }
 }
 @media screen and (min-width: 992px) {
@@ -23331,6 +23332,7 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .section .section-doing .box-what-doing .swiper-doing {
     overflow: hidden;
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
   }
 }
 .section .section-doing .box-what-doing .swiper-doing .swiper-wrapper {
