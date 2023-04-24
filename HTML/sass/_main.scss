@@ -33,12 +33,15 @@
 				background: transparent;
 				overflow: visible;
 
+				@media screen and (max-width: 991px) {
+					overflow: hidden;
+				}
+
 				.swiper-wrapper {
 					padding: 30px 0;
 
 					@media screen and (max-width: 991px) {
 						padding: 0;
-						overflow: hidden;
 					}
 					
 					.swiper-slide {
