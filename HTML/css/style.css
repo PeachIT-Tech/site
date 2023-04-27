@@ -22438,7 +22438,7 @@ input:active, input:focus, button:active, button:focus {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #0C1707;
   padding: 8px 12px;
@@ -22446,8 +22446,8 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: #7CD854;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 20px;
     padding: 12px 24px;
     font-weight: 700;
     border-bottom: 1px solid #D9D9D9;
@@ -22527,7 +22527,7 @@ input:active, input:focus, button:active, button:focus {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #0C1707;
   background: transparent;
@@ -22545,7 +22545,7 @@ input:active, input:focus, button:active, button:focus {
   .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .dropdown-menu li .dropdown-item {
     padding: 12px 24px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     border-bottom: 1px solid #D9D9D9;
   }
   .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .dropdown-menu li .dropdown-item::before {
@@ -22584,7 +22584,7 @@ input:active, input:focus, button:active, button:focus {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   height: 50px;
   padding: 0 30px;
@@ -22847,8 +22847,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text .h1 {
   font-weight: 700;
-  font-size: 46px;
-  line-height: 56px;
+  font-size: 40px;
+  line-height: 50px;
   color: #F2FAEF;
   text-align: left;
   max-width: 713px;
@@ -22878,7 +22878,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .slider .slider-home .swiper-slide .slider-general .row-slider .line-slider-text P, .slider .slider-geral .swiper-slide .slider-general .row-slider .line-slider-text P {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   color: #F2FAEF;
   text-align: left;
@@ -23106,8 +23106,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .slider .swiper-metodologia .swiper-wrapper .swiper-slide .box-conteudo .box-conteudo-texto h5, .slider .swiper-metodologia .swiper-wrapper .swiper-slide .box-conteudo .box-conteudo-texto .h5 {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 22px;
+  line-height: 28px;
   color: #0C1707;
   padding-bottom: 4px;
   margin-bottom: 8px;
@@ -23123,7 +23123,7 @@ input:active, input:focus, button:active, button:focus {
 .slider .swiper-metodologia .swiper-wrapper .swiper-slide .box-conteudo .box-conteudo-texto p {
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 16px;
   color: #3D3D3D;
   margin: 0;
 }
@@ -23213,8 +23213,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-front h1, .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-front .h1 {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 24px;
+  line-height: 32px;
   color: #0C1707;
 }
 @media screen and (max-width: 991px) {
@@ -23234,8 +23234,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-back h1, .swiper.swiper-team .swiper-slide .flip-card .flip-card-inner .flip-card-back .h1 {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 24px;
+  line-height: 32px;
   color: #0C1707;
 }
 @media screen and (max-width: 991px) {
@@ -23310,7 +23310,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-doing p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   letter-spacing: -0.01em;
   color: #3D3D3D;
@@ -23347,7 +23347,7 @@ input:active, input:focus, button:active, button:focus {
   box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
   padding: 24px;
-  min-height: 310px;
+  min-height: 270px;
   background: url("../images/marca-dagua-peach.png") #65B343 right bottom no-repeat;
 }
 @media screen and (max-width: 991px) {
@@ -23363,11 +23363,11 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-doing .box-what-doing .swiper-doing .swiper-wrapper .swiper-slide .box-doing h5, .section .section-doing .box-what-doing .swiper-doing .swiper-wrapper .swiper-slide .box-doing .h5 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 44px;
   letter-spacing: -0.01em;
   color: #F2FAEF;
-  height: 90px;
+  height: 50px;
   margin-bottom: 16px;
 }
 @media screen and (max-width: 991px) {
@@ -23399,7 +23399,7 @@ input:active, input:focus, button:active, button:focus {
   }
 }
 .section .section-we .valores {
-  margin-top: -60px;
+  margin-top: -40px;
 }
 .section .section-general .box-passos {
   padding-top: 50px;
@@ -23449,10 +23449,6 @@ input:active, input:focus, button:active, button:focus {
     text-align: left;
   }
 }
-.section .section-general h1.bigger, .section .section-general .bigger.h1 {
-  font-size: 48px;
-  line-height: 58px;
-}
 @media screen and (max-width: 991px) {
   .section .section-general h1.bigger, .section .section-general .bigger.h1 {
     font-size: 28px;
@@ -23489,8 +23485,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-general p {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 16px;
+  line-height: 24px;
   color: #0C1707;
   margin-bottom: 24px;
 }
@@ -23589,8 +23585,13 @@ input:active, input:focus, button:active, button:focus {
   min-height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
+}
+.section .section-general .marca-dagua.center {
+  justify-content: center;
+}
+.section .section-general .marca-dagua.center p {
+  margin-bottom: 0;
 }
 .section .section-general .marca-dagua.min-height-370 {
   min-height: 370px;
@@ -23604,11 +23605,7 @@ input:active, input:focus, button:active, button:focus {
 .section .section-general .marca-dagua .box-text-image {
   display: flex;
   align-items: center;
-}
-@media screen and (max-width: 991px) {
-  .section .section-general .marca-dagua .box-text-image {
-    margin-bottom: 24px;
-  }
+  margin-bottom: 24px;
 }
 .section .section-general .marca-dagua .box-text-image img {
   width: 80px;
@@ -23625,10 +23622,10 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-general .marca-dagua h5, .section .section-general .marca-dagua .h5 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 44px;
   letter-spacing: -0.01em;
-  height: 90px;
+  height: 50px;
   margin-bottom: 16px;
 }
 .section .section-general .marca-dagua h5.border-dotted, .section .section-general .marca-dagua .border-dotted.h5 {
@@ -23650,7 +23647,7 @@ input:active, input:focus, button:active, button:focus {
 .section .section-general .marca-dagua p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 24px;
   letter-spacing: -0.01em;
 }
 @media screen and (max-width: 991px) {
@@ -23671,6 +23668,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-general .marca-dagua.primary h5, .section .section-general .marca-dagua.primary .h5, .section .section-general .marca-dagua.primary p {
   color: #F2FAEF;
+  margin-bottom: 0;
 }
 .section .section-general .marca-dagua.primary-light {
   background: url("../images/marca-dagua-peach.png") #F2FAEF right bottom no-repeat;
@@ -23683,6 +23681,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-general .marca-dagua.primary-light h5, .section .section-general .marca-dagua.primary-light .h5, .section .section-general .marca-dagua.primary-light p {
   color: #0C1707;
+  margin-bottom: 0;
 }
 .section .section-general .marca-dagua.primary-middle {
   background: url("../images/marca-dagua-peach.png") #B9F39F right bottom no-repeat;
@@ -23715,8 +23714,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-general .banner .banner-text h1, .section .section-general .banner .banner-text .h1 {
   font-weight: 700;
-  font-size: 46px;
-  line-height: 56px;
+  font-size: 36px;
+  line-height: 40px;
   color: #F2FAEF;
   margin-bottom: 16px;
 }
@@ -23901,8 +23900,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-metodologia h1, .section .section-metodologia .h1 {
   font-weight: 700;
-  font-size: 46px;
-  line-height: 56px;
+  font-size: 36px;
+  line-height: 40px;
   color: #0C1707;
   margin-bottom: 50px;
 }
@@ -23940,8 +23939,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-metodologia .trabalho .box-trabalho h5, .section .section-metodologia .trabalho .box-trabalho .h5 {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 38px;
   width: 100%;
   color: #0C1707;
   padding-bottom: 16px;
@@ -23981,8 +23980,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-personalizado h1, .section .section-personalizado .h1 {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 38px;
   color: #0C1707;
   padding-top: 50px;
 }
@@ -23994,7 +23993,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-projects p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   letter-spacing: -0.01em;
   color: #3D3D3D;
@@ -24061,8 +24060,8 @@ input:active, input:focus, button:active, button:focus {
 .section .section-clients h1, .section .section-clients .h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 24px;
+  line-height: 30px;
   color: #000000;
 }
 @media screen and (max-width: 991px) {
@@ -24088,7 +24087,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-clients .client-depoiment .linha .linha-1 p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   color: #000000;
 }
@@ -24103,8 +24102,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-clients .client-depoiment .linha .linha-2 p {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 16px;
+  line-height: 24px;
   color: #0C1707;
   margin-bottom: 16px;
 }
@@ -24156,7 +24155,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-team .client-depoiment .linha .linha-1 p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   color: #000000;
 }
@@ -24171,19 +24170,13 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-team .client-depoiment .linha .linha-2 p {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 16px;
+  line-height: 22px;
   color: #0C1707;
   margin-bottom: 16px;
 }
 .section .section-team .client-depoiment .linha .linha-2 p:last-of-type {
   margin-bottom: 24px;
-}
-@media screen and (max-width: 991px) {
-  .section .section-team .client-depoiment .linha .linha-2 p {
-    font-size: 16px;
-    line-height: 19px;
-  }
 }
 .section .section-404 {
   text-align: center;
@@ -24258,13 +24251,13 @@ input:active, input:focus, button:active, button:focus {
 @media screen and (max-width: 991px) {
   .section .swiper-options .swiper-slide .option {
     background-size: 91px;
-    min-height: 310px;
+    min-height: 270px;
   }
 }
 .section .swiper-options .swiper-slide .option h5, .section .swiper-options .swiper-slide .option .h5 {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 38px;
   color: #0C1707;
   margin-bottom: 16px;
   border-bottom: 2px dashed #0C1707;
@@ -24349,8 +24342,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .swiper-options-2 .swiper-slide .option h5, .section .swiper-options-2 .swiper-slide .option .h5 {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 38px;
   color: #0C1707;
   margin-bottom: 16px;
   border-bottom: 2px dashed #0C1707;
@@ -24432,7 +24425,7 @@ input:active, input:focus, button:active, button:focus {
 .section .swiper-beneficios .swiper-slide .beneficio p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 24px;
   color: #000000;
   margin-bottom: 24px;
 }
@@ -24749,15 +24742,15 @@ input:active, input:focus, button:active, button:focus {
 }
 .page-timeline .timeline .timeline-item .timeline-panel .timeline-title {
   margin-top: 0;
-  padding-bottom: 13px;
-  margin-bottom: 13px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
   border-bottom: 2px dashed #000000;
   display: flex;
   align-items: center;
   justify-content: end;
   font-weight: 700;
   font-size: 48px;
-  line-height: 58px;
+  line-height: 1;
   color: #0C1707;
 }
 .page-timeline .timeline .timeline-item .timeline-panel .timeline-title img {
@@ -24859,8 +24852,8 @@ body {
   background-size: 35px;
   padding-left: 45px;
   font-weight: 700;
-  font-size: 42px;
-  line-height: 51px;
+  font-size: 36px;
+  line-height: 40px;
   margin-bottom: 16px;
 }
 @media screen and (max-width: 991px) {
@@ -24877,8 +24870,8 @@ body {
 
 .second-title {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 36px;
+  line-height: 40px;
   color: #386624;
 }
 @media screen and (max-width: 991px) {
@@ -24943,8 +24936,8 @@ body {
 }
 .box-border .box-border-text h1, .box-border .box-border-text .h1 {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 30px;
+  line-height: 40px;
   color: #0C1707;
   margin-bottom: 24px;
 }
@@ -24956,40 +24949,41 @@ body {
   }
 }
 .box-border .box-border-text h1.small, .box-border .box-border-text .small.h1 {
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 28px;
+  line-height: 34px;
   color: #000000;
 }
 @media screen and (max-width: 991px) {
   .box-border .box-border-text h1.small, .box-border .box-border-text .small.h1 {
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 .box-border .box-border-text p {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 30px;
   color: #0C1707;
   margin-bottom: 24px;
 }
 @media screen and (max-width: 991px) {
   .box-border .box-border-text p {
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
     letter-spacing: 0.05em;
     margin-bottom: 12px;
   }
 }
 .box-border .box-border-text p.small {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 24px;
   color: #000000;
 }
 @media screen and (max-width: 991px) {
   .box-border .box-border-text p.small {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 20px;
     text-align: justify;
   }
 }
@@ -25015,8 +25009,6 @@ body {
 }
 .box-border ul li.bigger {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
   color: #3D3D3D;
 }
 @media screen and (max-width: 991px) {
@@ -25096,8 +25088,8 @@ body {
 }
 .box-border-values h2, .box-border-values .h2 {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 24px;
+  line-height: 30px;
   margin-bottom: 15px;
 }
 .box-border-values p {

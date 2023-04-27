@@ -38,8 +38,8 @@ body {
 	background-size: 35px;
 	padding-left: 45px;
 	font-weight: 700;
-	font-size: 42px;
-	line-height: 51px;
+	font-size: 36px;
+	line-height: 40px;
 	margin-bottom: 16px;
 
 	@media screen and (max-width: 991px) {
@@ -56,8 +56,8 @@ body {
 
 .second-title {
 	font-weight: 700;
-	font-size: 48px;
-	line-height: 58px;
+	font-size: 36px;
+	line-height: 40px;
 	color: #386624;
 	
 	@media screen and (max-width: 991px) {
@@ -130,8 +130,8 @@ body {
 
 		h1 {
 			font-weight: 700;
-			font-size: 40px;
-			line-height: 48px;
+			font-size: 30px;
+			line-height: 40px;
 			color: #0C1707;
 			margin-bottom: 24px;
 
@@ -142,39 +142,40 @@ body {
 			}
 
 			&.small {
-				font-size: 32px;
-				line-height: 39px;
+				font-size: 28px;
+				line-height: 34px;
 				color: $preto;
 
 				@media screen and (max-width: 991px) {
-					font-size: 28px;
-					line-height: 34px;
+					font-size: 24px;
+					line-height: 30px;
 				}
 			}
 		}
 
 		p {
 			font-weight: 400;
-			font-size: 24px;
-			line-height: 29px;
+			font-size: 20px;
+			line-height: 30px;
 			color: #0C1707;
 			margin-bottom: 24px;
 
 			@media screen and (max-width: 991px) {
-				font-size: 16px;
-				line-height: 19px;
+				font-size: 14px;
+				line-height: 20px;
+				text-align: justify;
 				letter-spacing: 0.05em;
 				margin-bottom: 12px;
 			}
 
 			&.small {
 				font-size: 16px;
-				line-height: 19px;
+				line-height: 24px;
 				color: $preto;
 
 				@media screen and (max-width: 991px) {
 					font-size: 14px;
-					line-height: 17px;
+					line-height: 20px;
 					text-align: justify;
 				}
 			}
@@ -204,8 +205,8 @@ body {
 
 			&.bigger {
 				font-weight: 400;
-				font-size: 24px;
-				line-height: 29px;
+				// font-size: 24px;
+				// line-height: 29px;
 				color: #3D3D3D;
 			}
 
@@ -297,8 +298,8 @@ body {
 
 	h2 {
 		font-weight: 700;
-		font-size: 36px;
-		line-height: 44px;
+		font-size: 24px;
+		line-height: 30px;
 		margin-bottom: 15px;
 	}
 

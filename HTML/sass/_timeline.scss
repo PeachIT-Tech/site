@@ -174,8 +174,8 @@ $brand-danger: #ba1f1f;
 
 				.timeline-title {
 					margin-top: 0;
-					padding-bottom: 13px;
-					margin-bottom: 13px;
+					padding-bottom: 8px;
+					margin-bottom: 8px;
 					border-bottom: 2px dashed #000000;
 					display: flex;
 					align-items: center;
@@ -183,7 +183,7 @@ $brand-danger: #ba1f1f;
 
 					font-weight: 700;
 					font-size: 48px;
-					line-height: 58px;
+					line-height: 1;
 					color: #0C1707;
 
 					img {
