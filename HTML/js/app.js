@@ -51,6 +51,11 @@
             el: ".swiper-pagination-slider-home",
             clickable: true,
         },
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
     });
 
     var swiperClients = new Swiper(".slider-clients", {
@@ -58,12 +63,20 @@
             el: ".swiper-pagination-slider-clients",
             clickable: true,
         },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
     });
 
     var swiperTeam = new Swiper(".slider-team", {
         pagination: {
             el: ".swiper-pagination-slider-team",
             clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
         },
     });
 
@@ -78,6 +91,10 @@
             100: {
                 slidesPerView: 1,
                 spaceBetween: 30,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
             },
             991: {
                 slidesPerView: 3,
@@ -97,6 +114,10 @@
             100: {
                 slidesPerView: 1,
                 spaceBetween: 30,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
             },
             991: {
                 slidesPerView: 3,
@@ -111,6 +132,10 @@
             el: ".swiper-pagination-slider-values",
             clickable: true,
         },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
     });
 
     var swiperMetodologia = new Swiper(".swiper-metodologia", {
@@ -124,6 +149,10 @@
             100: {
                 slidesPerView: 1,
                 spaceBetween: 30,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
             },
             991: {
                 slidesPerView: 5,
@@ -141,6 +170,10 @@
         navigation: {
             nextEl: ".swiper-button-next-projects",
             prevEl: ".swiper-button-prev-projects",
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
         },
         breakpoints: {
             100: {
@@ -164,12 +197,20 @@
             el: ".swiper-pagination-slider-options-sol",
             clickable: true
         },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
         breakpoints: {
             100: {
                 slidesPerView: 1,
                 grid: {
                     rows: 1,
                 },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
             },
             991: {
                 slidesPerView: 2,
@@ -226,6 +267,10 @@
             el: ".swiper-pagination-plataform",
             clickable: true
         },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
         breakpoints: {
             100: {
                 slidesPerView: 1,
@@ -247,6 +292,10 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
         },
         breakpoints: {
             100: {

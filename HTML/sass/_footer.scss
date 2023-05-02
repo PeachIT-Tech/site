@@ -131,6 +131,15 @@
 						strong {
 							font-weight: 600;
 						}
+						
+						a {
+							text-decoration: none;
+							color: $cinza-escuro;
+
+							&:hover {
+								text-decoration: underline;
+							}
+						}
 
 						&:last-of-type {
 							padding-bottom: 0;

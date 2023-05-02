@@ -22723,6 +22723,13 @@ input:active, input:focus, button:active, button:focus {
 .footer .sob-footer .container .coluna-2 .lista-espacamento li strong, .footer .sob-footer .container .coluna-2 .lista-sem-espacamento li strong {
   font-weight: 600;
 }
+.footer .sob-footer .container .coluna-2 .lista-espacamento li a, .footer .sob-footer .container .coluna-2 .lista-sem-espacamento li a {
+  text-decoration: none;
+  color: #0C1707;
+}
+.footer .sob-footer .container .coluna-2 .lista-espacamento li a:hover, .footer .sob-footer .container .coluna-2 .lista-sem-espacamento li a:hover {
+  text-decoration: underline;
+}
 .footer .sob-footer .container .coluna-2 .lista-espacamento li:last-of-type, .footer .sob-footer .container .coluna-2 .lista-sem-espacamento li:last-of-type {
   padding-bottom: 0;
 }
@@ -23302,6 +23309,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-doing {
   margin-bottom: 50px;
+  overflow: hidden;
 }
 @media screen and (max-width: 991px) {
   .section .section-doing {
