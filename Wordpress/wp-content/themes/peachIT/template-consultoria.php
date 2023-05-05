@@ -65,118 +65,155 @@
 	<?php endif; ?>
 
 	<div class="section">
-		<div class="section-team pt-md-0">
-			<!-- DADOS DE POST TIPO DEPOIMENTO CATEGORIA DE COLABORADOR -->
-			<?php
-				$args = array(
-					'post_type' => 'depoimento',
-					'status' => 'publish',
-					'showposts' => -1,
-					'category_name'=> 'colaborador'
-				);
+		<div class="section-general mobile-pb-0">
+			<div class="container">
+				<div class="box-border">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="box-border-text">
+								<h1>Consultoria & Estratégia de TI:</h1>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="box-border-text">
+								<p class="bigger">Oferecemos consultoria completa de tecnologia para analisar e otimizar a (infraestrutura, softwares e processos).</p>
 
-				$more = new WP_Query( $args );
+								<ul>
+									<li class="bigger">Orientamos na seleção de plataformas, ferramentas e tecnologias.</li>
+									<li class="bigger">Apoiamos no direcionamento de produtividade no que tange aos processos internos da organização.</li>
+									<li class="bigger">Implementamos e acompanhamos as metodologias ágeis.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="box-border-image m-0">
+								<img class="shadow" src="<?php echo get_stylesheet_directory_uri(); ?>/images/o-que-fazemos/consultoria/img-office.png" alt="Card Office">
+							</div>
+						</div>
+					</div>
+					
+					<div class="row mobile-invert mt-50">
+						<div class="col-md-5">
+							<div class="box-border-image m-0 desktop">
+								<img class="shadow" src="<?php echo get_stylesheet_directory_uri(); ?>/images/o-que-fazemos/consultoria/img-meeting.png" alt="Card Meeting">
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="box-border-text">
+								<ul>
+									<li class="bigger">Com os negócios e a tecnologia sempre em evolução, as empresas enxergam que precisam se adequar e melhorar seus sistemas.</li>
+									<li class="bigger">Se você e seu negócio buscam aumentar e apoiar a satisfação de seus clientes e parceiros, então é preciso ter um suporte que atenda suas necessidades.</li>
+									<li class="bigger">Somos uma consultoria estratégica de TI que implementa as melhores metodologias de acordo com o perfil de cada empresa.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="box-hotsite mt-50 mobile-mt-25">
+					<h1 class="m-0">Nossa Metódologia</h1>
 
-				if (!empty($more->posts)): ?>
-					<div class="container">
-						<h1>Como é trabalhar na <span class="primary-color">Peach</span> <span class="terc-color">IT</span>?</h1>
+					<div class="swiper swiper-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="marca-dagua primary-light min-height-370">
+									<div class="box-text-image">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/o-que-fazemos/consultoria/analise.png" alt="Análise">
 
-						<div class="slider">
-							<div class="swiper slider-team">
+										<h5>Análise</h5>
+									</div>
+									
+									<p>Identificamos os objetivos e metas da empresa, bem como a compreensão do seu modelo de negócio e do mercado em que atua. Com base nessas informações, avaliamos a estrutura organizacional da empresa, incluindo a hierarquia, a divisão de responsabilidades e as políticas de gestão, trazendo como sugestão soluções tecnológicas que aprimorem e otimizem o dia a dia.</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="marca-dagua primary-light min-height-370">
+									<div class="box-text-image">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/o-que-fazemos/consultoria/implentacao.png" alt="Implementação">
+
+										<h5>Implementação</h5>
+									</div>
+									
+									<p>Visamos auxiliar e otimizar os processos, sistemas e recursos, através de uma análise detalhada das necessidades da empresa. Propomos soluções personalizadas para melhorar o desempenho e segurança do negócio, garantindo os resultados com qualidade, prazo e dentro do orçamento estabelecido.</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="marca-dagua primary-light min-height-370">
+									<div class="box-text-image">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/o-que-fazemos/consultoria/monitoramento.png" alt="Monitoramento">
+
+										<h5>Monitoramento</h5>
+									</div>
+									
+									<p>Nós coletamos, analisamos e acompanhamos os indicadores de desempenho, permitindo identificar problemas e oportunidades, além de melhorar a tomada de decisões e a elaboração no plano de ação. Nosso monitoramento contribui para o alinhamento entre os objetivos do negócio e as soluções de TI. Além disso, buscamos o aumento da competitividade e da inovação nas organizações.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="swiper-pagination swiper-pagination-slider"></div> -->
+				</div>
+
+				<div class="box-border mt-50">
+					<div class="row">
+						<div class="col-md-12">
+							<h1>Benefícios</h1>
+
+							<div class="swiper swiper-beneficios">
 								<div class="swiper-wrapper">
-									<?php foreach ( $more->posts as $post ): ?>
-										<div class="swiper-slide">
-											<div class="client-depoiment">
-												<div class="row linha">
-													<div class="row linha-1">
-														<div class="col-3 col-md-1">
-															<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'full');?>" alt="<?php echo get_the_title($post->ID); ?>">
-														</div>
-														<div class="col-9 col-md-11 d-flex align-items-center">
-															<p><?php echo get_the_title($post->ID); ?></p>
-														</div>
-													</div>
-													<div class="col-md-11 offset-md-1 linha-2">
-														<p><?php echo apply_filters('the_content', $post->post_content); ?></p>
-													</div>
-												</div>
-											</div>
+									<div class="swiper-slide">
+										<div class="beneficio">
+											<h5>Eficiência operacional</h5>
+
+											<p>A consultoria da Peach IT pode ajudar você e sua empresa a identificar e corrigir problemas nos processos de TI, tornando-os mais eficientes e eficazes. Isso pode incluir a eliminação de processos redundantes ou a implementação de tecnologia mais avançada para aumentar a eficiência.</p>
 										</div>
-									<?php endforeach; ?>
-								</div>
-							</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="beneficio">
+											<h5>Redução de custos</h5>
 
-							<div class="swiper-pagination swiper-pagination-slider-team"></div>
-						</div>
-					</div>
-				<?php endif;
-				wp_reset_query();
-			?>
-			
-			<div class="section-text">
-				<div class="container">
-					<div class="box-border mt-50">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="box-border-text">
-									<h1>Você gosta de novos desafios?</h1>
+											<p>A otimização dos processos de uma empresa podem economizar dinheiro em infraestrutura, software e outros investimentos. A Peach IT vem com essa proposta de ajudar você e sua empresa a identificarem áreas em que pode haver desperdício de recursos e a encontrar soluções mais econômicas.</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="beneficio">
+											<h5>Expertise especializada</h5>
 
-									<p>Então é com você que nós queremos contar!</p>
-									<p>Trabalhamos em parceria com empresas dos mais diversos ramos! Buscamos manter nosso ambiente descontraído, porém, com foco. Nossa parceria é com as empresas, mas principalmente com nossos colaboradores também. </p>
-									<p>Formamos uma grande família e você poderá fazer parte dela junto conosco!</p>
-								</div>
-							</div>
-						</div>
-					</div>
+											<p>A Peach IT tem profissionais experientes e qualificados que podem oferecer soluções inovadoras e de alta qualidade para os desafios de TI da empresa. Isso pode incluir a implementação de novas tecnologias ou a resolução de problemas complexos de TI.</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="beneficio">
+											<h5>Segurança</h5>
 
-					<div class="box-border mt-50">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="box-border-text">
-									<h1>Compromisso e Excelência.</h1>
+											<p>A Peach IT pode ajudar a implementar medidas de segurança cibernética robustas para proteger seus dados e sistemas contra ameaças externas. Isso pode incluir a avaliação de riscos de segurança cibernética, a implementação de políticas de segurança ou a adoção de tecnologias de segurança mais avançadas.</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="beneficio">
+											<h5>Decisões estratégicas</h5>
 
-									<p>Nosso compromisso é com o seu desenvolvimento e com a entrega de valor aos nossos clientes.</p>
-									<p>Acreditamos que, ao oferecermos um ambiente propício para o seu crescimento pessoal e profissional, podemos alcançar resultados ainda mais expressivos e positivos. Sendo assim, constantemente promovemos um ambiente colaborativo, inovador e desafiador, que estimule o seu potencial e permita que você explore novas possibilidades e ideias.</p>
-									<p>Aqui no nosso time, valorizamos características que consideramos fundamentais para o sucesso do nosso trabalho. Uma dessas características é a paixão pela construção de softwares. Acreditamos que a paixão é o que move o nosso time a buscar soluções inovadoras e a superar desafios. Outra característica que valorizamos é o compromisso com a qualidade do código e o uso das melhores práticas de programação. Sabemos que essa postura resulta em softwares mais eficientes e seguros.</p>											
-									<p>Por fim, nos sentimos motivados por saber do grande impacto que podemos promover, juntos, na entrega de excelentes projetos. Junte-se a nós e faça parte de um time apaixonado por construir grandes soluções!</p>
-								</div>
-							</div>
-						</div>
-					</div>
+											<p>A consultoria da Peach IT pode ajudar a empresa a tomar decisões mais informadas e estratégicas em relação à sua infraestrutura de TI e ao uso de tecnologia em geral. Isso pode incluir a avaliação de diferentes opções de tecnologia ou a definição de objetivos de longo prazo para a empresa.</p>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="beneficio">
+											<h5>Experiência do usuário</h5>
 
-					<div class="box-border mt-50">
-						<div class="row mobile-invert">
-							<div class="col-lg-4">
-								<div class="box-border-image">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-tecnologias.png" alt="Tecnologias utilizadas pela Peach IT">
-								</div>
-							</div>
-							<div class="col-lg-8">
-								<div class="box-border-text text-md-end">
-									<h1>Tecnologia e Metodologia.</h1>
-
-									<p>Nosso time é formado por profissionais especializados em diversas tecnologias e metodologias, o que nos permite trabalhar com flexibilidade e adaptabilidade para atender às necessidades específicas de cada projeto.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="box-border mt-50">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="box-border-text">
-									<h1>Focamos no seu desenvolvimento</h1>
-
-									<p>Na nossa empresa, o desenvolvimento dos nossos colaboradores é uma prioridade. Por isso, auxiliamos cada indivíduo a traçar e alcançar suas metas pessoais e profissionais.</p>
-									<p>Acreditamos que o acompanhamento individual e os planos de desenvolvimento são ferramentas essenciais para o crescimento contínuo e aprimoramento de nossos colaboradores, mantendo-os sempre atualizados e preparados para os desafios do mercado.</p>
+											<p>Com a ajuda da Peach IT, a empresa pode melhorar a experiência do usuário em seus sistemas e aplicativos, tornando-os mais intuitivos e fáceis de usar. Isso pode incluir a realização de pesquisas de usuário, o desenvolvimento de interfaces mais amigáveis ou a adoção de novas tecnologias para melhorar a experiência do usuário.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<div class="swiper-pagination swiper-pagination-slider-beneficios mobile"></div>
 			</div>
 		</div>
 	</div>
+
 <?php
-	get_footer('trabalhe');
+	get_footer('subpage');
 ?>

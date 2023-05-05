@@ -17,7 +17,7 @@
 		<header id="header" class="header">
 			<nav class="navbar navbar-expand-lg">
 				<div class="container">
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="<?php echo get_site_url() ?>/">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-grande.png" alt="Logo Peach IT">
 					</a>
 					

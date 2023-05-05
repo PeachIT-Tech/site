@@ -178,5 +178,5 @@
 		</div>
 	</div>
 <?php
-	get_footer('trabalhe');
+	get_footer();
 ?>

@@ -21,3 +21,6 @@
 
 # ignore sass-cache
 HTML/.sass-cache
+
+Wordpress/.htaccess
+Wordpress/wp-config.php

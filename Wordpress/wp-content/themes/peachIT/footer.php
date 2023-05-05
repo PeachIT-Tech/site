@@ -54,13 +54,13 @@
 								<div class="col">
 									<ul class="lista-espacamento">
 										<li>
-											<strong><a href="index.html" target="_blank"> Início </a></strong>
+											<strong><a href="<?php echo get_site_url() ?>/" target="_blank"> Início </a></strong>
 										</li>
 										<li>
-											<strong><a href="quem-somos.html" target="_blank"> Quem somos </a></strong>
+											<strong><a href="<?php echo get_site_url() ?>/quem-somos" target="_blank"> Quem somos </a></strong>
 										</li>
 										<li>
-											<strong><a href="trabalhe.html" target="_blank"> Trabalhe conosco </a></strong>
+											<strong><a href="<?php echo get_site_url() ?>/trabalhe-conosco" target="_blank"> Trabalhe conosco </a></strong>
 										</li>
 									</ul>
 								</div>
@@ -70,16 +70,16 @@
 											<strong>O que fazemos</strong>
 										</li>
 										<li>
-											<a href="solucoes-digitais.html" target="_blank"> Soluções digitais </a>
+											<a href="<?php echo get_site_url() ?>/solucoes-digitais" target="_blank"> Soluções digitais </a>
 										</li>
 										<li>
-											<a href="solucoes-promocionais.html" target="_blank"> Soluções Promocionais </a>
+											<a href="<?php echo get_site_url() ?>/solucoes-promocionais" target="_blank"> Soluções Promocionais </a>
 										</li>
 										<li>
-											<a href="consultoria.html" target="_blank"> Consultoria & Estratégia </a>
+											<a href="<?php echo get_site_url() ?>/consultoria" target="_blank"> Consultoria & Estratégia </a>
 										</li>
 										<li>
-											<a href="outsourcing.html" target="_blank"> Outsourcing </a>
+											<a href="<?php echo get_site_url() ?>/outsourcing" target="_blank"> Outsourcing </a>
 										</li>
 									</ul>
 								</div>

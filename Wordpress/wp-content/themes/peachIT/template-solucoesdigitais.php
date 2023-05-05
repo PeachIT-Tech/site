@@ -65,110 +65,220 @@
 	<?php endif; ?>
 
 	<div class="section">
-		<div class="section-team pt-md-0">
-			<!-- DADOS DE POST TIPO DEPOIMENTO CATEGORIA DE COLABORADOR -->
-			<?php
-				$args = array(
-					'post_type' => 'depoimento',
-					'status' => 'publish',
-					'showposts' => -1,
-					'category_name'=> 'colaborador'
-				);
+		<div class="section-general">
+			<div class="container">
+				<div class="box-border">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="box-border-text">
+								<h1>WebSites e Web Apps</h1>
 
-				$more = new WP_Query( $args );
+								<p>Desenvolvemos e publicamos websites e web apps utilizando as melhores tecnologias disponíveis no mercado:</p>
 
-				if (!empty($more->posts)): ?>
-					<div class="container">
-						<h1>Como é trabalhar na <span class="primary-color">Peach</span> <span class="terc-color">IT</span>?</h1>
-
-						<div class="slider">
-							<div class="swiper slider-team">
-								<div class="swiper-wrapper">
-									<?php foreach ( $more->posts as $post ): ?>
-										<div class="swiper-slide">
-											<div class="client-depoiment">
-												<div class="row linha">
-													<div class="row linha-1">
-														<div class="col-3 col-md-1">
-															<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'full');?>" alt="<?php echo get_the_title($post->ID); ?>">
-														</div>
-														<div class="col-9 col-md-11 d-flex align-items-center">
-															<p><?php echo get_the_title($post->ID); ?></p>
-														</div>
-													</div>
-													<div class="col-md-11 offset-md-1 linha-2">
-														<p><?php echo apply_filters('the_content', $post->post_content); ?></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									<?php endforeach; ?>
-								</div>
+								<ul>
+									<li>Front-end: Flutter - Angular - React - Next.Js - JavaScript</li>
+									<li>Back-end: C# .Net - NodeJs - Python - Ruby on Rails - GraphQL - TypeScript - PHP - Go</li>
+									<li>Database: SQL Server - MySQL - PostgreSQL - MongoDB - CosmosDB - Redis</li>
+									<li>QA: Jest - Cypress - Detox</li>
+									<li>CI / CD: Gitlab - Circle CI - Azure Pipelines</li>
+									<li>Cloud Services: Google Gloud - AWS - Microsfot Azure</li>
+								</ul>
 							</div>
-
-							<div class="swiper-pagination swiper-pagination-slider-team"></div>
+						</div>
+						<div class="col-md-4">
+							<div class="box-border-image">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/o-que-fazemos/solucoes-digitais/card-websites-webapps.png" alt="Card Websites Webapps">
+							</div>
 						</div>
 					</div>
-				<?php endif;
-				wp_reset_query();
-			?>
-			
-			<div class="section-text">
+				</div>
+
+				<div class="box-border mt-50">
+					<div class="row mobile-invert">
+						<div class="col-md-4">
+							<div class="box-border-image">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/o-que-fazemos/solucoes-digitais/card-mobile-apps.png" class="max-300" alt="Card mobile apps">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="box-border-text text-md-end">
+								<h1>Mobile Apps</h1>
+
+								<p>Desenvolvemos e publicamos Aplicativos Mobile Android e IOS, Ipad, Smart Tvs e Smart Watch.</p>
+
+								<ul>
+									<li>Linguagens Híbridas: Flutter - React Native - JavaScript</li>
+									<li>Linguagens Nativas: Objective-C - Swift - Kotlin</li>
+									<li>Cloud Services: Firebase</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box-border mt-50">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="box-border-text">
+								<h1>Sharepoint & Power Platform</h1>
+
+								<p>Com a integração, é possível criar soluções empresariais personalizadas, escaláveis e eficientes.</p>
+
+								<ul>
+									<li>Integrações entre sistemas internos, clientes e fornecedores, além de integrações com ERP’s.</li>
+									<li>Desenvolvimento de intranets corporativas, workflows, integrações, ferramentas Power Plataform e Office 365.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="box-border-image text-end">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/o-que-fazemos/solucoes-digitais/card-sharepoint.png" class="shadow" alt="Card sharepoint">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section-metodologia mt-50">
+			<div class="container">
+				<h1>Metodologia de trabalho</h1>
+
+				<div class="slider">
+					<div class="swiper swiper-metodologia">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide impar">
+								<div class="box-conteudo">
+									<div class="box-conteudo-imagem">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/o-que-fazemos/solucoes-digitais/metodologia/metodologia-1.png" alt="Metodologia">
+									</div>
+									<div class="box-conteudo-texto">
+										<h5>Análise</h5>
+
+										<p>Realizamos análises detalhadas para compreender as necessidades e expectativas de nossos clientes e encontrar soluções eficientes e inovadoras.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide par">
+								<div class="box-conteudo">
+									<div class="box-conteudo-imagem">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/o-que-fazemos/solucoes-digitais/metodologia/metodologia-2.png" alt="Metodologia">
+									</div>
+									<div class="box-conteudo-texto">
+										<h5>Prototipação</h5>
+
+										<p>Desenvolvemos protótipos para testar e validar as soluções propostas, garantindo a qualidade e a eficiência dos produtos entregues.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide impar">
+								<div class="box-conteudo">
+									<div class="box-conteudo-imagem">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/o-que-fazemos/solucoes-digitais/metodologia/metodologia-3.png" alt="Metodologia">
+									</div>
+									<div class="box-conteudo-texto">
+										<h5>Desenvolvimento</h5>
+
+										<p>Executamos o desenvolvimento de produtos de acordo com os padrões e especificações definidos, garantindo a qualidade e a satisfação dos nossos clientes.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide par">
+								<div class="box-conteudo">
+									<div class="box-conteudo-imagem">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/o-que-fazemos/solucoes-digitais/metodologia/metodologia-4.png" alt="Metodologia">
+									</div>
+									<div class="box-conteudo-texto">
+										<h5>Publicação</h5>
+
+										<p>Publicamos os produtos desenvolvidos com atenção aos detalhes e garantindo a disponibilidade e a estabilidade dos mesmos para os usuários finais.</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide impar">
+								<div class="box-conteudo">
+									<div class="box-conteudo-imagem">
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/o-que-fazemos/solucoes-digitais/metodologia/metodologia-5.png" alt="Metodologia">
+									</div>
+									<div class="box-conteudo-texto">
+										<h5>Monitoramento</h5>
+
+										<p>Monitoramos constantemente o desempenho e a utilização dos produtos publicados, realizando manutenção e atualizações de forma a garantir a sua qualidade.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-pagination swiper-pagination-slider-metodologia"></div>
+				</div>
+
+				
+				<div class="trabalho">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="box-trabalho">
+								<h5>Suporte</h5>
+
+								<p>A Peach IT oferece atendimento contínuo para questões técnicas, tais como manutenção do software e desenvolvimentos adicionais</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="box-trabalho">
+								<h5>Garantia</h5>
+
+								<p>Após o desenvolvimento ser finalizado, disponibilizaremos suporte por um período, sem cobranças extras, caso alguma manutenção seja necessária.</p>
+							</div>
+						</div>
+						<div class="col-md-4 m-0">
+							<div class="box-trabalho">
+								<h5>Propriedade</h5>
+
+								<p>O código fonte do software será de inteira propriedade da empresa que adquiriu o desenvolvimento.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section-personalizado">
+			<div class="options">
 				<div class="container">
-					<div class="box-border mt-50">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="box-border-text">
-									<h1>Você gosta de novos desafios?</h1>
+					<h1>A <span class="primary-color">Peach</span> <span class="terc-color">IT</span> tem a opção de trabalho ideal para cada empresa</h1>
 
-									<p>Então é com você que nós queremos contar!</p>
-									<p>Trabalhamos em parceria com empresas dos mais diversos ramos! Buscamos manter nosso ambiente descontraído, porém, com foco. Nossa parceria é com as empresas, mas principalmente com nossos colaboradores também. </p>
-									<p>Formamos uma grande família e você poderá fazer parte dela junto conosco!</p>
+					<div class="swiper swiper-options">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="option">
+									<h5>Escopo Fechado</h1>
+
+									<p>Com a demanda bem definida, realizamos o desenvolvimento em etapas pré-determinadas, garantindo um cronograma assertivo para projetos de software e aplicativo. Além disso, o esforço é mensurado com precisão desde o início, de forma que o orçamento seja respeitado.</p>
+									<p>Ideal para projetos de pequeno porte com escopo bem determinado.</p>
 								</div>
 							</div>
-						</div>
-					</div>
+							<div class="swiper-slide">
+								<div class="option">
+									<h5>Quick Project</h1>
 
-					<div class="box-border mt-50">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="box-border-text">
-									<h1>Compromisso e Excelência.</h1>
-
-									<p>Nosso compromisso é com o seu desenvolvimento e com a entrega de valor aos nossos clientes.</p>
-									<p>Acreditamos que, ao oferecermos um ambiente propício para o seu crescimento pessoal e profissional, podemos alcançar resultados ainda mais expressivos e positivos. Sendo assim, constantemente promovemos um ambiente colaborativo, inovador e desafiador, que estimule o seu potencial e permita que você explore novas possibilidades e ideias.</p>
-									<p>Aqui no nosso time, valorizamos características que consideramos fundamentais para o sucesso do nosso trabalho. Uma dessas características é a paixão pela construção de softwares. Acreditamos que a paixão é o que move o nosso time a buscar soluções inovadoras e a superar desafios. Outra característica que valorizamos é o compromisso com a qualidade do código e o uso das melhores práticas de programação. Sabemos que essa postura resulta em softwares mais eficientes e seguros.</p>											
-									<p>Por fim, nos sentimos motivados por saber do grande impacto que podemos promover, juntos, na entrega de excelentes projetos. Junte-se a nós e faça parte de um time apaixonado por construir grandes soluções!</p>
+									<p>Apesar de ser bastante utilizada em projetos e o nome indicar, metodologia ágil não é sinônimo de velocidade. O QuickProject é um modelo de trabalho exclusivo da Peach It, que surgiu para atender projetos de desenvolvimento de software e aplicativo com prazos desafiadores.</p>
+									<p>Ideal para projetos que precisam ser desenvolvidos em poucos dias.</p>
 								</div>
 							</div>
-						</div>
-					</div>
+							<div class="swiper-slide">
+								<div class="option">
+									<h5>Body Shop</h1>
 
-					<div class="box-border mt-50">
-						<div class="row mobile-invert">
-							<div class="col-lg-4">
-								<div class="box-border-image">
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-tecnologias.png" alt="Tecnologias utilizadas pela Peach IT">
+									<p>Possuímos uma ampla rede de profissionais qualificados para demandas variadas, o que possibilita uma alocação rápida e assertiva para o outsourcing. No modelo remoto, conseguimos elevar a régua na hora de encontrar o perfil correto para cada squad.</p>
+									<p>Ideal para empresas que precisam expandir seu time de TI.</p>
 								</div>
 							</div>
-							<div class="col-lg-8">
-								<div class="box-border-text text-md-end">
-									<h1>Tecnologia e Metodologia.</h1>
+							<div class="swiper-slide">
+								<div class="option">
+									<h5>Outsourcing Gerenciado</h1>
 
-									<p>Nosso time é formado por profissionais especializados em diversas tecnologias e metodologias, o que nos permite trabalhar com flexibilidade e adaptabilidade para atender às necessidades específicas de cada projeto.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="box-border mt-50">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="box-border-text">
-									<h1>Focamos no seu desenvolvimento</h1>
-
-									<p>Na nossa empresa, o desenvolvimento dos nossos colaboradores é uma prioridade. Por isso, auxiliamos cada indivíduo a traçar e alcançar suas metas pessoais e profissionais.</p>
-									<p>Acreditamos que o acompanhamento individual e os planos de desenvolvimento são ferramentas essenciais para o crescimento contínuo e aprimoramento de nossos colaboradores, mantendo-os sempre atualizados e preparados para os desafios do mercado.</p>
+									<p>Além de alocarmos profissionais qualificados, formamos e gerenciamos equipes com nossa expertise em outsourcing. Implementamos processos que auxiliam na formação de uma área sólida para desenvolvimento de softwares e aplicativos.</p>
+									<p>Ideal para empresas que precisam formar uma equipe autogerenciável.</p>
 								</div>
 							</div>
 						</div>
@@ -177,6 +287,7 @@
 			</div>
 		</div>
 	</div>
+
 <?php
-	get_footer('trabalhe');
+	get_footer('subpage');
 ?>

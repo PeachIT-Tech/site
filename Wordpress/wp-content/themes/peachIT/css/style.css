@@ -22435,17 +22435,22 @@ input:active, input:focus, button:active, button:focus {
   }
 }
 .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.menu-item-has-children::after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.menu-item-has-children::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  margin: 0;
-  top: 76px;
-  left: 0;
-  border: none;
-  border-radius: 0;
-  background-color: #7CD854;
-  z-index: -1;
+  content: initial;
+}
+@media screen and (min-width: 992px) {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.menu-item-has-children::after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.menu-item-has-children::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    top: 76px;
+    left: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #7CD854;
+    z-index: -1;
+  }
 }
 .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a {
   height: 100%;
@@ -22488,12 +22493,12 @@ input:active, input:focus, button:active, button:focus {
   transform: rotate(180deg);
 }
 @media screen and (min-width: 992px) {
-  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:focus {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:focus {
     border-bottom: 5px solid #7CD854;
     position: relative;
     border-bottom: none;
   }
-  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.active:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.current-menu-item:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.show:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:hover:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:focus:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.active:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.current-menu-item:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.show:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:hover:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:focus:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.active:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.current-menu-item:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.show:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:hover:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:focus:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.active:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.current-menu-item:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.show:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:hover:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:focus:after {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.active:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.show:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:hover:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:focus:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.active:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.show:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:hover:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:focus:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.active:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.show:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:hover:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:focus:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.active:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.show:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:hover:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:focus:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -22506,6 +22511,28 @@ input:active, input:focus, button:active, button:focus {
 }
 @media screen and (max-width: 991px) {
   .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.current-menu-item {
+    border-bottom: 4px solid #7CD854;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-item a, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-parent .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-parent a, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-item a, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-parent .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-parent a {
+    border-bottom: 5px solid #7CD854;
+    position: relative;
+    border-bottom: none;
+  }
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-item .nav-link:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-item a:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-parent .nav-link:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-parent a:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-item .nav-link:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-item a:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-parent .nav-link:after, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-parent a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background: #7CD854;
+    border-radius: 16px 16px 0px 0px;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-item.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-item.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-parent.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current-menu-parent.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-item.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-item.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-parent.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current-menu-parent.current-menu-item {
     border-bottom: 4px solid #7CD854;
   }
 }
@@ -22540,7 +22567,7 @@ input:active, input:focus, button:active, button:focus {
 .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li {
   height: auto;
 }
-.header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .dropdown-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .menu-item {
+.header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li.menu-item {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -22549,26 +22576,41 @@ input:active, input:focus, button:active, button:focus {
   color: #0C1707;
   background: transparent;
 }
-.header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .dropdown-item.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .dropdown-item.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .dropdown-item:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .dropdown-item:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .menu-item.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .menu-item.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .menu-item:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .menu-item:focus {
+.header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li.menu-item.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li.menu-item:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li.menu-item:focus {
   background-color: transparent;
   font-weight: 700;
 }
 @media screen and (max-width: 991px) {
-  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .dropdown-item.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .dropdown-item.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .dropdown-item:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .dropdown-item:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .menu-item.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .menu-item.current-menu-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .menu-item:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .menu-item:focus {
-    border-bottom: 4px solid #000000;
-  }
-}
-@media screen and (max-width: 991px) {
-  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .dropdown-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .menu-item {
-    padding: 12px 24px;
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li.menu-item {
+    padding: 10px 24px;
     font-weight: 700;
     font-size: 16px;
     border-bottom: 1px solid #D9D9D9;
+    display: flex;
+    align-items: center;
+    background-color: #7CD854;
   }
-  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .dropdown-item::before, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li .menu-item::before {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li.menu-item::before {
     position: relative;
     content: "-";
     margin-right: 8px;
+  }
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li.menu-item a {
+    color: #0C1707;
+    font-size: 16px;
+    padding: 0;
+    line-height: initial;
+    border-bottom: none;
+    display: block;
+  }
+}
+.header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li.menu-item.current-menu-item a {
+  background-color: transparent;
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu li.menu-item.current-menu-item {
+    border-bottom: 4px solid #000000;
   }
 }
 .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .sub-menu.show {
