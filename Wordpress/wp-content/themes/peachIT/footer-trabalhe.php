@@ -239,7 +239,7 @@
 		</div>
 
 		<!-- JQuery -->
-		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.6.4.min.js"></script>
 		<!-- Bootstrap Bundle JS -->
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.bundle.min.js"></script>
 		<!-- Swiper JS -->

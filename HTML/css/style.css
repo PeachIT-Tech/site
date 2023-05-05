@@ -24807,6 +24807,18 @@ input:active, input:focus, button:active, button:focus {
     top: 49px;
   }
 }
+.page-timeline .timeline .timeline-item .timeline-panel .timeline-heading {
+  position: relative;
+}
+.page-timeline .timeline .timeline-item .timeline-panel .timeline-heading img {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  right: initial;
+  background-color: #FFFFFF;
+  padding-right: 40px;
+  padding-left: 0;
+}
 .page-timeline .timeline .timeline-item .timeline-panel .timeline-title {
   margin-top: 0;
   padding-bottom: 8px;
@@ -24836,9 +24848,9 @@ input:active, input:focus, button:active, button:focus {
 }
 .page-timeline .timeline .timeline-item .timeline-panel .timeline-body > h4, .page-timeline .timeline .timeline-item .timeline-panel .timeline-body > .h4 {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-  max-width: 420px;
+  font-size: 28px;
+  line-height: 32px;
+  max-width: 360px;
   color: #0C1707;
   margin-bottom: 16px;
 }
@@ -24877,6 +24889,18 @@ input:active, input:focus, button:active, button:focus {
   float: right;
   left: 16px;
   text-align: left;
+}
+.page-timeline .timeline .timeline-item:nth-child(odd) .timeline-panel .timeline-heading {
+  position: relative;
+}
+.page-timeline .timeline .timeline-item:nth-child(odd) .timeline-panel .timeline-heading img {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  left: initial;
+  background-color: #FFFFFF;
+  padding-right: 0;
+  padding-left: 40px;
 }
 .page-timeline .timeline .timeline-item:nth-child(odd) .timeline-panel .timeline-title {
   justify-content: start;

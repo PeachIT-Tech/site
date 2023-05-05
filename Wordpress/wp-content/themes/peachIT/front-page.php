@@ -81,7 +81,7 @@
 
 								<p>Colocamos à disposição de sua empresa uma equipe de desenvolvedores altamente qualificados.</p>
 
-								<a href="#" class="button button-more">Saiba mais</a>
+								<a href="<?php echo get_site_url() ?>/solucoes-digitais" class="button button-more">Saiba mais</a>
 							</div>
 						</div>
 						<div class="swiper-slide">
@@ -90,7 +90,7 @@
 
 								<p>Alcance novos patamares com nossos serviços de entrega de hotsite! Impulsione suas campanhas promocionais de maneira eficiente e ágil. </p>
 
-								<a href="#" class="button button-more">Saiba mais</a>
+								<a href="<?php echo get_site_url() ?>/solucoes-promocionais" class="button button-more">Saiba mais</a>
 							</div>
 						</div>
 						<div class="swiper-slide">
@@ -99,7 +99,7 @@
 
 								<p>Colocamos à disposição de sua empresa uma equipe de desenvolvedores altamente qualificados.</p>
 
-								<a href="#" class="button button-more">Saiba mais</a>
+								<a href="<?php echo get_site_url() ?>/consultoria" class="button button-more">Saiba mais</a>
 							</div>
 						</div>
 						<div class="swiper-slide">
@@ -108,7 +108,7 @@
 
 								<p>Oferecemos alocação de profissionais altamente qualificados em diversas áreas de conhecimento técnico.</p>
 
-								<a href="#" class="button button-more">Saiba mais</a>
+								<a href="<?php echo get_site_url() ?>/outsourcing" class="button button-more">Saiba mais</a>
 							</div>
 						</div>
 						</div>
@@ -144,7 +144,7 @@
 			</div>
 		</div>
 		
-		<!-- DADOS DE POST TIPO DEPOIMENTO CATEGORIA DE CLIENTES -->
+		<!-- DADOS DOS PROJETOS -->
 		<?php
 			$args = array(
 				'post_type' => 'projeto',

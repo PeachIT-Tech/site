@@ -12,6 +12,10 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css">
+		<meta property='og:title' content='<?php echo get_the_title(); ?>'/>
+		<meta property='og:image' content='<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'full');?>'/>
+		<meta property='og:description' content='<?php echo $post->post_excerpt; ?>'/>
+		<meta property='og:url' content='<?php echo get_the_permalink(); ?>' />
 	</head> 
 	<body>
 		<header id="header" class="header">
