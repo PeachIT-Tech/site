@@ -1,0 +1,43 @@
+.modal-dialog {
+    .modal-body {
+        padding: 40px;
+        position: relative;
+
+        .btn-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .left {
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: justify;
+                letter-spacing: 0.005em;
+
+                @media screen and (max-width: 991px) {
+                    margin-bottom: 24px;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+
+        .right {
+            .button {
+                margin-top: 24px;
+
+                @media screen and (max-width: 991px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

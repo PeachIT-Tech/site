@@ -1,0 +1,56 @@
+.button {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #65B343;
+    text-decoration: none;
+    padding: 13px 27px;
+    border-radius: 4px;
+
+    &.button-more {
+        padding-right: 50px;
+        background: url(../images/icons/arrow-right.svg) #F2FAEF right 15px center no-repeat;
+        background-size: 25px;
+
+        &.primary {
+            background: url(../images/icons/arrow-right-dark.svg) #7CD854 right 15px center no-repeat;
+            background-size: 25px;
+        }
+    }
+
+    &.primary {
+        background-color: #7CD854;
+        color: #0C1707;
+    }
+
+    &.invert {
+        background-color: #7CD854;
+        color: $branco;
+        border: none;
+    }
+
+    &.invert-bg {
+        background-color: $branco;
+    }
+
+    &.shadow {
+        box-shadow: 2px 2px 6px rgba(18, 18, 18, 0.35);
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &.border-primary {
+        border: 1px solid #7CD854 !important;
+    }
+
+    &.invert-shadow {
+        box-shadow: 1px 1px 8px 2px rgba(18, 18, 18, 0.2);
+    }
+
+    &.no-border {
+        border: none;
+    }
+}

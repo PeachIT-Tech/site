@@ -1,0 +1,247 @@
+.footer {
+	border-top: 4px solid $primaria;
+	
+	.sob-footer {
+		padding: 24px 0;
+
+		.container {
+			.logo-footer {
+				outline: none;
+				padding-bottom: 16px;
+				display: block;
+
+				img {
+					width: 210px;
+					height: 47px;
+				}
+
+				@media screen and (max-width: 991px) {
+					text-align: center;
+				}
+			}
+
+			.coluna-1 {
+				@media screen and (max-width: 991px) {
+					padding-top: 30px;
+				}
+
+				h1 {
+					font-family: 'Inter';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+					padding-bottom: 26px;
+					margin: 0;
+				}
+
+				.redes-sociais {
+					@media screen and (max-width: 991px) {
+						text-align: center;
+					}
+
+					p {
+						font-family: 'Inter';
+						font-style: normal;
+						font-weight: 700;
+						font-size: 16px;
+						line-height: 19px;
+						color: $primaria;
+						padding-bottom: 16px;
+						margin: 0;
+					}
+
+					ul {
+						padding: 0;
+						margin: 0;
+								
+						@media screen and (max-width: 991px) {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+
+						li {
+							font-family: 'Inter';
+							font-style: normal;
+							padding-bottom: 16px;
+								
+							@media screen and (max-width: 991px) {
+								padding-bottom: 0;
+								margin: 0 5px;
+							}
+
+							span {
+								line-height: 1;
+
+								@media screen and (max-width: 991px) {
+									display: none;
+								}
+							}
+
+							a {
+								text-decoration: none;
+								display: flex;
+								align-items: center;
+								font-weight: 700;
+								font-size: 16px;
+								line-height: 19px;
+								color: $primaria;
+							}
+
+							img {
+								width: 32px;
+								height: 32px;
+								margin-right: 8px;
+							}
+
+							&:last-of-type {
+								padding: 0;
+							}
+						}
+					}
+				}
+			}
+
+			.coluna-2 {
+				h1 {
+					font-family: 'Inter';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					color: $cinza-escuro;
+					padding-bottom: 24px;
+				}
+
+				.lista-espacamento, .lista-sem-espacamento {
+					padding: 0;
+					margin: 0;
+					list-style: none;
+
+					li {
+						font-family: 'Inter';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 19px;
+						color: $cinza-escuro;
+						padding-bottom: 15px;
+
+						strong {
+							font-weight: 600;
+						}
+						
+						a {
+							text-decoration: none;
+							color: $cinza-escuro;
+
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+
+						&:last-of-type {
+							padding-bottom: 0;
+						}
+					}
+				}
+
+				.lista-sem-espacamento {
+					li {
+						padding-bottom: 8px;
+
+						&:last-of-type {
+							padding-bottom: 0;
+						}
+					}
+				}
+			}
+
+			.coluna-3 {
+				@media screen and (max-width: 991px) {
+					padding-bottom: 24px;
+				}
+
+				h1 {
+					font-family: 'Inter';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					color: $cinza-escuro;
+					padding-bottom: 24px;
+				}
+
+				.contato {
+
+					ul {
+						padding: 0;
+						margin: 0;
+
+						li {
+							display: flex;
+							align-items: center;
+							padding-bottom: 21px;
+
+							@media screen and (max-width: 991px) {
+								justify-content: center;
+							}
+
+							&:last-of-type {
+								padding: 0;
+							}
+
+							a {
+								font-family: 'Inter';
+								font-style: normal;
+								font-weight: 500;
+								font-size: 16px;
+								line-height: 19px;
+								color: $primaria;
+								text-decoration: none;
+							}
+
+							img {
+								margin-right: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.sub-footer {
+		padding: 15px 30px;
+		background-color: $primaria;
+
+		@media screen and (max-width: 991px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		p {
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			color: $cinza-escuro;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 19px;
+			
+			@media screen and (max-width: 991px) {
+				max-width: 250px;
+			}
+		}
+	}
+
+	.mobile-hidden {
+		@media screen and (max-width: 991px) {
+			display: none;
+		}
+	}
+}

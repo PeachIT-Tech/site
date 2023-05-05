@@ -1,0 +1,1360 @@
+.section {
+	padding: 50px 0;
+
+	@media screen and (max-width: 991px) {
+		padding: 24px 0;
+	}
+
+	.section-doing {
+		margin-bottom: 50px;
+		overflow: hidden;
+
+		@media screen and (max-width: 991px) {
+			margin-bottom: 16px;
+		}
+
+		p {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 29px;
+			letter-spacing: -0.01em;
+			color: #3D3D3D;
+			padding-bottom: 16px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 16px;
+				line-height: 19px;
+			}
+		}
+
+		.box-what-doing {
+			position: relative;
+
+			.swiper-doing {
+				background: transparent;
+				overflow: visible;
+
+				@media screen and (max-width: 991px) {
+					overflow: hidden;
+					box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+				}
+
+				.swiper-wrapper {
+					padding: 30px 0;
+
+					@media screen and (max-width: 991px) {
+						padding: 0;
+					}
+					
+					.swiper-slide {
+						box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+						border-radius: 16px;
+						padding: 24px;
+						min-height: 270px;
+						background: url("../images/marca-dagua-peach.png") #65B343 right bottom no-repeat;
+
+						@media screen and (max-width: 991px) {
+							background-size: 91px;
+						}
+
+						.box-doing {
+							display: flex;
+							flex-direction: column;
+							justify-content: space-between;
+							align-items: flex-start;
+			
+							h5 {
+								font-weight: 700;
+								font-size: 20px;
+								line-height: 44px;
+								letter-spacing: -0.01em;
+								color: #F2FAEF;
+								height: 50px;
+								margin-bottom: 16px;
+
+								@media screen and (max-width: 991px) {
+									font-size: 28px;
+									line-height: 34px;
+								}
+							}
+			
+							p {
+								font-weight: 400;
+								font-size: 16px;
+								line-height: 19px;
+								letter-spacing: -0.01em;
+								color: #F2FAEF;
+								margin-bottom: 24px;
+
+								@media screen and (max-width: 991px) {
+									font-size: 14px;
+									line-height: 17px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-we {
+		padding-bottom: 50px;
+
+		@media screen and (max-width: 991px) {
+			padding-bottom: 25px;
+		}
+
+		.valores {
+			margin-top: -40px;
+		}
+	}
+
+	.section-general {
+		// padding-bottom: 50px;
+
+		.box-passos {
+			padding-top: 50px;
+
+			img {
+				max-width: 100%;
+				filter: drop-shadow(6px 6px 24px rgba(0, 0, 0, 0.2));
+				margin-bottom: 16px;
+			}
+
+			h5 {
+				font-weight: 700;
+				font-size: 28px;
+				line-height: 34px;
+				color: #0C1707;
+				margin-bottom: 8px;
+
+				@media screen and (max-width: 991px) {
+					font-size: 28px;
+					line-height: 34px;
+				}
+			}
+
+			p {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 19px;
+				color: $preto;
+				margin-bottom: 0;
+
+				@media screen and (max-width: 991px) {
+					font-size: 14px;
+					line-height: 17px;
+				}
+			}
+		}
+
+		h1 {
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 40px;
+			color: #0C1707;
+			margin-bottom: 24px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 28px;
+				line-height: 34px;
+				text-align: left;
+			}
+
+			&.bigger {
+				// font-size: 48px;
+				// line-height: 58px;
+
+				@media screen and (max-width: 991px) {
+					font-size: 28px;
+					line-height: 34px;
+				}
+			}
+		}
+		
+		h2 {
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 40px;
+			color: #0C1707;
+			margin-bottom: 24px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 24px;
+				line-height: 30px;
+				text-align: left;
+			}
+		}
+		
+		h3 {
+			font-weight: 700;
+			font-size: 28px;
+			line-height: 36px;
+			color: #0C1707;
+			margin-bottom: 24px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 20px;
+				line-height: 26px;
+				text-align: left;
+			}
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: #0C1707;
+			margin-bottom: 24px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 16px;
+				line-height: 19px;
+				letter-spacing: 0.05em;
+			}
+		}
+
+		img {
+			max-width: 100%;
+		}
+		
+		ul {
+			font-size: 20px;
+			margin-left: 0;
+			list-style: none;
+
+			li {
+				background: url("../images/icons/peach-icon.svg") left center no-repeat;
+				background-size: 25px;
+				padding: 10px 0;
+				padding-left: 40px;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 24px;
+
+				@media screen and (max-width: 991px) {
+					font-size: 14px;
+					line-height: 17px;
+					padding: 15px 0;
+					padding-left: 40px;
+				}
+			}
+		}
+
+		.text-md-end {
+			ul {
+				li {
+					background: url("../images/icons/peach-icon.svg") right center no-repeat;
+					background-size: 25px;
+					padding: 10px 0;
+					padding-left: 0;
+					padding-right: 40px;
+					
+					@media screen and (max-width: 991px) {
+						background: url("../images/icons/peach-icon.svg") left center no-repeat;
+						background-size: 25px;
+						padding: 15px 0;
+						padding-left: 40px;
+						padding-right: 0;
+					}
+				}
+			}
+		}
+
+		.row {
+			&.mobile-invert {
+				@media screen and (max-width: 991px) {
+					flex-direction: column-reverse;
+				}
+			}
+		}
+
+		.box-green-gradient {
+			background: linear-gradient(180deg, #7ED955 28.19%, rgba(255, 255, 255, 0) 103.55%);
+			border-radius: 12px;
+			padding: 24px 16px;
+		}
+
+		.box-border-image {
+			margin-top: 24px;
+
+			@media screen and (max-width: 991px) {
+				text-align: center !important;
+			}
+		}
+
+		.white-box {
+			background-color: $branco;
+			padding-top: 16px;
+			padding-bottom: 50px;
+			position: relative;
+			// height: 1800px;
+			background: url("../images/o-que-fazemos/outsourcing/marca-dagua.png") $branco right bottom no-repeat;
+
+			@media screen and (max-width: 991px) {
+				background: url("../images/o-que-fazemos/outsourcing/marca-dagua-mobile.png") $branco right bottom no-repeat;
+			}
+
+			.image-absolute {
+				position: absolute;
+				top: -20px;
+				left: 0;
+
+				@media screen and (max-width: 991px) {
+					width: 320px;
+				}
+			}
+		}
+
+		.marca-dagua {
+			box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+			border-radius: 16px;
+			padding: 24px;
+			min-height: 250px;
+			display: flex;
+			flex-direction: column;
+			// justify-content: space-between;
+			align-items: flex-start;
+
+			&.center {
+				justify-content: center;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			&.min-height-370 {
+				min-height: 370px;
+			}
+
+			@media screen and (max-width: 991px) {
+				background-size: 91px;
+				justify-content: flex-start;
+			}
+
+			.box-text-image {
+				display: flex;
+				align-items: center;
+				margin-bottom: 24px;
+
+				img {
+					width: 80px;
+					height: 80px;
+					margin-right: 24px;
+				}
+
+				h5 {
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					text-transform: capitalize;
+					height: auto;
+					margin-bottom: 16px;
+				}
+			}
+
+			h5 {
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 44px;
+				letter-spacing: -0.01em;
+				height: 50px;
+				margin-bottom: 16px;
+
+				&.border-dotted {
+					border-bottom: 2px dashed #0C1707;
+					margin-bottom: 24px;
+					padding-bottom: 8px;
+
+					@media screen and (max-width: 991px) {
+						height: auto;
+					}
+				}
+
+				@media screen and (max-width: 991px) {
+					font-size: 28px;
+					line-height: 34px;
+				}
+			}
+
+			p {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 24px;
+				letter-spacing: -0.01em;
+				// margin-bottom: 24px;
+
+				@media screen and (max-width: 991px) {
+					font-size: 14px;
+					line-height: 17px;
+					text-align: justify;
+				}
+			}
+			
+			&.primary {
+				background: url("../images/marca-dagua-peach.png") #65B343 right bottom no-repeat;
+
+				@media screen and (max-width: 991px) {
+					background: url("../images/marca-dagua-peach.png") #65B343 right bottom no-repeat;
+					background-size: 91px;
+				}
+	
+				h5, p {
+					color: #F2FAEF;
+					margin-bottom: 0;
+				}
+			}
+
+			&.primary-light {
+				background: url("../images/marca-dagua-peach.png") #F2FAEF right bottom no-repeat;
+
+				@media screen and (max-width: 991px) {
+					background: url("../images/marca-dagua-peach.png") #F2FAEF right bottom no-repeat;
+					background-size: 91px;
+				}
+	
+				h5, p {
+					color: #0C1707;
+					margin-bottom: 0;
+				}
+			}
+
+			&.primary-middle {
+				background: url("../images/marca-dagua-peach.png") #B9F39F right bottom no-repeat;
+
+				@media screen and (max-width: 991px) {
+					background: url("../images/marca-dagua-peach.png") #B9F39F right bottom no-repeat;
+					background-size: 91px;
+				}
+	
+				h5, p {
+					color: #0C1707;
+				}
+			}
+		}
+
+		.banner {
+			margin-top: 140px;
+			padding-top: 50px;
+			background-color: #172511;
+
+			@media screen and (max-width: 991px) {
+				margin-top: 50px;
+				padding: 0;
+				background-color: transparent;
+
+				.banner-mobile {
+					background-color: #172511;
+					padding: 24px;
+					border-radius: 12px;
+				}
+			}
+
+			.banner-text {
+				h1 {
+					font-weight: 700;
+					font-size: 36px;
+					line-height: 40px;
+					color: #F2FAEF;
+					margin-bottom: 16px;
+
+					@media screen and (max-width: 991px) {
+						font-size: 28px;
+						line-height: 34px;
+					}
+				}
+
+				h3 {
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 24px;
+					color: #F2FAEF;
+					margin-bottom: 16px;
+
+					@media screen and (max-width: 991px) {
+						font-size: 16px;
+						line-height: 19px;
+					}
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+					color: #F2FAEF;
+					margin-bottom: 70px;
+
+					@media screen and (max-width: 991px) {
+						font-size: 14px;
+						line-height: 17px;
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			.banner-image {
+				position: relative;
+
+				img {
+					position: absolute;
+					bottom: 0;
+				}
+			}
+		}
+
+		.options-plataform {
+			.box {
+				display: flex;
+				align-items: center;
+				margin: 0 15px;
+				margin-bottom: 24px;
+
+				img {
+					width: 100px;
+					height: 100px;
+					margin-right: 16px;
+				}
+
+				h5 {
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					text-transform: uppercase;
+					color: $preto;
+					height: auto;
+					margin-bottom: 8px;
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 17px;
+					color: $preto;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.section-hotsite {
+		padding-top: 50px;
+
+		h1 {
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 44px;
+			color: #0C1707;
+			margin-bottom: 24px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 32px;
+				line-height: 39px;
+			}
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			color: #000000;
+			margin-bottom: 24px;
+			
+			@media screen and (max-width: 991px) {
+				font-size: 14px;
+				line-height: 17px;
+			}
+		}
+
+		.box-hotsite {
+			position: relative;
+
+			.swiper-doing {
+				background: transparent;
+				overflow: visible;
+
+				@media screen and (max-width: 991px) {
+					overflow: hidden;
+					border-radius: 12px;
+					box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
+				}
+			
+				.swiper-wrapper {
+					padding: 30px 0;
+					// box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
+
+					@media screen and (max-width: 991px) {
+						box-shadow: none;
+						padding: 0;
+					}
+					
+					.swiper-slide {
+						box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
+						border-radius: 12px;
+						background: #F2FAEF;
+						padding: 16px;
+						min-height: 440px;
+
+						@media screen and (max-width: 991px) {
+							box-shadow: none;
+						}
+
+						.box-hotsite {
+							text-align: center;
+
+							img {
+								margin-bottom: 16px;
+
+								@media screen and (max-width: 991px) {
+									max-width: 100%;
+									width: 255px;
+								}
+							}
+			
+							h5 {
+								font-weight: 700;
+								font-size: 28px;
+								line-height: 34px;
+								color: #0C1707;
+								margin-bottom: 8px;
+
+								@media screen and (max-width: 991px) {
+									font-size: 28px;
+									line-height: 34px;
+								}
+							}
+			
+							p {
+								font-weight: 400;
+								font-size: 14px;
+								line-height: 17px;
+								text-align: justify;
+								letter-spacing: -0.01em;
+								color: $preto;
+								margin-bottom: 0;
+
+								@media screen and (max-width: 991px) {
+									font-size: 14px;
+									line-height: 17px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-metodologia {
+		padding-bottom: 50px;
+		
+		@media screen and (max-width: 991px) {
+			padding: 0;
+		}
+
+		h1 {
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 40px;
+			color: #0C1707;
+			margin-bottom: 50px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 32px;
+				line-height: 39px;
+			}
+		}
+
+		.trabalho {
+			padding-top: 50px;
+
+			@media screen and (max-width: 991px) {
+				padding-top: 20px;
+				padding-bottom: 30px;
+			}
+
+			.box-trabalho {
+				box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+				border-radius: 16px;
+				padding: 24px;
+				min-height: 250px;
+				background: url("../images/marca-dagua-peach.png") #F2FAEF right bottom no-repeat;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				
+				@media screen and (max-width: 991px) {
+					margin-bottom: 24px;
+					justify-content: center;
+					background-size: 91px;
+				}
+
+				h5 {
+					font-weight: 700;
+					font-size: 30px;
+					line-height: 38px;
+					width: 100%;
+					color: #0C1707;
+					padding-bottom: 16px;
+					border-bottom: 2px dashed #0C1707;
+					margin-bottom: 24px;
+
+					@media screen and (max-width: 991px) {
+						font-size: 28px;
+						line-height: 34px;
+					}
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+					color: #0C1707;
+					margin-bottom: 24px;
+
+					@media screen and (max-width: 991px) {
+						margin-bottom: 0;
+						font-size: 14px;
+						line-height: 17px;
+					}
+				}
+			}
+		}
+	}
+
+	.section-personalizado {
+		// margin-bottom: 50px;
+		background: url("../images/bg-quadriculado.png") #FFFFFF center no-repeat;
+		background-size: contain;
+
+		@media screen and (max-width: 991px) {
+			background-image: none;
+			background-color: $branco;
+			padding-bottom: 50px;
+		}
+		
+		h1 {
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 38px;
+			color: #0C1707;
+			padding-top: 50px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 32px;
+				line-height: 39px;
+			}
+		}
+	}
+
+	.section-projects {
+		p {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 29px;
+			letter-spacing: -0.01em;
+			color: #3D3D3D;
+			padding-bottom: 16px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 16px;
+				line-height: 19px;
+			}
+		}
+		
+		.projects {
+			.projects-bg {
+				background-color: $branco;
+				padding: 50px 0;
+	
+				@media screen and (max-width: 991px) {
+					padding: 24px 0;
+				}
+
+				.swiper-projects {
+					width: 100%;
+					height: 170px;
+	
+					@media screen and (max-width: 991px) {
+						height: 320px;
+					}
+			
+					.swiper-slide {
+						height: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+	
+						@media screen and (max-width: 991px) {
+							height: calc((100% - 30px) / 2) !important;
+						}
+					}
+	
+					.swiper-button-next-projects, .swiper-button-prev-projects {
+						@media screen and (max-width: 991px) {
+							display: none;
+						}
+					}
+				}
+			}
+
+			.swiper-pagination-slider-projects {
+				display: none;
+
+				@media screen and (max-width: 991px) {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.section-clients {
+		padding: 50px 30px;
+		padding-bottom: 0;
+
+		@media screen and (max-width: 991px) {
+			padding: 50px 0;
+			padding-bottom: 0;
+		}
+
+		h1 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 30px;
+			color: $preto;
+
+			@media screen and (max-width: 991px) {
+				font-size: 28px;
+				line-height: 34px;
+			}
+		}
+
+		.client-depoiment {
+			padding: 24px 32px;
+
+			.linha {
+				.linha-1 {
+					text-align: left;
+
+					@media screen and (max-width: 991px) {
+						margin-bottom: 24px;
+					}
+
+					img {
+						max-width: 100%;
+						border-radius: 100%;
+					}
+
+					p {
+						font-weight: 500;
+						font-size: 20px;
+						line-height: 29px;
+						color: $preto;
+
+						@media screen and (max-width: 991px) {
+							font-size: 20px;
+							line-height: 24px;
+						}
+					}
+				}
+
+				.linha-2 {
+					text-align: left;
+
+					p {
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 24px;
+						color: #0C1707;
+						margin-bottom: 16px;
+
+						&:last-of-type {
+							margin-bottom: 24px;
+						}
+
+						@media screen and (max-width: 991px) {
+							font-size: 16px;
+							line-height: 19px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-team {
+		padding: 50px 30px;
+		padding-bottom: 0;
+
+		@media screen and (max-width: 991px) {
+			padding: 50px 0;
+		}
+
+		h1 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 44px;
+			color: $preto;
+
+			@media screen and (max-width: 991px) {
+				font-size: 28px;
+				line-height: 34px;
+			}
+		}
+
+		.client-depoiment {
+			padding: 24px 32px;
+
+			.linha {
+				.linha-1 {
+					text-align: left;
+
+					@media screen and (max-width: 991px) {
+						margin-bottom: 24px;
+					}
+
+					img {
+						max-width: 100%;
+						border-radius: 100%;
+					}
+
+					p {
+						font-weight: 500;
+						font-size: 20px;
+						line-height: 29px;
+						color: $preto;
+
+						@media screen and (max-width: 991px) {
+							font-size: 20px;
+							line-height: 24px;
+						}
+					}
+				}
+
+				.linha-2 {
+					text-align: left;
+
+					p {
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 22px;
+						color: #0C1707;
+						margin-bottom: 16px;
+
+						&:last-of-type {
+							margin-bottom: 24px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section-404 {
+		text-align: center;
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 29px;
+			color: #0C1707;
+
+			@media screen and (max-width: 991px) {
+				font-size: 16px;
+				line-height: 19px;
+			}
+		}
+	}
+	
+	.swiper-options {
+		width: 100%;
+		height: 650px;
+		padding: 50px 0;
+		overflow: visible;
+
+		@media screen and (max-width: 991px) {
+			height: auto;
+			padding: 0;
+			overflow: hidden;
+			box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+			margin-top: 40px;
+		}
+
+		&.padding-options {
+			height: 620px;
+			padding: 50px 30px;
+		
+			@media screen and (max-width: 991px) {
+				height: auto;
+				padding: 0 15px;
+				padding-top: 30px;
+				padding-bottom: 25px;
+				box-shadow: none;			
+			}
+		}
+
+		.swiper-slide {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: calc((100% - 30px) / 2) !important;
+
+			@media screen and (max-width: 991px) {
+				height: 100% !important;
+			}
+			
+			.option {
+				box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+				background: url("../images/marca-dagua-peach.png") #B9F3A0 right bottom no-repeat;
+				border-radius: 16px;
+				padding: 24px;
+				display: flex;
+				min-height: 248px;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+
+				@media screen and (max-width: 991px) {
+					// box-shadow: none;
+					background-size: 91px;
+					min-height: 270px;
+				}
+
+				h5 {
+					font-weight: 700;
+					font-size: 30px;
+					line-height: 38px;
+					color: #0C1707;
+					margin-bottom: 16px;
+					border-bottom: 2px dashed #0C1707;
+					padding-bottom: 8px;
+					padding-right: 20px;
+					
+					@media screen and (max-width: 1326px) {
+						font-size: 30px;
+						line-height: 38px;
+					}
+
+					@media screen and (max-width: 991px) {
+						font-size: 28px;
+						line-height: 34px;
+					}
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+					color: $preto;
+					margin-bottom: 24px;
+
+					&:last-of-type {
+						margin: 0;
+					}
+
+					@media screen and (max-width: 1326px) {
+						font-size: 13px;
+						line-height: 16px;
+					}
+
+					@media screen and (max-width: 991px) {
+						font-size: 14px;
+						line-height: 17px;
+					}
+				}
+			}
+		}
+	}
+	
+	.swiper-options-2 {
+		width: 100%;
+		padding: 20px 0;
+		padding-bottom: 50px;
+		overflow: visible;
+
+		@media screen and (max-width: 991px) {
+			overflow: hidden;
+			height: auto;
+			padding-bottom: 30px;
+		}
+
+		.swiper-slide {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 250px;
+
+			@media screen and (max-width: 991px) {
+				height: 100% !important;
+			}
+			
+			.option {
+				box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+				background: url("../images/marca-dagua-peach.png") #B9F3A0 right bottom no-repeat;
+				border-radius: 16px;
+				padding: 24px;
+				display: flex;
+				min-height: 248px;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+
+				@media screen and (max-width: 991px) {
+					box-shadow: none;
+					background-size: 91px;
+				}
+
+				h5 {
+					font-weight: 700;
+					font-size: 30px;
+					line-height: 38px;
+					color: #0C1707;
+					margin-bottom: 16px;
+					border-bottom: 2px dashed #0C1707;
+					padding-bottom: 8px;
+					padding-right: 20px;
+					
+					@media screen and (max-width: 1326px) {
+						font-size: 30px;
+						line-height: 38px;
+					}
+
+					@media screen and (max-width: 991px) {
+						font-size: 28px;
+						line-height: 34px;
+					}
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+					color: $preto;
+					margin-bottom: 24px;
+
+					&:last-of-type {
+						margin: 0;
+					}
+
+					@media screen and (max-width: 1326px) {
+						font-size: 13px;
+						line-height: 16px;
+					}
+
+					@media screen and (max-width: 991px) {
+						font-size: 14px;
+						line-height: 17px;
+					}
+				}
+			}
+		}
+	}
+	
+	.swiper-beneficios {
+		width: 100%;
+		height: 650px;
+
+		@media screen and (max-width: 991px) {
+			height: auto;
+			padding-bottom: 0;
+		}
+
+		.swiper-wrapper {
+			width: auto !important;
+			margin: 0 -15px;
+		}
+
+		.swiper-slide {
+			height: calc((100% - 30px) / 3) !important;
+
+			@media screen and (max-width: 991px) {
+				height: 100% !important;
+			}
+			
+			.beneficio {
+				padding: 0 15px;
+
+				h5 {
+					font-weight: 700;
+					font-size: 28px;
+					line-height: 34px;
+					color: #0C1707;
+					margin-bottom: 16px;
+
+					@media screen and (max-width: 991px) {
+						font-size: 20px;
+						line-height: 24px;
+					}
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 24px;
+					color: $preto;
+					margin-bottom: 24px;
+
+					&:last-of-type {
+						margin: 0;
+					}
+
+					@media screen and (max-width: 991px) {
+						font-size: 14px;
+						line-height: 17px;
+					}
+				}
+			}
+		}
+	}
+
+	.swiper-ajuste-width {
+		@media screen and (max-width: 991px) {
+			width: 320px;
+		}
+	}
+
+	.swiper-plataform {
+		width: 100%;
+		height: 770px;
+		margin-left: auto;
+		margin-right: auto;
+
+		@media screen and (max-width: 991px) {
+			height: 650px;
+			margin-top: 50px;
+		}
+		
+		.swiper-slide {
+			background: transparent;
+			height: calc((100% - 30px) / 6) !important;
+  
+			@media screen and (max-width: 991px) {
+				height: calc((100% - 30px) / 2) !important;
+			}
+
+			.box {
+				display: flex;
+				align-items: center;
+				margin: 0 15px;
+				margin-bottom: 24px;
+				
+				@media screen and (max-width: 991px) {
+					flex-direction: column;	
+					text-align: center;
+				}
+
+				img {
+					width: 100px;
+					height: 100px;
+					margin-right: 16px;
+
+					@media screen and (max-width: 991px) {
+						margin: 0;
+						margin-bottom: 16px;
+					}
+				}
+
+				h5 {
+					font-weight: 700;
+					font-size: 20px;
+					line-height: 24px;
+					text-transform: uppercase;
+					color: $preto;
+					height: auto;
+					margin-bottom: 8px;
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 17px;
+					color: $preto;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+}
+
+.semi-footer {
+	padding: 50px 0;
+	padding-bottom: 100px;
+	margin-top: 100px;
+
+	@media screen and (max-width: 991px) {
+		padding: 50px 20px 50px 0px;
+		margin-top: 0px;
+	}
+
+	.box-semi-footer {
+		position: relative;
+		background-color: $branco;
+		border-radius: 50px;
+		padding: 40px;
+
+		h4 {
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 44px;
+			color: $cinza-escuro;
+			padding-bottom: 8px;
+
+			@media screen and (max-width: 991px) {
+				font-size: 28px;
+				line-height: 34px;
+			}
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			color: $preto;
+
+			@media screen and (max-width: 991px) {
+				padding-bottom: 24px;
+			}
+
+			a {
+				color: #465EFF;
+				text-decoration: none;
+				font-weight: 700;
+			}
+		}
+
+		.hexagono {
+			position: absolute;
+			bottom: -45px;
+			left: 30%;
+			
+			@media screen and (max-width: 991px) {
+				bottom: initial;
+				top: -25px;
+				right: -20px;
+				left: initial;
+			}
+		}
+
+		.image {
+			img {
+				position: absolute;
+				bottom: -56px;
+			}
+			
+			@media screen and (max-width: 991px) {
+				display: none;
+			}
+		}
+	}
+}
