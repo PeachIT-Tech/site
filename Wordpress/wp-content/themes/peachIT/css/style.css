@@ -22232,13 +22232,23 @@ input:active, input:focus, button:active, button:focus {
   font-weight: 700;
   color: #8E8E8E;
 }
+.form-floating textarea.form-control {
+  resize: none;
+  height: 150px;
+}
 .form-floating .form-control {
   height: 50px;
   color: #8E8E8E;
   background-color: #E9E9E9;
 }
-.form-floating textarea {
-  resize: none;
+.form-floating .form-control::-webkit-input-placeholder {
+  font-weight: bold;
+}
+.form-floating .form-control::-moz-placeholder {
+  font-weight: bold;
+}
+.form-floating .form-control::-ms-input-placeholder {
+  font-weight: bold;
 }
 .form-floating .uploaded-item {
   background: #F4F4F4;

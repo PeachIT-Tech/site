@@ -4,14 +4,25 @@
         color: #8E8E8E;
     }
     
+    textarea.form-control {
+        resize: none;
+        height: 150px;
+    }
+    
     .form-control {
         height: 50px;
         color: #8E8E8E;
         background-color: #E9E9E9;
-    }
-    
-    textarea {
-        resize: none;
+
+        &::-webkit-input-placeholder {
+            font-weight: bold;
+        }
+        &::-moz-placeholder {
+            font-weight: bold;
+        }
+        &::-ms-input-placeholder {
+            font-weight: bold;
+        }
     }
 
     .uploaded-item {

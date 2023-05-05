@@ -124,43 +124,7 @@
 							</div>
 							<div class="col-md-8">
 								<div class="right">
-									<form action="">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-floating mb-3">
-													<input type="text" class="form-control" id="nome" placeholder="Nome">
-													<label for="nome">Nome</label>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-floating mb-3">
-													<input type="email" class="form-control" id="email" placeholder="name@example.com">
-													<label for="email">Email</label>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-floating mb-3">
-													<input type="whatsapp" class="form-control" id="whatsapp" placeholder="Whatsapp">
-													<label for="whatsapp">Whatsapp</label>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-floating mb-3">
-													<input type="empresa" class="form-control" id="empresa" placeholder="Empresa">
-													<label for="empresa">Empresa</label>
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-floating">
-													<textarea class="form-control" placeholder="Mensagem" id="mensagem" style="height: 150px"></textarea>
-													<label for="mensagem">Mensagem</label>
-												</div>
-											</div>
-										</div>
-										<div>
-											<button type="submit" class="button invert">Enviar mensagem</button>
-										</div>
-									</form>
+									<?php echo do_shortcode( '[contact-form-7 id="112" title="Seja Cliente"]' ); ?>
 								</div>
 							</div>
 						</div>
@@ -187,49 +151,7 @@
 							</div>
 							<div class="col-md-8">
 								<div class="right">
-									<form action="">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-floating mb-3">
-													<input type="text" class="form-control" id="nome" placeholder="Nome">
-													<label for="nome">Nome</label>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-floating mb-3">
-													<input type="email" class="form-control" id="email" placeholder="name@example.com">
-													<label for="email">Email</label>
-												</div>
-											</div>
-											<div class="col-md-12">
-												<div class="form-floating">
-													<textarea class="form-control" placeholder="Mensagem" id="mensagem" style="height: 200px"></textarea>
-													<label for="mensagem">Mensagem</label>
-
-													<div class="uploaded-item" id="uploaded-item">
-														<p id="fileName"></p>
-														<button type="button" onclick="removeFile()">
-															<span class="material-symbols-outlined">
-																close
-															</span>
-														</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="d-md-flex justify-content-center">
-											<div class="input-file">
-												<label for="arquivo" class="label-file button invert-bg border-primary invert-shadow">
-													<span class="material-symbols-outlined">
-														attach_file
-													</span>
-												</label>
-												<input type="file" name="arquivo" id="arquivo" onchange="getInputName()">
-											</div>
-											</button>
-											<button type="submit" class="button invert shadow">Enviar mensagem</button>
-										</div>
-									</form>
+									<?php echo do_shortcode( '[contact-form-7 id="113" title="Trabalhe Conosco"]' ); ?>
 								</div>
 							</div>
 						</div>
@@ -240,11 +162,19 @@
 
 		<!-- JQuery -->
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.6.4.min.js"></script>
+		<!-- Mascara -->
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.mask.min.js"></script>
 		<!-- Bootstrap Bundle JS -->
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.bundle.min.js"></script>
 		<!-- Swiper JS -->
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/swiper-bundle.min.js"></script>
 		<!-- App JS -->
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js"></script>
+
+		<script type="text/javascript">
+  			$("#whatsapp").mask('(00) 00000-0000');
+			$("#cpf").mask("000.000.000-00");
+			$("#cnpj").mask("00.000.000/0000-00");
+		</script>
 	</body>
 </html>

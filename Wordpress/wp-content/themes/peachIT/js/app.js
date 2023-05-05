@@ -342,7 +342,7 @@
     });
 
 // Get Filename input
-    function getInputName() {
+    $("#arquivo").change(function(){
         var fullPath = document.getElementById('arquivo').value;
         
         if (fullPath) {
@@ -355,16 +355,14 @@
 
             document.getElementById('fileName').innerHTML = nomeArquivo;
 
-            var uploded = document.getElementById("uploaded-item");
-
-            if (uploded.classList.contains("active")) {
-                uploded.classList.remove("active");
+            if ($("#uploaded-item").hasClass("active")) {
+                $("#uploaded-item").removeClass("active");
             } else {
-                uploded.classList.add("active");
+                $("#uploaded-item").addClass("active");
             }
         }
-    }
-
+    });
+    
     function removeFile() {
         document.getElementById('arquivo').value = "";
         document.getElementById('fileName').innerHTML = "";
