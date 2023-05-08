@@ -67,57 +67,44 @@
 	<?php endif; ?>
 
 	<div class="section">
-		<div class="section-doing">
-			<div class="container">
-				<h1 class="title"><span>O que</span> fazemos?</h1>
-				<p>Usamos a tecnologia de maneira eficiente para simplificar, potencializar e acelerar os resultados.</p>
+		
+		<?php if( have_rows('o_que_fazemos') ): ?>
+			<div class="section-doing">
+				<div class="container">
+					<h1 class="title"><span>O que</span> fazemos?</h1>
+					<p>Usamos a tecnologia de maneira eficiente para simplificar, potencializar e acelerar os resultados.</p>
 
-				<div class="box-what-doing">
-					<div class="swiper swiper-doing">
-						<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="box-doing">
-								<h5>Soluções Digitais</h5>
+					<div class="box-what-doing">
+						<div class="swiper swiper-doing">
+							<div class="swiper-wrapper">
+								<?php
+									while( have_rows('o_que_fazemos') ) : the_row();
 
-								<p>Colocamos à disposição de sua empresa uma equipe de desenvolvedores altamente qualificados.</p>
+									$titulo = get_sub_field('titulo');
+									$subtitulo = get_sub_field('subtitulo');
+									$link_saiba_mais = get_sub_field('link_saiba_mais');
 
-								<a href="<?php echo get_site_url() ?>/solucoes-digitais" class="button button-more">Saiba mais</a>
+									?>
+										<div class="swiper-slide">
+											<div class="box-doing">
+												<h5><?php echo $titulo ?></h5>
+
+												<p><?php echo $subtitulo ?></p>
+
+												<a href="<?php echo $link_saiba_mais ?>" class="button button-more">Saiba mais</a>
+											</div>
+										</div>
+									<?php 
+									endwhile; 
+								?>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="box-doing">
-								<h5>Soluções Promocionais</h5>
 
-								<p>Alcance novos patamares com nossos serviços de entrega de hotsite! Impulsione suas campanhas promocionais de maneira eficiente e ágil. </p>
-
-								<a href="<?php echo get_site_url() ?>/solucoes-promocionais" class="button button-more">Saiba mais</a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="box-doing">
-								<h5>Consultoria & Estratégia</h5>
-
-								<p>Colocamos à disposição de sua empresa uma equipe de desenvolvedores altamente qualificados.</p>
-
-								<a href="<?php echo get_site_url() ?>/consultoria" class="button button-more">Saiba mais</a>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="box-doing">
-								<h5>Outsourcing</h5>
-
-								<p>Oferecemos alocação de profissionais altamente qualificados em diversas áreas de conhecimento técnico.</p>
-
-								<a href="<?php echo get_site_url() ?>/outsourcing" class="button button-more">Saiba mais</a>
-							</div>
-						</div>
-						</div>
+						<div class="swiper-pagination swiper-pagination-slider-doing mobile"></div>
 					</div>
-
-					<div class="swiper-pagination swiper-pagination-slider-doing mobile"></div>
 				</div>
 			</div>
-		</div>
+		<?php endif; ?>
 			
 		<div class="section-we">
 			<div class="container">
@@ -136,7 +123,7 @@
 
 								<p>Nossa missão é utilizar a tecnologia como uma ferramenta para potencializar os negócios de nossos clientes. Por isso estamos sempre empenhados em ajudar nossos clientes a alcançarem o sucesso que desejam.</p>
 								
-								<a href="#" class="button button-more primary">Saiba mais</a>
+								<a href="<?php echo get_site_url() ?>/quem-somos" class="button button-more primary">Saiba mais</a>
 							</div>
 						</div>
 					</div>
