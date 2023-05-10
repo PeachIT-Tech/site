@@ -43,7 +43,7 @@
         }
     }
 
-    $("#menu-item-99" ).click(function() {
+    $("#menu-item-77" ).click(function() {
         if ($("#header").hasClass("show")) {
             $("#header").removeClass("show");
         } else {
@@ -56,14 +56,14 @@
             $("#DropdownItem").addClass("show");
         }
         
-        if ($("#menu-item-99 > ul").hasClass("show")) {
-            $("#menu-item-99 > ul").removeClass("show");
+        if ($("#menu-item-77 > ul").hasClass("show")) {
+            $("#menu-item-77 > ul").removeClass("show");
         } else {
-            $("#menu-item-99 > ul").addClass("show");
+            $("#menu-item-77 > ul").addClass("show");
         }
     });
 
-    $("#menu-item-99 > a" ).click(function() {
+    $("#menu-item-77 > a" ).click(function() {
         if ($("#expand").hasClass("expand")) {
             $("#expand").removeClass("expand");
         } else {

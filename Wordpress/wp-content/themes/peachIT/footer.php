@@ -125,7 +125,7 @@
 							</div>
 							<div class="col-md-8">
 								<div class="right">
-									<?php echo do_shortcode( '[contact-form-7 id="117" title="Seja Cliente"]' ); ?>
+									<?php echo do_shortcode( '[contact-form-7 id="31" title="Seja Cliente"]' ); ?>
 								</div>
 							</div>
 						</div>
