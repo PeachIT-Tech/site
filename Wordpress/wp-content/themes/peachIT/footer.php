@@ -161,7 +161,7 @@
 		<!-- Swiper JS -->
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/swiper-bundle.min.js"></script>
 		<!-- App JS -->
-		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js?v=1.2"></script>
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js?v=1.5"></script>
 
 		<script type="text/javascript">
   			$("#whatsapp").mask('(00) 00000-0000');

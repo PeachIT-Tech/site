@@ -22967,6 +22967,9 @@ input:active, input:focus, button:active, button:focus {
 .slider {
   position: relative;
 }
+.slider .slider-geral {
+  margin-bottom: 20px;
+}
 .slider .slider-home, .slider .slider-geral {
   width: 100%;
   height: 500px;
@@ -24234,6 +24237,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .client-depoiment {
   padding: 24px 32px;
+  width: 100%;
 }
 .section .client-depoiment .linha .linha-1 {
   text-align: left;
@@ -24881,6 +24885,11 @@ input:active, input:focus, button:active, button:focus {
   padding-right: 40px;
   padding-left: 0;
 }
+@media screen and (max-width: 991px) {
+  .page-timeline .timeline .timeline-item .timeline-panel .timeline-heading img {
+    display: none;
+  }
+}
 .page-timeline .timeline .timeline-item .timeline-panel .timeline-title {
   margin-top: 0;
   padding-bottom: 8px;
@@ -25357,6 +25366,10 @@ input[type=file] {
   .row-margin-adjust {
     margin-right: -30px;
   }
+}
+
+.wp-block-quote {
+  line-height: 1.4;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -183,6 +183,10 @@ $brand-danger: #ba1f1f;
 						background-color: #FFFFFF;
 						padding-right: 40px;
 						padding-left: 0;
+
+						@media screen and (max-width: 991px) {
+							display: none;
+						}
 					}
 				}
 

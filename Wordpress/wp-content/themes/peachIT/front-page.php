@@ -136,7 +136,9 @@
 			$args = array(
 				'post_type' => 'projeto',
 				'status' => 'publish',
-				'showposts' => -1
+				'showposts' => -1,
+				'orderby' => 'menu_order',
+				'order' => 'ASC'
 			);
 
 			$more = new WP_Query( $args );
