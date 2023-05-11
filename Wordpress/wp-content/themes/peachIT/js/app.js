@@ -43,6 +43,62 @@
         }
     }
 
+    $("#menu-item-99" ).click(function() {
+        if ($("#header").hasClass("show")) {
+            $("#header").removeClass("show");
+        } else {
+            $("#header").addClass("show");
+        }
+        
+        if ($("#DropdownItem").hasClass("show")) {
+            $("#DropdownItem").removeClass("show");
+        } else {
+            $("#DropdownItem").addClass("show");
+        }
+        
+        if ($("#menu-item-99 > ul").hasClass("show")) {
+            $("#menu-item-99 > ul").removeClass("show");
+        } else {
+            $("#menu-item-99 > ul").addClass("show");
+        }
+    });
+
+    $("#menu-item-75" ).click(function() {
+        if ($("#header").hasClass("show")) {
+            $("#header").removeClass("show");
+        } else {
+            $("#header").addClass("show");
+        }
+        
+        if ($("#DropdownItem").hasClass("show")) {
+            $("#DropdownItem").removeClass("show");
+        } else {
+            $("#DropdownItem").addClass("show");
+        }
+        
+        if ($("#menu-item-75 > ul").hasClass("show")) {
+            $("#menu-item-75 > ul").removeClass("show");
+        } else {
+            $("#menu-item-75 > ul").addClass("show");
+        }
+    });
+
+    $("#menu-item-75 > a" ).click(function() {
+        if ($("#expand").hasClass("expand")) {
+            $("#expand").removeClass("expand");
+        } else {
+            $("#expand").addClass("expand");
+        }
+    });
+
+    $("#menu-item-77 > a" ).click(function() {
+        if ($("#expand").hasClass("expand")) {
+            $("#expand").removeClass("expand");
+        } else {
+            $("#expand").addClass("expand");
+        }
+    });
+
     $("#menu-item-77" ).click(function() {
         if ($("#header").hasClass("show")) {
             $("#header").removeClass("show");
@@ -87,17 +143,19 @@
     });
 
     var swiperClients = new Swiper(".slider-clients", {
+        autoHeight: true,
         pagination: {
             el: ".swiper-pagination-slider-clients",
             clickable: true,
         },
         autoplay: {
             delay: 2500,
-            disableOnInteraction: false
+            disableOnInteraction: true
         },
     });
 
     var swiperTeam = new Swiper(".slider-team", {
+        autoHeight: true,
         pagination: {
             el: ".swiper-pagination-slider-team",
             clickable: true,
@@ -111,6 +169,29 @@
     var swiperDoing = new Swiper(".swiper-doing", {
         pagination: {
             el: ".swiper-pagination-slider-doing",
+            clickable: true,
+        },
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        breakpoints: {
+            100: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
+            },
+            991: {
+                slidesPerView: "auto",
+                spaceBetween: 30,
+            },
+        },
+    });
+
+    var swiperReport = new Swiper(".swiper-report", {
+        pagination: {
+            el: ".swiper-pagination-slider-report",
             clickable: true,
         },
         slidesPerView: 3,
@@ -253,7 +334,7 @@
         slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
-            el: ".swiper-pagination-slider-options-2-sol",
+            el: ".swiper-pagination-slider-options-2",
             clickable: true
         },
         breakpoints: {
@@ -318,18 +399,18 @@
     var swiperBoxTeam = new Swiper(".swiper-team", {
         spaceBetween: 30,
         pagination: {
-          el: ".swiper-pagination",
+          el: ".swiper-pagination-slider-team",
           clickable: true,
         },
         autoplay: {
-            delay: 2500,
+            delay: 5000,
             disableOnInteraction: false
         },
         breakpoints: {
             100: {
                 slidesPerView: 1,
                 grid: {
-                    rows: 2,
+                    rows: 1,
                 },
             },
             991: {
@@ -362,7 +443,6 @@
             }
         }
     });
-    
     function removeFile() {
         document.getElementById('arquivo').value = "";
         document.getElementById('fileName').innerHTML = "";

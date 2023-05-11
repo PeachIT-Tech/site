@@ -22888,7 +22888,7 @@ input:active, input:focus, button:active, button:focus {
   position: fixed;
   z-index: 999;
   bottom: 10px;
-  right: 10px;
+  right: 27px;
 }
 .chat .chat-channel {
   width: 54px;
@@ -22922,6 +22922,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .chat .chat-channel .chat-tooltip .on-hover-text {
   background: #7cd854;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
   color: #FFFFFF;
   width: 205px;
   height: 50px;
@@ -23077,9 +23078,6 @@ input:active, input:focus, button:active, button:focus {
   text-align: left;
 }
 @media screen and (max-width: 991px) {
-  .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text {
-    align-items: center;
-  }
   .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text h1, .slider .slider-home .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text .h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text h1, .slider .slider-geral .swiper-slide .slider-general.slider-type-1 .row-slider .line-slider-text .h1 {
     text-align: left;
   }
@@ -23295,6 +23293,11 @@ input:active, input:focus, button:active, button:focus {
 .swiper.swiper-slider .swiper-slide .marca-dagua {
   box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 991px) {
+  .swiper.swiper-slider .swiper-slide .marca-dagua {
+    box-shadow: none;
+  }
+}
 .swiper.swiper-team {
   width: 100%;
   height: 900px;
@@ -23303,7 +23306,7 @@ input:active, input:focus, button:active, button:focus {
 }
 @media screen and (max-width: 991px) {
   .swiper.swiper-team {
-    height: 500px;
+    height: auto;
   }
 }
 .swiper.swiper-team .swiper-slide {
@@ -23423,7 +23426,7 @@ input:active, input:focus, button:active, button:focus {
 }
 
 .swiper-pagination-bullets {
-  padding: 24px 0;
+  padding: 18px 0;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   position: relative;
@@ -23448,7 +23451,7 @@ input:active, input:focus, button:active, button:focus {
 }
 
 .section {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 @media screen and (max-width: 991px) {
   .section {
@@ -23456,7 +23459,7 @@ input:active, input:focus, button:active, button:focus {
   }
 }
 .section .section-doing {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 @media screen and (max-width: 991px) {
@@ -23483,7 +23486,7 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-doing .box-what-doing .swiper-doing {
   background: transparent;
-  overflow: visible;
+  overflow: hidden;
 }
 @media screen and (max-width: 991px) {
   .section .section-doing .box-what-doing .swiper-doing {
@@ -23503,12 +23506,14 @@ input:active, input:focus, button:active, button:focus {
   box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
   padding: 24px;
+  width: 30%;
   min-height: 270px;
   background: url("../images/marca-dagua-peach.png") #65B343 right bottom no-repeat;
 }
 @media screen and (max-width: 991px) {
   .section .section-doing .box-what-doing .swiper-doing .swiper-wrapper .swiper-slide {
     background-size: 91px;
+    width: 100%;
   }
 }
 .section .section-doing .box-what-doing .swiper-doing .swiper-wrapper .swiper-slide .box-doing {
@@ -23974,27 +23979,27 @@ input:active, input:focus, button:active, button:focus {
 .section .section-hotsite .box-hotsite {
   position: relative;
 }
-.section .section-hotsite .box-hotsite .swiper-doing {
+.section .section-hotsite .box-hotsite .swiper-report {
   background: transparent;
   overflow: visible;
 }
 @media screen and (max-width: 991px) {
-  .section .section-hotsite .box-hotsite .swiper-doing {
+  .section .section-hotsite .box-hotsite .swiper-report {
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
   }
 }
-.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper {
+.section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper {
   padding: 30px 0;
 }
 @media screen and (max-width: 991px) {
-  .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper {
+  .section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper {
     box-shadow: none;
     padding: 0;
   }
 }
-.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide {
+.section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper .swiper-slide {
   box-shadow: 4.64789px 4.64789px 18.5915px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   background: #F2FAEF;
@@ -24002,23 +24007,23 @@ input:active, input:focus, button:active, button:focus {
   min-height: 440px;
 }
 @media screen and (max-width: 991px) {
-  .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide {
+  .section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper .swiper-slide {
     box-shadow: none;
   }
 }
-.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite {
+.section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper .swiper-slide .box-hotsite {
   text-align: center;
 }
-.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite img {
+.section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper .swiper-slide .box-hotsite img {
   margin-bottom: 16px;
 }
 @media screen and (max-width: 991px) {
-  .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite img {
+  .section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper .swiper-slide .box-hotsite img {
     max-width: 100%;
     width: 255px;
   }
 }
-.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite h5, .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite .h5 {
+.section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper .swiper-slide .box-hotsite h5, .section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper .swiper-slide .box-hotsite .h5 {
   font-weight: 700;
   font-size: 28px;
   line-height: 34px;
@@ -24026,12 +24031,12 @@ input:active, input:focus, button:active, button:focus {
   margin-bottom: 8px;
 }
 @media screen and (max-width: 991px) {
-  .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite h5, .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite .h5 {
+  .section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper .swiper-slide .box-hotsite h5, .section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper .swiper-slide .box-hotsite .h5 {
     font-size: 28px;
     line-height: 34px;
   }
 }
-.section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite p {
+.section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper .swiper-slide .box-hotsite p {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -24041,7 +24046,7 @@ input:active, input:focus, button:active, button:focus {
   margin-bottom: 0;
 }
 @media screen and (max-width: 991px) {
-  .section .section-hotsite .box-hotsite .swiper-doing .swiper-wrapper .swiper-slide .box-hotsite p {
+  .section .section-hotsite .box-hotsite .swiper-report .swiper-wrapper .swiper-slide .box-hotsite p {
     font-size: 14px;
     line-height: 17px;
   }
@@ -24206,6 +24211,7 @@ input:active, input:focus, button:active, button:focus {
 .section .section-clients {
   padding: 50px 30px;
   padding-bottom: 0;
+  height: auto;
 }
 @media screen and (max-width: 991px) {
   .section .section-clients {
@@ -24226,48 +24232,53 @@ input:active, input:focus, button:active, button:focus {
     line-height: 34px;
   }
 }
-.section .section-clients .client-depoiment {
+.section .client-depoiment {
   padding: 24px 32px;
 }
-.section .section-clients .client-depoiment .linha .linha-1 {
+.section .client-depoiment .linha .linha-1 {
   text-align: left;
 }
 @media screen and (max-width: 991px) {
-  .section .section-clients .client-depoiment .linha .linha-1 {
+  .section .client-depoiment .linha .linha-1 {
     margin-bottom: 24px;
   }
 }
-.section .section-clients .client-depoiment .linha .linha-1 img {
-  max-width: 100%;
+.section .client-depoiment .linha .linha-1 .image {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
   border-radius: 100%;
 }
-.section .section-clients .client-depoiment .linha .linha-1 p {
+.section .client-depoiment .linha .linha-1 .image img {
+  max-width: 100%;
+}
+.section .client-depoiment .linha .linha-1 h1, .section .client-depoiment .linha .linha-1 .h1 {
   font-weight: 500;
   font-size: 20px;
   line-height: 29px;
   color: #000000;
+  margin-bottom: 8px;
+  text-align: left;
 }
 @media screen and (max-width: 991px) {
-  .section .section-clients .client-depoiment .linha .linha-1 p {
+  .section .client-depoiment .linha .linha-1 h1, .section .client-depoiment .linha .linha-1 .h1 {
     font-size: 20px;
     line-height: 24px;
   }
 }
-.section .section-clients .client-depoiment .linha .linha-2 {
-  text-align: left;
-}
-.section .section-clients .client-depoiment .linha .linha-2 p {
+.section .client-depoiment .linha .linha-1 p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #0C1707;
   margin-bottom: 16px;
+  text-align: left;
 }
-.section .section-clients .client-depoiment .linha .linha-2 p:last-of-type {
+.section .client-depoiment .linha .linha-1 p:last-of-type {
   margin-bottom: 24px;
 }
 @media screen and (max-width: 991px) {
-  .section .section-clients .client-depoiment .linha .linha-2 p {
+  .section .client-depoiment .linha .linha-1 p {
     font-size: 16px;
     line-height: 19px;
   }
@@ -24275,6 +24286,7 @@ input:active, input:focus, button:active, button:focus {
 .section .section-team {
   padding: 50px 30px;
   padding-bottom: 0;
+  height: auto;
 }
 @media screen and (max-width: 991px) {
   .section .section-team {
@@ -24293,46 +24305,6 @@ input:active, input:focus, button:active, button:focus {
     font-size: 28px;
     line-height: 34px;
   }
-}
-.section .section-team .client-depoiment {
-  padding: 24px 32px;
-}
-.section .section-team .client-depoiment .linha .linha-1 {
-  text-align: left;
-}
-@media screen and (max-width: 991px) {
-  .section .section-team .client-depoiment .linha .linha-1 {
-    margin-bottom: 24px;
-  }
-}
-.section .section-team .client-depoiment .linha .linha-1 img {
-  max-width: 100%;
-  border-radius: 100%;
-}
-.section .section-team .client-depoiment .linha .linha-1 p {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
-  color: #000000;
-}
-@media screen and (max-width: 991px) {
-  .section .section-team .client-depoiment .linha .linha-1 p {
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-.section .section-team .client-depoiment .linha .linha-2 {
-  text-align: left;
-}
-.section .section-team .client-depoiment .linha .linha-2 p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #0C1707;
-  margin-bottom: 16px;
-}
-.section .section-team .client-depoiment .linha .linha-2 p:last-of-type {
-  margin-bottom: 24px;
 }
 .section .section-404 {
   text-align: center;
@@ -24364,7 +24336,7 @@ input:active, input:focus, button:active, button:focus {
     height: auto;
     padding: 0;
     overflow: hidden;
-    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
     margin-top: 40px;
   }
 }
@@ -24406,6 +24378,7 @@ input:active, input:focus, button:active, button:focus {
 }
 @media screen and (max-width: 991px) {
   .section .swiper-options .swiper-slide .option {
+    box-shadow: none;
     background-size: 91px;
     min-height: 270px;
   }
@@ -24662,7 +24635,7 @@ input:active, input:focus, button:active, button:focus {
 
 .semi-footer {
   padding: 50px 0;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
   margin-top: 100px;
 }
 @media screen and (max-width: 991px) {
@@ -24916,7 +24889,7 @@ input:active, input:focus, button:active, button:focus {
   display: flex;
   align-items: center;
   justify-content: end;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 48px;
   line-height: 1;
   color: #0C1707;

@@ -306,7 +306,7 @@
 				<p>Potencialize suas promoções online com as nossas ferramentas personalizadas e escolha como quer fechar o seu projeto. Você poderá decidir se deseja incluir um hotsite integrado, personalizado ou até mesmo seguir sem um hotsite elaborado pela nossa equipe.</p>
 
 				<div class="box-hotsite">
-					<div class="swiper swiper-doing">
+					<div class="swiper swiper-report">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="box-hotsite">
@@ -338,7 +338,7 @@
 						</div>
 					</div>
 
-					<div class="swiper-pagination swiper-pagination-slider-doing"></div>
+					<div class="swiper-pagination swiper-pagination-slider-report"></div>
 				</div>
 			</div>
 		</div>

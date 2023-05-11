@@ -91,10 +91,10 @@
 							<div class="contato">
 								<ul>
 									<li>
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/email.svg" alt="Email Peach IT"> <a href="mailto:comercial@peachit.com.br?subject=Contato">comercial@peachit.com.br</a>
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/email.svg" alt="Email Peach IT"> <a href="mailto:comercial@peachit.com.br?subject=Contato" target="_blank">comercial@peachit.com.br</a>
 									</li>
 									<li>
-										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/whatsapp.svg" alt="Whatsapp Peach IT"> <a href="https://api.whatsapp.com/send?phone=+5511978794205&text=Olá">(11) 97879-4205</a>
+										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/whatsapp.svg" alt="Whatsapp Peach IT"> <a href="https://wa.me/5511978794205?text=Olá" target="_blank">(11) 97879-4205</a>
 									</li>
 								</ul>
 							</div>
@@ -125,7 +125,7 @@
 							</div>
 							<div class="col-md-8">
 								<div class="right">
-									<?php echo do_shortcode( '[contact-form-7 id="31" title="Seja Cliente"]' ); ?>
+									<?php echo do_shortcode( '[contact-form-7 id="117" title="Seja Cliente"]' ); ?>
 								</div>
 							</div>
 						</div>
@@ -136,7 +136,7 @@
 
 		<div class="chat single-channel">
 			<div class="chat-channel">
-				<a href="https://wa.me/5511963467100?text=" target="_blank" class="chat-tooltip">
+				<a href="https://wa.me/5511978794205?text=" target="_blank" class="chat-tooltip">
 					<span class="chat-icon">
 						<span class="chat-svg">
 							<svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,6 +151,7 @@
 			</div>
 		</div>
 
+		<?php wp_footer(); ?>
 		<!-- JQuery -->
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.6.4.min.js"></script>
 		<!-- Mascara -->
@@ -160,7 +161,7 @@
 		<!-- Swiper JS -->
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/swiper-bundle.min.js"></script>
 		<!-- App JS -->
-		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js"></script>
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js?v=1.2"></script>
 
 		<script type="text/javascript">
   			$("#whatsapp").mask('(00) 00000-0000');

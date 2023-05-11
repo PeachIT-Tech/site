@@ -96,6 +96,8 @@
 								</div>
 							</div>
 						</div>
+						
+						<div class="swiper-pagination swiper-pagination-slider-options-2"></div>
 
 						<h1 class="bigger">Nosso time</h1>
 
@@ -260,6 +262,8 @@
 								</div>
 								<!-- <div class="swiper-pagination"></div> -->
 							</div>
+							
+							<div class="swiper-pagination swiper-pagination-slider-team mobile"></div>
 						</div>
 					</div>
 				</div>
@@ -311,7 +315,7 @@
 				</div>
 				
 				<div class="box">
-					<div class="swiper swiper-doing">
+					<div class="swiper swiper-report">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 							<div class="box-passos">
@@ -334,7 +338,7 @@
 						</div>
 					</div>
 
-					<div class="swiper-pagination swiper-pagination-slider-doing"></div>
+					<div class="swiper-pagination swiper-pagination-slider-report"></div>
 				</div>
 
 				<div class="box mt-50">

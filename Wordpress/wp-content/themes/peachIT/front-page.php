@@ -100,7 +100,7 @@
 							</div>
 						</div>
 
-						<div class="swiper-pagination swiper-pagination-slider-doing mobile"></div>
+						<div class="swiper-pagination swiper-pagination-slider-doing"></div>
 					</div>
 				</div>
 			</div>
@@ -195,15 +195,15 @@
 											<div class="client-depoiment">
 												<div class="row linha">
 													<div class="row linha-1">
-														<div class="col-3 col-md-1">
-															<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'full');?>" alt="<?php echo get_the_title($post->ID); ?>">
+														<div class="col-12 col-md-1">
+															<div class="image">
+																<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id(), 'full');?>" alt="<?php echo get_the_title($post->ID); ?>">
+															</div>
 														</div>
-														<div class="col-9 col-md-11 d-flex align-items-center">
-															<p><?php echo get_the_title($post->ID); ?></p>
+														<div class="col-12 col-md-11">
+															<h1><?php echo get_the_title($post->ID); ?></h1>
+															<?php echo apply_filters('the_content', $post->post_content); ?>
 														</div>
-													</div>
-													<div class="col-md-11 offset-md-1 linha-2">
-														<p><?php echo apply_filters('the_content', $post->post_content); ?></p>
 													</div>
 												</div>
 											</div>

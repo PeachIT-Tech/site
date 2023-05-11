@@ -151,7 +151,7 @@
 						</div>
 					</div>
 
-					<!-- <div class="swiper-pagination swiper-pagination-slider"></div> -->
+					<div class="swiper-pagination swiper-pagination-slider mobile"></div>
 				</div>
 
 				<div class="box-border mt-50">

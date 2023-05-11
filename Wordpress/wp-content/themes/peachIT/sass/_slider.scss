@@ -117,8 +117,6 @@
 							}
 	
 							@media screen and (max-width: 991px) {
-								align-items: center;
-		
 								h1 {
 									text-align: left;
 								}
@@ -382,6 +380,10 @@
 		.swiper-slide {
 			.marca-dagua {
 				box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
+
+				@media screen and (max-width: 991px) {
+					box-shadow: none;
+				}
 			}
 		}
 	}
@@ -393,7 +395,7 @@
 		margin-right: auto;
 
 		@media screen and (max-width: 991px) {
-			height: 500px;	
+			height: auto;	
 		}
 
 		.swiper-slide {
@@ -523,7 +525,7 @@
 }
 
 .swiper-pagination-bullets {
-	padding: 24px 0;
+	padding: 18px 0;
 	
 	&.swiper-pagination-horizontal {
 		position: relative;
