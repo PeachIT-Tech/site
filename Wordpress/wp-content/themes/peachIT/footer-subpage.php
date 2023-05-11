@@ -165,6 +165,7 @@
 
 		<script>
 			$("#menu-item-77 > ul").addClass("show");
+			$("#menu-item-99 > ul").addClass("show");
 			
 			$("#header").addClass("show");
 			$("#DropdownItem").addClass("show");
