@@ -6,7 +6,7 @@
 								<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img-holding-tablet.png" alt="img-holding-tablet">
 							</div>
 							<div class="col-md-6">
-								<h4>Converse com um especialista</h4>
+								<h6>Converse com um especialista</h6>
 								<p>Caso prefira, encaminhe um e-mail para <a href="mailto:comercial@peachit.com.br" target="_blank">comercial@peachit.com.br</a></p>
 							</div>
 							<div class="col-md-3 vertical-align right mob-center">
@@ -161,12 +161,6 @@
 		<!-- Swiper JS -->
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/swiper-bundle.min.js"></script>
 		<!-- App JS -->
-		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js?v=1.5"></script>
-
-		<script type="text/javascript">
-  			$("#whatsapp").mask('(00) 00000-0000');
-			$("#cpf").mask("000.000.000-00");
-			$("#cnpj").mask("00.000.000/0000-00");
-		</script>
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js?v=1.9"></script>
 	</body>
 </html>

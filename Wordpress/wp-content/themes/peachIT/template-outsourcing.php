@@ -342,20 +342,20 @@
 				</div>
 
 				<div class="box mt-50">
-					<div class="marca-dagua center primary-middle">
+					<div class="marca-dagua center primary-middle min-height-auto">
 						<div class="row">
 							<div class="col-md-4">
-								<h5 class="border-dotted d-flex align-items-end">Retenção de profissionais</h5>
+								<h5 class="border-dotted d-flex align-items-end w-100">Retenção de profissionais</h5>
 								
 								<p>A Peach IT estimula a relação com os colaboradores através de reuniões de rotina, integrações em atividades coletivas e acompanhamento próximo. </p>
 							</div>
 							<div class="col-md-4">
-								<h5 class="border-dotted d-flex align-items-end">Expansão de time</h5>
+								<h5 class="border-dotted d-flex align-items-end w-100">Expansão de time</h5>
 								
 								<p>O time é escalável, podendo aumentar ou diminuir a quantidade de recursos conforme a demanda.</p>
 							</div>
 							<div class="col-md-4">
-								<h5 class="border-dotted d-flex align-items-end">Expertise Peach IT</h5>
+								<h5 class="border-dotted d-flex align-items-end w-100">Expertise Peach IT</h5>
 								
 								<p>Os profissionais possuem acesso a toda base de conhecimento da Peach IT e assim podem trocar experiências sobre projetos de forma integrada e colaborativa.</p>
 							</div>

@@ -116,7 +116,7 @@
 					<div class="swiper swiper-slider">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<div class="marca-dagua primary-light min-height-370">
+								<div class="marca-dagua primary-light h-100">
 									<div class="box-text-image">
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/o-que-fazemos/consultoria/analise.png" alt="Análise">
 
@@ -127,7 +127,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="marca-dagua primary-light min-height-370">
+								<div class="marca-dagua primary-light h-100">
 									<div class="box-text-image">
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/o-que-fazemos/consultoria/implentacao.png" alt="Implementação">
 
@@ -138,7 +138,7 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="marca-dagua primary-light min-height-370">
+								<div class="marca-dagua primary-light h-100">
 									<div class="box-text-image">
 										<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/o-que-fazemos/consultoria/monitoramento.png" alt="Monitoramento">
 

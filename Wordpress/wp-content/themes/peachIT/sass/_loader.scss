@@ -1,0 +1,143 @@
+//Colors Variables
+$mainBgc: #03002E;
+
+// Container and shapes dimentions
+$containerDimentions: 30px;
+$shapeDimentions: 10px;
+
+// custom translation for each shape in an animation
+@mixin customTranslate ($shape, $tx, $ty) {
+	@if  $shape == 1 {
+		transform: translate($tx, $ty);
+	} @else if $shape == 2 {
+		transform: translate(-$ty, $tx);
+	} @else if $shape == 3 {
+		transform: translate($ty, -$tx);
+	} @else if $shape == 4 {
+		transform: translate(-$tx, -$ty);
+	}
+}
+
+.container-pre-load {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 99999; 
+	background-color: rgba($preto, 0.5);
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	top: 0;
+
+	.content {
+		max-width: 600px;
+		margin: auto;
+		padding: 5px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-content: flex-start;
+
+		.column {
+			width: calc(33.33% - 10px);
+			height: 170px;
+			background-color: lighten($mainBgc, 2%);
+			margin: 5px;
+			border: 1px solid transparentize(white, 0.9);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	  
+	.container {
+		width: 90px;
+		height: 90px;
+		position: relative;
+
+		&.animation-2  {
+			transform: rotate(10deg);
+
+			.shape {
+				border-radius: calc($shapeDimentions/2);
+			}    
+		}
+		&.animation-2 {
+			animation: rotation 1s infinite;
+		}
+		
+
+		.shape {
+			position: absolute;
+			width: 45px;
+			height: 45px;
+			border-radius: 1px;
+			background: url("../images/icons/peach-icon.svg") center no-repeat;
+			background-size: contain;
+
+			&.shape1{
+				left: 0;
+				top: 0;
+			}
+			&.shape2 {
+				right: 0;
+				top: 0;
+			}
+			&.shape3 {
+				left: 0;
+				bottom: 0;
+			}
+			&.shape4 {
+				right: 0;
+				bottom: 0;
+			}
+		}
+	}
+	
+	@keyframes rotation {
+		from { transform: rotate(0deg) }
+		to { transform: rotate(360deg) }
+	}
+
+	@for $j from 1 through 4 {
+		
+		$duration: 0.5s;
+		$timing: ease;
+		$delay: 0s;
+		$direction: alternate;
+		
+		$a: 20px;
+		
+		.animation-2 {
+			.shape#{$j} {
+				animation: animation2shape#{$j}
+					$duration
+					$timing 
+					$delay
+					infinite
+					$direction;
+			}
+		}
+		@keyframes animation2shape#{$j} {
+			from { transform: translate(0, 0) }
+			to { @include customTranslate($j, $a, $a) }
+		}
+	}
+
+	// Responsive Content
+	.content {
+		@media screen and (max-width: 600px) {
+			align-content: flex-start;
+			.column {
+				width: calc(50% - 90px);
+			}
+		}
+		@media screen and (max-width: 400px) {
+			align-content: flex-start;
+			.column {
+				width: calc(100% - 90px);
+			}
+		}
+	}
+}

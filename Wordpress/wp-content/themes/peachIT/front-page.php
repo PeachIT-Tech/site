@@ -30,15 +30,15 @@
 													<p><?php echo $subtitulo_slider?></p>
 												</div>
 												<div class="col-md-4 line-slider-image">
-													<img src="<?php echo $imagem_slider_desktop; ?>" class="desktop" alt="Personagem 1">
-													<img src="<?php echo $imagem_slider_mobile; ?>" class="mobile" alt="Personagem 1">
+													<img src="<?php echo $imagem_slider_desktop; ?>" class="desktop" alt="Personagem 1" loading="lazy">
+													<img src="<?php echo $imagem_slider_mobile; ?>" class="mobile" alt="Personagem 1" loading="lazy">
 												</div>
 											</div>
 										<?php elseif ($modelo_slider === 'slider-type-2') : ?>
 											<div class="row row-slider">
 												<div class="col-md-4 line-slider-image">
-													<img src="<?php echo $imagem_slider_desktop; ?>" class="desktop" alt="Personagem 2">
-													<img src="<?php echo $imagem_slider_mobile; ?>" class="mobile" alt="Personagem 2">
+													<img src="<?php echo $imagem_slider_desktop; ?>" class="desktop" alt="Personagem 2" loading="lazy">
+													<img src="<?php echo $imagem_slider_mobile; ?>" class="mobile" alt="Personagem 2" loading="lazy">
 												</div>
 												<div class="col-md-8 line-slider-text">
 													<h1><?php echo $titulo_slider?></h1>
@@ -55,6 +55,9 @@
 										<?php endif; ?>
 									</div>
 								</div>
+								<?php if ($modelo_slider != 'slider-type-3') : ?>
+        							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+								<?php endif; ?>
 							</div>
 						<?php 
 						endwhile; 

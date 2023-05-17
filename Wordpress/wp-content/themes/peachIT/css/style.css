@@ -22192,6 +22192,144 @@ input:active, input:focus, button:active, button:focus {
   color: #32704C;
 }
 
+.container-pre-load {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+.container-pre-load .content {
+  max-width: 600px;
+  margin: auto;
+  padding: 5px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.container-pre-load .content .column {
+  width: calc(33.33% - 10px);
+  height: 170px;
+  background-color: #040038;
+  margin: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-pre-load .container {
+  width: 90px;
+  height: 90px;
+  position: relative;
+}
+.container-pre-load .container.animation-2 {
+  transform: rotate(10deg);
+}
+.container-pre-load .container.animation-2 .shape {
+  border-radius: 5px;
+}
+.container-pre-load .container.animation-2 {
+  animation: rotation 1s infinite;
+}
+.container-pre-load .container .shape {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 1px;
+  background: url("../images/icons/peach-icon.svg") center no-repeat;
+  background-size: contain;
+}
+.container-pre-load .container .shape.shape1 {
+  left: 0;
+  top: 0;
+}
+.container-pre-load .container .shape.shape2 {
+  right: 0;
+  top: 0;
+}
+.container-pre-load .container .shape.shape3 {
+  left: 0;
+  bottom: 0;
+}
+.container-pre-load .container .shape.shape4 {
+  right: 0;
+  bottom: 0;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container-pre-load .animation-2 .shape1 {
+  animation: animation2shape1 0.5s ease 0s infinite alternate;
+}
+@keyframes animation2shape1 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(20px, 20px);
+  }
+}
+.container-pre-load .animation-2 .shape2 {
+  animation: animation2shape2 0.5s ease 0s infinite alternate;
+}
+@keyframes animation2shape2 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-20px, 20px);
+  }
+}
+.container-pre-load .animation-2 .shape3 {
+  animation: animation2shape3 0.5s ease 0s infinite alternate;
+}
+@keyframes animation2shape3 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(20px, -20px);
+  }
+}
+.container-pre-load .animation-2 .shape4 {
+  animation: animation2shape4 0.5s ease 0s infinite alternate;
+}
+@keyframes animation2shape4 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-20px, -20px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-pre-load .content {
+    align-content: flex-start;
+  }
+  .container-pre-load .content .column {
+    width: calc(50% - 90px);
+  }
+}
+@media screen and (max-width: 400px) {
+  .container-pre-load .content {
+    align-content: flex-start;
+  }
+  .container-pre-load .content .column {
+    width: calc(100% - 90px);
+  }
+}
+
 .modal-dialog .modal-body {
   padding: 40px;
   position: relative;
@@ -22326,6 +22464,12 @@ input:active, input:focus, button:active, button:focus {
 
 .header {
   height: 76px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 991px) {
   .header {
@@ -22454,7 +22598,7 @@ input:active, input:focus, button:active, button:focus {
     width: 100%;
     height: 70px;
     margin: 0;
-    top: 76px;
+    top: 0;
     left: 0;
     border: none;
     border-radius: 0;
@@ -23293,6 +23437,9 @@ input:active, input:focus, button:active, button:focus {
     overflow: hidden;
   }
 }
+.swiper.swiper-slider .swiper-slide {
+  height: initial;
+}
 .swiper.swiper-slider .swiper-slide .marca-dagua {
   box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.2);
 }
@@ -23711,6 +23858,12 @@ input:active, input:focus, button:active, button:focus {
   background: linear-gradient(180deg, #7ED955 28.19%, rgba(255, 255, 255, 0) 103.55%);
   border-radius: 12px;
   padding: 24px 16px;
+  height: calc(100% - 50px);
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .box-green-gradient {
+    height: auto;
+  }
 }
 .section .section-general .box-border-image {
   margin-top: 24px;
@@ -23750,6 +23903,16 @@ input:active, input:focus, button:active, button:focus {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+@media screen and (max-width: 1326px) {
+  .section .section-general .marca-dagua {
+    min-height: 300px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section .section-general .marca-dagua {
+    min-height: 250px;
+  }
 }
 .section .section-general .marca-dagua.center {
   justify-content: center;
@@ -23794,6 +23957,8 @@ input:active, input:focus, button:active, button:focus {
 }
 .section .section-general .marca-dagua h5.border-dotted, .section .section-general .marca-dagua .border-dotted.h5 {
   border-bottom: 2px dashed #0C1707;
+  font-size: 25px;
+  line-height: 32px;
   margin-bottom: 24px;
   padding-bottom: 8px;
 }
@@ -24345,8 +24510,13 @@ input:active, input:focus, button:active, button:focus {
   }
 }
 .section .swiper-options.padding-options {
-  height: 620px;
+  height: 700px;
   padding: 50px 30px;
+}
+@media screen and (max-width: 1326px) {
+  .section .swiper-options.padding-options {
+    height: 750px;
+  }
 }
 @media screen and (max-width: 991px) {
   .section .swiper-options.padding-options {
@@ -24360,8 +24530,6 @@ input:active, input:focus, button:active, button:focus {
 .section .swiper-options .swiper-slide {
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: calc((100% - 30px) / 2) !important;
 }
 @media screen and (max-width: 991px) {
@@ -24654,7 +24822,7 @@ input:active, input:focus, button:active, button:focus {
   border-radius: 50px;
   padding: 40px;
 }
-.semi-footer .box-semi-footer h4, .semi-footer .box-semi-footer .h4 {
+.semi-footer .box-semi-footer h6, .semi-footer .box-semi-footer .h6 {
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
@@ -24662,7 +24830,7 @@ input:active, input:focus, button:active, button:focus {
   padding-bottom: 8px;
 }
 @media screen and (max-width: 991px) {
-  .semi-footer .box-semi-footer h4, .semi-footer .box-semi-footer .h4 {
+  .semi-footer .box-semi-footer h6, .semi-footer .box-semi-footer .h6 {
     font-size: 28px;
     line-height: 34px;
   }
@@ -24998,9 +25166,16 @@ input:active, input:focus, button:active, button:focus {
 body {
   font-family: "Inter", Verdana, sans-serif;
 }
+body.lock {
+  overflow: hidden;
+}
 
 .main {
   background-color: #F2FAEF;
+  margin-top: 76px;
+}
+.main.show {
+  margin-top: 146px;
 }
 @media screen and (max-width: 991px) {
   .main {
@@ -25366,6 +25541,10 @@ input[type=file] {
   .row-margin-adjust {
     margin-right: -30px;
   }
+}
+
+.min-height-auto {
+  min-height: auto !important;
 }
 
 .wp-block-quote {

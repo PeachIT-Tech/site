@@ -43,11 +43,19 @@
         }
     }
 
-    $("#menu-item-99" ).click(function() {
+    $("#menu-item-99" ).click(function(evt) {
+        // evt.preventDefault();
+
         if ($("#header").hasClass("show")) {
             $("#header").removeClass("show");
         } else {
             $("#header").addClass("show");
+        }
+
+        if ($("#main").hasClass("show")) {
+            $("#main").removeClass("show");
+        } else {
+            $("#main").addClass("show");
         }
         
         if ($("#DropdownItem").hasClass("show")) {
@@ -63,11 +71,25 @@
         }
     });
 
+    $("#menu-item-99 > a" ).click(function() {
+        if ($("#expand").hasClass("expand")) {
+            $("#expand").removeClass("expand");
+        } else {
+            $("#expand").addClass("expand");
+        }
+    });
+
     $("#menu-item-75" ).click(function() {
         if ($("#header").hasClass("show")) {
             $("#header").removeClass("show");
         } else {
             $("#header").addClass("show");
+        }
+
+        if ($("#main").hasClass("show")) {
+            $("#main").removeClass("show");
+        } else {
+            $("#main").addClass("show");
         }
         
         if ($("#DropdownItem").hasClass("show")) {
@@ -91,19 +113,17 @@
         }
     });
 
-    $("#menu-item-77 > a" ).click(function() {
-        if ($("#expand").hasClass("expand")) {
-            $("#expand").removeClass("expand");
-        } else {
-            $("#expand").addClass("expand");
-        }
-    });
-
     $("#menu-item-77" ).click(function() {
         if ($("#header").hasClass("show")) {
             $("#header").removeClass("show");
         } else {
             $("#header").addClass("show");
+        }
+
+        if ($("#main").hasClass("show")) {
+            $("#main").removeClass("show");
+        } else {
+            $("#main").addClass("show");
         }
         
         if ($("#DropdownItem").hasClass("show")) {
@@ -147,6 +167,7 @@
         pagination: {
             el: ".swiper-pagination-slider-clients",
             clickable: true,
+            dynamicBullets: true,
         },
         autoplay: {
             delay: 2500,
@@ -159,6 +180,7 @@
         pagination: {
             el: ".swiper-pagination-slider-team",
             clickable: true,
+            dynamicBullets: true,
         },
         autoplay: {
             delay: 2500,
@@ -455,3 +477,13 @@
             uploded.classList.add("active");
         }
     }
+
+    
+$("#whatsapp").mask('(00) 00000-0000');
+$("#cpf").mask("000.000.000-00");
+$("#cnpj").mask("00.000.000/0000-00");
+
+$(document).ready( function() {
+    $('body').removeClass('lock');
+    $('.container-pre-load').fadeOut();
+});

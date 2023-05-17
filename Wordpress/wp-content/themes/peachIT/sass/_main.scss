@@ -276,6 +276,11 @@
 			background: linear-gradient(180deg, #7ED955 28.19%, rgba(255, 255, 255, 0) 103.55%);
 			border-radius: 12px;
 			padding: 24px 16px;
+			height: calc(100% - 50px);
+
+			@media screen and (max-width: 991px) {
+				height: auto;
+			}
 		}
 
 		.box-border-image {
@@ -319,6 +324,14 @@
 			// justify-content: space-between;
 			align-items: flex-start;
 
+			@media screen and (max-width: 1326px) {
+				min-height: 300px;
+			}
+
+			@media screen and (max-width: 991px) {
+				min-height: 250px;
+			}
+	
 			&.center {
 				justify-content: center;
 
@@ -367,6 +380,8 @@
 
 				&.border-dotted {
 					border-bottom: 2px dashed #0C1707;
+					font-size: 25px;
+					line-height: 32px;
 					margin-bottom: 24px;
 					padding-bottom: 8px;
 
@@ -952,8 +967,12 @@
 		}
 
 		&.padding-options {
-			height: 620px;
+			height: 700px;
 			padding: 50px 30px;
+
+			@media screen and (max-width: 1326px) {
+				height: 750px;
+			}
 		
 			@media screen and (max-width: 991px) {
 				height: auto;
@@ -967,8 +986,8 @@
 		.swiper-slide {
 			height: 100%;
 			display: flex;
-			align-items: center;
-			justify-content: center;
+			// align-items: center;
+			// justify-content: center;
 			height: calc((100% - 30px) / 2) !important;
 
 			@media screen and (max-width: 991px) {
@@ -1266,7 +1285,7 @@
 		border-radius: 50px;
 		padding: 40px;
 
-		h4 {
+		h6 {
 			font-weight: 700;
 			font-size: 36px;
 			line-height: 44px;
